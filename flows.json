@@ -76,9 +76,9 @@
             "442e7bc38dd4c3b7",
             "06ef4faf69df41d0"
         ],
-        "x": -6,
+        "x": 34,
         "y": 319,
-        "w": 712,
+        "w": 672,
         "h": 202
     },
     {
@@ -107,9 +107,9 @@
             "59b3354d12a64752",
             "65c75d67cdeec25c"
         ],
-        "x": -6,
+        "x": 34,
         "y": 559,
-        "w": 872,
+        "w": 812,
         "h": 342
     },
     {
@@ -143,91 +143,100 @@
         "height": "1"
     },
     {
-        "id": "197160bd5c9b62c4",
-        "type": "ui_button",
-        "z": "350f3f1be5bf834e",
-        "g": "1d39f27b3d601c72",
-        "name": "",
-        "group": "f08ba3d0ec182a89",
-        "order": 5,
-        "width": "2",
-        "height": 1,
-        "passthru": true,
-        "label": "Start",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "green",
-        "className": "",
-        "icon": "fa-play",
-        "payload": "{\"msg\":{\"payload\":\"gamestart\",\"timeout\":600,\"warning\":30}}",
-        "payloadType": "json",
-        "topic": "/game",
-        "topicType": "str",
-        "x": 110,
-        "y": 360,
-        "wires": [
-            [
-                "98ab54042d4213d0"
-            ]
-        ]
-    },
-    {
-        "id": "0deb9fba3b6f3c48",
-        "type": "ui_button",
-        "z": "350f3f1be5bf834e",
-        "g": "1d39f27b3d601c72",
-        "name": "",
-        "group": "f08ba3d0ec182a89",
-        "order": 3,
-        "width": "2",
-        "height": 1,
-        "passthru": true,
-        "label": "Stop",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "red",
-        "className": "",
-        "icon": "fa-stop",
-        "payload": "{     \"payload\": \"cancel\" }",
-        "payloadType": "json",
-        "topic": "/game",
-        "topicType": "str",
-        "x": 110,
-        "y": 420,
-        "wires": [
-            [
-                "342f119e8f4998e2"
-            ]
-        ]
-    },
-    {
-        "id": "c1d322a0a9c2b4ac",
-        "type": "ui_button",
-        "z": "350f3f1be5bf834e",
-        "g": "1d39f27b3d601c72",
-        "name": "",
-        "group": "f08ba3d0ec182a89",
-        "order": 4,
-        "width": 2,
-        "height": 1,
-        "passthru": true,
-        "label": "Reset",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "orange",
-        "className": "",
-        "icon": "fa-fast-backward",
-        "payload": "{\"timeout\": 600 }",
-        "payloadType": "json",
-        "topic": "/game",
-        "topicType": "str",
-        "x": 110,
-        "y": 480,
-        "wires": [
-            [
-                "890f86205d47ef77"
-            ]
-        ]
+        "id": "3a054ffea2c5314f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
     },
     {
         "id": "4a56258a14858018",
@@ -636,21 +645,6 @@
         "wires": []
     },
     {
-        "id": "34e41184596a8cc2",
-        "type": "ui_ui_control",
-        "z": "350f3f1be5bf834e",
-        "g": "063501cbf8d4d96b",
-        "name": "On Browser Refresh",
-        "events": "all",
-        "x": 160,
-        "y": 240,
-        "wires": [
-            [
-                "87d09c692b8687fc"
-            ]
-        ]
-    },
-    {
         "id": "87d09c692b8687fc",
         "type": "link out",
         "z": "350f3f1be5bf834e",
@@ -662,28 +656,6 @@
         "x": 295,
         "y": 240,
         "wires": []
-    },
-    {
-        "id": "0b46b07651aabd95",
-        "type": "ui_template",
-        "z": "350f3f1be5bf834e",
-        "group": "f08ba3d0ec182a89",
-        "name": "CSS-style overrides",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n\n    /* Don't let title expand */\n    md-card md-card-title {\n        flex: 0 0 auto !important;\n    }\n\n    /* Don't show scrollbars */\n    .nr-dashboard-template {\n        overflow-y: hidden !important;\n    }\n</style>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "global",
-        "className": "",
-        "info": "CSS Style overrides to the Node-RED Dark theme.\n\nFrom the Dashboard node information panel (View->Dashboard), select\n - Site: Options -> Node-RED theme everywhere\n - Theme: Style -> Dark",
-        "x": 1000,
-        "y": 140,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "e364bd8ab15e99bb",
@@ -814,28 +786,6 @@
         ]
     },
     {
-        "id": "c8fb5887561b01d3",
-        "type": "ui_template",
-        "z": "350f3f1be5bf834e",
-        "g": "c870415b6658eca9",
-        "group": "f08ba3d0ec182a89",
-        "name": "Time Remaining",
-        "order": 2,
-        "width": "6",
-        "height": "3",
-        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">Time Remaining</p>\n    </md-card-title-text>\n    <span ng-class=\"'fa fa-clock-o fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div style=\"text-align:center\">\n        <span class=\"value\" style=\"color:{{msg.timeColour}}; font-size:3em;\">\n            {{msg.formattedTimeRemaining}}\n        </span>\n    </div>\n</md-card-content>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 740,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "39e77fdf6d2e5543",
         "type": "function",
         "z": "350f3f1be5bf834e",
@@ -876,64 +826,6 @@
         "wires": [
             [
                 "4a9c0dfb1f0b9b85"
-            ]
-        ]
-    },
-    {
-        "id": "e7252fb6a4819ecf",
-        "type": "ui_button",
-        "z": "350f3f1be5bf834e",
-        "g": "c870415b6658eca9",
-        "name": "",
-        "group": "f08ba3d0ec182a89",
-        "order": 9,
-        "width": "2",
-        "height": 1,
-        "passthru": true,
-        "label": "+5min",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "grey",
-        "className": "",
-        "icon": "fa-plus",
-        "payload": "{\"msg\":{\"payload\":\"add5\",\"timeout\":600,\"warning\":30}}",
-        "payloadType": "json",
-        "topic": "/game",
-        "topicType": "str",
-        "x": 110,
-        "y": 740,
-        "wires": [
-            [
-                "2ce811328a35a524"
-            ]
-        ]
-    },
-    {
-        "id": "f457b1998a5d01b9",
-        "type": "ui_button",
-        "z": "350f3f1be5bf834e",
-        "g": "c870415b6658eca9",
-        "name": "",
-        "group": "f08ba3d0ec182a89",
-        "order": 7,
-        "width": 2,
-        "height": 1,
-        "passthru": true,
-        "label": "-5min",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "gray",
-        "className": "",
-        "icon": "fa-minus",
-        "payload": "{\"msg\":{\"payload\":\"deduct5\",\"timeout\":600,\"warning\":30}}",
-        "payloadType": "json",
-        "topic": "/game",
-        "topicType": "str",
-        "x": 110,
-        "y": 780,
-        "wires": [
-            [
-                "a98c2ab0de57b58a"
             ]
         ]
     },
@@ -1008,22 +900,216 @@
         "wires": []
     },
     {
-        "id": "f93150b86a48dd2b",
-        "type": "ui_text",
+        "id": "0c9d3ef3bf7c7bc0",
+        "type": "change",
         "z": "350f3f1be5bf834e",
         "g": "c870415b6658eca9",
-        "group": "f08ba3d0ec182a89",
-        "order": 8,
-        "width": "2",
-        "height": "1",
-        "name": "Game Duration",
-        "label": "Duration",
-        "format": "{{msg.formattedGameDuration}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 680,
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "$globalContext('elapsedTimeDelta') + (5000 * 60)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 820,
+        "wires": [
+            [
+                "32180624627a2049"
+            ]
+        ]
+    },
+    {
+        "id": "6e87bf8ee8b2ac47",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "$globalContext('elapsedTimeDelta') - (5000 * 60)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 860,
+        "wires": [
+            [
+                "32180624627a2049"
+            ]
+        ]
+    },
+    {
+        "id": "65c75d67cdeec25c",
+        "type": "comment",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "Adjustments to game duration or time taken",
+        "info": "",
+        "x": 230,
+        "y": 700,
         "wires": []
+    },
+    {
+        "id": "197160bd5c9b62c4",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 5,
+        "width": "2",
+        "height": 1,
+        "passthru": true,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "fa-play",
+        "payload": "{\"msg\":{\"payload\":\"gamestart\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "98ab54042d4213d0"
+            ]
+        ]
+    },
+    {
+        "id": "0deb9fba3b6f3c48",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 3,
+        "width": "2",
+        "height": 1,
+        "passthru": true,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-stop",
+        "payload": "{     \"payload\": \"cancel\" }",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 420,
+        "wires": [
+            [
+                "342f119e8f4998e2"
+            ]
+        ]
+    },
+    {
+        "id": "c1d322a0a9c2b4ac",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "orange",
+        "className": "",
+        "icon": "fa-fast-backward",
+        "payload": "{\"timeout\": 600 }",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "890f86205d47ef77"
+            ]
+        ]
+    },
+    {
+        "id": "e7252fb6a4819ecf",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 9,
+        "width": "2",
+        "height": 1,
+        "passthru": true,
+        "label": "+5min",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "grey",
+        "className": "",
+        "icon": "fa-plus",
+        "payload": "{\"msg\":{\"payload\":\"add5\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 740,
+        "wires": [
+            [
+                "2ce811328a35a524"
+            ]
+        ]
+    },
+    {
+        "id": "f457b1998a5d01b9",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "name": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "-5min",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "gray",
+        "className": "",
+        "icon": "fa-minus",
+        "payload": "{\"msg\":{\"payload\":\"deduct5\",\"timeout\":600,\"warning\":30}}",
+        "payloadType": "json",
+        "topic": "/game",
+        "topicType": "str",
+        "x": 110,
+        "y": 780,
+        "wires": [
+            [
+                "a98c2ab0de57b58a"
+            ]
+        ]
     },
     {
         "id": "465e64fa2453bb6a",
@@ -1084,60 +1170,22 @@
         ]
     },
     {
-        "id": "0c9d3ef3bf7c7bc0",
-        "type": "change",
+        "id": "f93150b86a48dd2b",
+        "type": "ui_text",
         "z": "350f3f1be5bf834e",
         "g": "c870415b6658eca9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "elapsedTimeDelta",
-                "pt": "global",
-                "to": "$globalContext('elapsedTimeDelta') + (5000 * 60)",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 320,
-        "y": 820,
-        "wires": [
-            [
-                "32180624627a2049"
-            ]
-        ]
-    },
-    {
-        "id": "6e87bf8ee8b2ac47",
-        "type": "change",
-        "z": "350f3f1be5bf834e",
-        "g": "c870415b6658eca9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "elapsedTimeDelta",
-                "pt": "global",
-                "to": "$globalContext('elapsedTimeDelta') - (5000 * 60)",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 320,
-        "y": 860,
-        "wires": [
-            [
-                "32180624627a2049"
-            ]
-        ]
+        "group": "f08ba3d0ec182a89",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "name": "Game Duration",
+        "label": "Duration",
+        "format": "{{msg.formattedGameDuration}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 740,
+        "y": 680,
+        "wires": []
     },
     {
         "id": "59b3354d12a64752",
@@ -1158,41 +1206,61 @@
         "wires": []
     },
     {
-        "id": "65c75d67cdeec25c",
-        "type": "comment",
+        "id": "34e41184596a8cc2",
+        "type": "ui_ui_control",
         "z": "350f3f1be5bf834e",
-        "g": "c870415b6658eca9",
-        "name": "Adjustments to game duration or time taken",
-        "info": "",
-        "x": 230,
-        "y": 700,
-        "wires": []
+        "g": "063501cbf8d4d96b",
+        "name": "On Browser Refresh",
+        "events": "all",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "87d09c692b8687fc"
+            ]
+        ]
     },
     {
-        "id": "d47ccc5aa8395796",
-        "type": "uibuilder",
+        "id": "0b46b07651aabd95",
+        "type": "ui_template",
         "z": "350f3f1be5bf834e",
-        "name": "tes",
-        "topic": "tet",
-        "url": "10.255.255.197",
-        "okToGo": true,
-        "fwdInMessages": false,
-        "allowScripts": false,
-        "allowStyles": false,
-        "copyIndex": true,
-        "templateFolder": "blank",
-        "extTemplate": "",
-        "showfolder": false,
-        "reload": false,
-        "sourceFolder": "src",
-        "deployedVersion": "6.8.2",
-        "showMsgUib": false,
-        "title": "",
-        "descr": "",
-        "x": 680,
-        "y": 220,
+        "group": "f08ba3d0ec182a89",
+        "name": "CSS-style overrides",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n\n    /* Don't let title expand */\n    md-card md-card-title {\n        flex: 0 0 auto !important;\n    }\n\n    /* Don't show scrollbars */\n    .nr-dashboard-template {\n        overflow-y: hidden !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 1000,
+        "y": 140,
         "wires": [
-            [],
+            []
+        ],
+        "info": "CSS Style overrides to the Node-RED Dark theme.\n\nFrom the Dashboard node information panel (View->Dashboard), select\n - Site: Options -> Node-RED theme everywhere\n - Theme: Style -> Dark"
+    },
+    {
+        "id": "c8fb5887561b01d3",
+        "type": "ui_template",
+        "z": "350f3f1be5bf834e",
+        "g": "c870415b6658eca9",
+        "group": "f08ba3d0ec182a89",
+        "name": "Time Remaining",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">Time Remaining</p>\n    </md-card-title-text>\n    <span ng-class=\"'fa fa-clock-o fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div style=\"text-align:center\">\n        <span class=\"value\" style=\"color:{{msg.timeColour}}; font-size:3em;\">\n            {{msg.formattedTimeRemaining}}\n        </span>\n    </div>\n</md-card-content>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 600,
+        "wires": [
             []
         ]
     }
