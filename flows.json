@@ -15,6 +15,14 @@
         "info": ""
     },
     {
+        "id": "93bfa7be5611ed79",
+        "type": "tab",
+        "label": "Connect The Wires",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "063501cbf8d4d96b",
         "type": "group",
         "z": "350f3f1be5bf834e",
@@ -111,6 +119,129 @@
         "y": 559,
         "w": 812,
         "h": 342
+    },
+    {
+        "id": "40ac803f180ca667",
+        "type": "group",
+        "z": "93bfa7be5611ed79",
+        "name": "Initial state set on system startup / reset",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1bf9a947777f7090",
+            "5036be253a8f6ed5",
+            "07abad867daa174f",
+            "4444bfbafa153eec",
+            "1026dad58359b3d9"
+        ],
+        "x": 94,
+        "y": 79,
+        "w": 462,
+        "h": 122
+    },
+    {
+        "id": "784cd73750252334",
+        "type": "group",
+        "z": "93bfa7be5611ed79",
+        "name": "Receive updates from device",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "207453df94b85781",
+            "8303fcc867aa8da3",
+            "12db1ad0fca4239f",
+            "66e7a92b35265f55",
+            "2724a5779c969454",
+            "48f6405eb02a815c",
+            "5eae4c2982e7ed08",
+            "3a21df5234d32109",
+            "3407915547214bd1",
+            "6bfb362e0fc7f4e3",
+            "a3468a7870285df5"
+        ],
+        "x": 84,
+        "y": 239,
+        "w": 972,
+        "h": 282
+    },
+    {
+        "id": "6f6edaeb1d55cba0",
+        "type": "group",
+        "z": "93bfa7be5611ed79",
+        "name": "Send updates to device",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "97639973ae7afe14",
+            "9cb3f87d5803ef00",
+            "0f7465abf873bd05",
+            "7934503c5f821063",
+            "754ae284ffe99c31",
+            "16e21ab268612f1e",
+            "17c3ab744cb88da0",
+            "dc9a44bba74954d2",
+            "e5e469f546877986",
+            "79da5e35fbbc93f8",
+            "8d971bf7b0481225",
+            "2897ef21b7e94a83",
+            "4db603c45a36131e",
+            "453dc20ebbae07cf",
+            "cb5e9f7ad5136d47",
+            "49a8dd708c1b4f34",
+            "fa6d2e984fcf7cfc",
+            "8fed383227e051a1",
+            "a53b690add9c95d8",
+            "13330a5229df6135"
+        ],
+        "x": 1084,
+        "y": 219,
+        "w": 422,
+        "h": 542
+    },
+    {
+        "id": "7a422e636d546f40",
+        "type": "group",
+        "z": "93bfa7be5611ed79",
+        "name": "Dashboard controls",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b02248e1f8d487f1",
+            "b7734c6ffcf854ea",
+            "c88c7bb4822e7522",
+            "c16d3978917dde1e",
+            "41e7fd674b4abf78",
+            "26d7074e84cca523",
+            "cb509f47926e0892",
+            "252b7e825424bfbc"
+        ],
+        "x": 94,
+        "y": 559,
+        "w": 542,
+        "h": 202
+    },
+    {
+        "id": "2474c6296f0ff089",
+        "type": "group",
+        "z": "93bfa7be5611ed79",
+        "name": "Game Events",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1a47e0035cae9ff0",
+            "3b72506c6dd97cd0",
+            "d61cf2628d35a7fc",
+            "916b3d897a697285"
+        ],
+        "x": 584,
+        "y": 79,
+        "w": 432,
+        "h": 82
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -238,6 +369,59 @@
                 "py": 0
             }
         }
+    },
+    {
+        "id": "8396df2f5978da6f",
+        "type": "mqtt-broker",
+        "name": "MQTT Server",
+        "broker": "localhost",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "d02b7f3c5e5df6dc",
+        "type": "serial-port",
+        "serialport": "COM5",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "bc988420b6a0a649",
+        "type": "websocket-listener",
+        "path": "/ws/input",
+        "wholemsg": "false"
+    },
+    {
+        "id": "ddc4c194acf07958",
+        "type": "ui_group",
+        "name": "Connect the Wires",
+        "tab": "a38c3d325d960343",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "4a56258a14858018",
@@ -1263,5 +1447,1035 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "1bf9a947777f7090",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "40ac803f180ca667",
+        "name": "Configuration",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "flow",
+                "to": "{\"id\":\"Wires-1\",\"name\":\"Connect The Wires\",\"description\":\"Players must plug cables into the correct sockets\",\"inputs\":[{\"F\":1,\"T\":2,\"S\":0},{\"F\":3,\"T\":0,\"S\":0},{\"F\":4,\"T\":6,\"S\":0},{\"F\":5,\"T\":7,\"S\":0}],\"state\":\"UNSOLVED\",\"ip\":\"0.0.0.0\",\"port\":\"23\"}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "1026dad58359b3d9"
+            ]
+        ]
+    },
+    {
+        "id": "5036be253a8f6ed5",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "40ac803f180ca667",
+        "name": "On Initialisation",
+        "links": [
+            "758310f9eb5818de"
+        ],
+        "x": 135,
+        "y": 120,
+        "wires": [
+            [
+                "1bf9a947777f7090"
+            ]
+        ]
+    },
+    {
+        "id": "07abad867daa174f",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "40ac803f180ca667",
+        "name": "On Reset",
+        "links": [
+            "442e7bc38dd4c3b7"
+        ],
+        "x": 135,
+        "y": 160,
+        "wires": [
+            [
+                "1bf9a947777f7090"
+            ]
+        ]
+    },
+    {
+        "id": "4444bfbafa153eec",
+        "type": "link out",
+        "z": "93bfa7be5611ed79",
+        "g": "40ac803f180ca667",
+        "name": "On Config Set",
+        "mode": "link",
+        "links": [
+            "3a21df5234d32109",
+            "80df62030689a0b8",
+            "44742918442ed8d4",
+            "79da5e35fbbc93f8",
+            "8d971bf7b0481225",
+            "2897ef21b7e94a83",
+            "0e6a7ea34ed569b3",
+            "252b7e825424bfbc"
+        ],
+        "x": 515,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1026dad58359b3d9",
+        "type": "function",
+        "z": "93bfa7be5611ed79",
+        "g": "40ac803f180ca667",
+        "name": "Store",
+        "func": "// Retrieve the ID of the prop used in this flow\nvar propid = flow.get(\"payload.id\");\n\n// Get the current stored value of this prop,\n// Or create a new entry if we didn't previously know about it\nvar prop = global.get(propid) || {};\n\n// Now loop over the incoming values and update the stored state\nvar count = 0;\nfor (var key in msg.payload) {\n  if (msg.payload.hasOwnProperty(key)) {\n    prop[key] = msg.payload[key];\n    count++;\n  }\n}\n\n// Save the global value again\nglobal.set(propid, prop);\n\n// Pass the updated status through the message flow\nmsg.payload = prop;\n\n// Update the dashboard editor\nnode.status({fill:\"green\", shape:\"dot\", text:count + \" values updated\"});\n\n// Pass the value along the flow\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "4444bfbafa153eec"
+            ]
+        ]
+    },
+    {
+        "id": "207453df94b85781",
+        "type": "mqtt in",
+        "z": "93bfa7be5611ed79",
+        "g": "784cd73750252334",
+        "name": "MQTT FromDevice",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8396df2f5978da6f",
+        "nl": false,
+        "rap": false,
+        "inputs": 1,
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "3407915547214bd1"
+            ]
+        ]
+    },
+    {
+        "id": "8303fcc867aa8da3",
+        "type": "udp in",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "784cd73750252334",
+        "name": "",
+        "iface": "",
+        "port": "161",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "3407915547214bd1"
+            ]
+        ]
+    },
+    {
+        "id": "12db1ad0fca4239f",
+        "type": "tcp in",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "784cd73750252334",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "80",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "3407915547214bd1"
+            ]
+        ]
+    },
+    {
+        "id": "66e7a92b35265f55",
+        "type": "serial in",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "784cd73750252334",
+        "name": "",
+        "serial": "d02b7f3c5e5df6dc",
+        "x": 430,
+        "y": 360,
+        "wires": [
+            [
+                "3407915547214bd1"
+            ]
+        ]
+    },
+    {
+        "id": "2724a5779c969454",
+        "type": "websocket in",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "784cd73750252334",
+        "name": "",
+        "server": "bc988420b6a0a649",
+        "client": "",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "3407915547214bd1"
+            ]
+        ]
+    },
+    {
+        "id": "48f6405eb02a815c",
+        "type": "http in",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "784cd73750252334",
+        "name": "",
+        "url": "/FromDevice",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "3407915547214bd1"
+            ]
+        ]
+    },
+    {
+        "id": "5eae4c2982e7ed08",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "784cd73750252334",
+        "name": "Subscribe",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "subscribe",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "'FromDevice/' & $$.payload.id",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "207453df94b85781"
+            ]
+        ]
+    },
+    {
+        "id": "3a21df5234d32109",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "784cd73750252334",
+        "name": "link in 43",
+        "links": [
+            "4444bfbafa153eec"
+        ],
+        "x": 125,
+        "y": 280,
+        "wires": [
+            [
+                "5eae4c2982e7ed08"
+            ]
+        ]
+    },
+    {
+        "id": "3407915547214bd1",
+        "type": "json",
+        "z": "93bfa7be5611ed79",
+        "g": "784cd73750252334",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 610,
+        "y": 360,
+        "wires": [
+            [
+                "6bfb362e0fc7f4e3"
+            ]
+        ]
+    },
+    {
+        "id": "6bfb362e0fc7f4e3",
+        "type": "function",
+        "z": "93bfa7be5611ed79",
+        "g": "784cd73750252334",
+        "name": "Parse JSON and update stored state",
+        "func": "// Retrieve the ID of the prop used in this flow\nvar propid = flow.get(\"payload.id\");\n\n// Get the current stored value of this prop,\n// Or create a new entry if we didn't previously know about it\nvar prop = global.get(propid) || {};\n\n// Now loop over the incoming values and update the stored state\nvar count = 0;\nfor (var key in msg.payload) {\n  if (msg.payload.hasOwnProperty(key)) {\n    prop[key] = msg.payload[key];\n    count++;\n  }\n}\n\n// Save the global value again\nglobal.set(propid, prop);\n\n// Pass the updated status through the message flow\nmsg.payload = prop;\n\n// Update the dashboard editor\nnode.status({fill:\"green\", shape:\"dot\", text:count + \" values updated\"});\n\n// Pass the value along the flow\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 360,
+        "wires": [
+            [
+                "a3468a7870285df5"
+            ]
+        ]
+    },
+    {
+        "id": "a3468a7870285df5",
+        "type": "link out",
+        "z": "93bfa7be5611ed79",
+        "g": "784cd73750252334",
+        "name": "link out 12",
+        "mode": "link",
+        "links": [
+            "252b7e825424bfbc"
+        ],
+        "x": 1015,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "97639973ae7afe14",
+        "type": "mqtt out",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "MQTT ToDevice",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8396df2f5978da6f",
+        "x": 1400,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9cb3f87d5803ef00",
+        "type": "tcp out",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "6f6edaeb1d55cba0",
+        "name": "",
+        "host": "",
+        "port": "",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 1430,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "0f7465abf873bd05",
+        "type": "serial out",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "6f6edaeb1d55cba0",
+        "name": "",
+        "serial": "",
+        "x": 1430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7934503c5f821063",
+        "type": "udp out",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "6f6edaeb1d55cba0",
+        "name": "",
+        "addr": "",
+        "iface": "",
+        "port": "",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 1430,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "754ae284ffe99c31",
+        "type": "websocket out",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "6f6edaeb1d55cba0",
+        "name": "",
+        "server": "bc988420b6a0a649",
+        "client": "",
+        "x": 1400,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "16e21ab268612f1e",
+        "type": "http request",
+        "z": "93bfa7be5611ed79",
+        "d": true,
+        "g": "6f6edaeb1d55cba0",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1410,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17c3ab744cb88da0",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "Set Target IP and Port",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ip",
+                "pt": "msg",
+                "to": "payload.ip",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "port",
+                "pt": "msg",
+                "to": "payload.port",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 440,
+        "wires": [
+            [
+                "7934503c5f821063"
+            ]
+        ]
+    },
+    {
+        "id": "dc9a44bba74954d2",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "Set URL",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "'ToDevice/' & $flowContext('id')",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 680,
+        "wires": [
+            [
+                "16e21ab268612f1e"
+            ]
+        ]
+    },
+    {
+        "id": "e5e469f546877986",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "Set Host and Port",
+        "rules": [
+            {
+                "t": "set",
+                "p": "host",
+                "pt": "msg",
+                "to": "payload.ip",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "port",
+                "pt": "msg",
+                "to": "payload.port",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 520,
+        "wires": [
+            [
+                "9cb3f87d5803ef00"
+            ]
+        ]
+    },
+    {
+        "id": "79da5e35fbbc93f8",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 45",
+        "links": [
+            "4444bfbafa153eec"
+        ],
+        "x": 1125,
+        "y": 440,
+        "wires": [
+            [
+                "17c3ab744cb88da0"
+            ]
+        ]
+    },
+    {
+        "id": "8d971bf7b0481225",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 46",
+        "links": [
+            "4444bfbafa153eec"
+        ],
+        "x": 1145,
+        "y": 520,
+        "wires": [
+            [
+                "e5e469f546877986"
+            ]
+        ]
+    },
+    {
+        "id": "2897ef21b7e94a83",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 47",
+        "links": [
+            "4444bfbafa153eec"
+        ],
+        "x": 1165,
+        "y": 680,
+        "wires": [
+            [
+                "dc9a44bba74954d2"
+            ]
+        ]
+    },
+    {
+        "id": "4db603c45a36131e",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "Set Topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "'ToDevice/' & $flowContext('payload.id')",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 300,
+        "wires": [
+            [
+                "97639973ae7afe14",
+                "13330a5229df6135"
+            ]
+        ]
+    },
+    {
+        "id": "453dc20ebbae07cf",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 48",
+        "links": [
+            "26d7074e84cca523",
+            "916b3d897a697285"
+        ],
+        "x": 1145,
+        "y": 300,
+        "wires": [
+            [
+                "4db603c45a36131e"
+            ]
+        ]
+    },
+    {
+        "id": "cb5e9f7ad5136d47",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 49",
+        "links": [
+            "26d7074e84cca523",
+            "916b3d897a697285"
+        ],
+        "x": 1345,
+        "y": 380,
+        "wires": [
+            [
+                "0f7465abf873bd05"
+            ]
+        ]
+    },
+    {
+        "id": "49a8dd708c1b4f34",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 50",
+        "links": [
+            "26d7074e84cca523",
+            "916b3d897a697285"
+        ],
+        "x": 1345,
+        "y": 480,
+        "wires": [
+            [
+                "7934503c5f821063"
+            ]
+        ]
+    },
+    {
+        "id": "fa6d2e984fcf7cfc",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 51",
+        "links": [
+            "26d7074e84cca523",
+            "916b3d897a697285"
+        ],
+        "x": 1345,
+        "y": 560,
+        "wires": [
+            [
+                "9cb3f87d5803ef00"
+            ]
+        ]
+    },
+    {
+        "id": "8fed383227e051a1",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 52",
+        "links": [
+            "26d7074e84cca523",
+            "916b3d897a697285"
+        ],
+        "x": 1305,
+        "y": 720,
+        "wires": [
+            [
+                "16e21ab268612f1e"
+            ]
+        ]
+    },
+    {
+        "id": "a53b690add9c95d8",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "link in 53",
+        "links": [
+            "26d7074e84cca523",
+            "916b3d897a697285"
+        ],
+        "x": 1285,
+        "y": 620,
+        "wires": [
+            [
+                "754ae284ffe99c31"
+            ]
+        ]
+    },
+    {
+        "id": "b02248e1f8d487f1",
+        "type": "ui_button",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "name": "RESET",
+        "group": "ddc4c194acf07958",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-lock",
+        "payload": "{\"command\":\"RESET\"}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 180,
+        "y": 720,
+        "wires": [
+            [
+                "c16d3978917dde1e"
+            ]
+        ]
+    },
+    {
+        "id": "b7734c6ffcf854ea",
+        "type": "ui_button",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "name": "SOLVE",
+        "group": "ddc4c194acf07958",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Solve",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-unlock",
+        "payload": "{\"command\":\"SOLVE\"}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 660,
+        "wires": [
+            [
+                "c88c7bb4822e7522"
+            ]
+        ]
+    },
+    {
+        "id": "c88c7bb4822e7522",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "payload.id",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.command",
+                "pt": "msg",
+                "to": "SOLVE",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 660,
+        "wires": [
+            [
+                "41e7fd674b4abf78"
+            ]
+        ]
+    },
+    {
+        "id": "c16d3978917dde1e",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "payload.id",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.command",
+                "pt": "msg",
+                "to": "RESET",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 720,
+        "wires": [
+            [
+                "41e7fd674b4abf78"
+            ]
+        ]
+    },
+    {
+        "id": "41e7fd674b4abf78",
+        "type": "json",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 510,
+        "y": 680,
+        "wires": [
+            [
+                "26d7074e84cca523"
+            ]
+        ]
+    },
+    {
+        "id": "26d7074e84cca523",
+        "type": "link out",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "18404cad9ee52512",
+            "453dc20ebbae07cf",
+            "cb5e9f7ad5136d47",
+            "49a8dd708c1b4f34",
+            "fa6d2e984fcf7cfc",
+            "8fed383227e051a1",
+            "a53b690add9c95d8"
+        ],
+        "x": 595,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "cb509f47926e0892",
+        "type": "ui_template",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "group": "ddc4c194acf07958",
+        "name": "Dashboard Panel",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='S' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n    </p>\n    <div style=\"text-align:center\" ng-repeat=\"input in msg.payload.inputs track by $index\">\n        <span style=\"font-size: 2em;\">{{input.F}}  </span>\n        <span ng-class=\"input.S == 1 ? 'fa fa-2x fa-arrows-h' : 'fa fa-2x '\">&nbsp;</span>\n        <span style=\"font-size: 2em;\">{{input.T}} </span>\n    </div>\n    <div style=\"height:10px;\">&nbsp;</div>\n</md-card-content>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 390,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "252b7e825424bfbc",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "7a422e636d546f40",
+        "name": "link in 54",
+        "links": [
+            "4444bfbafa153eec",
+            "a3468a7870285df5"
+        ],
+        "x": 265,
+        "y": 600,
+        "wires": [
+            [
+                "cb509f47926e0892"
+            ]
+        ]
+    },
+    {
+        "id": "1a47e0035cae9ff0",
+        "type": "change",
+        "z": "93bfa7be5611ed79",
+        "g": "2474c6296f0ff089",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.command",
+                "pt": "msg",
+                "to": "RESET",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 120,
+        "wires": [
+            [
+                "d61cf2628d35a7fc"
+            ]
+        ]
+    },
+    {
+        "id": "3b72506c6dd97cd0",
+        "type": "link in",
+        "z": "93bfa7be5611ed79",
+        "g": "2474c6296f0ff089",
+        "name": "link in 55",
+        "links": [],
+        "x": 625,
+        "y": 120,
+        "wires": [
+            [
+                "1a47e0035cae9ff0"
+            ]
+        ]
+    },
+    {
+        "id": "d61cf2628d35a7fc",
+        "type": "json",
+        "z": "93bfa7be5611ed79",
+        "g": "2474c6296f0ff089",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 890,
+        "y": 120,
+        "wires": [
+            [
+                "916b3d897a697285"
+            ]
+        ]
+    },
+    {
+        "id": "916b3d897a697285",
+        "type": "link out",
+        "z": "93bfa7be5611ed79",
+        "g": "2474c6296f0ff089",
+        "name": "link out 14",
+        "mode": "link",
+        "links": [
+            "18404cad9ee52512",
+            "453dc20ebbae07cf",
+            "cb5e9f7ad5136d47",
+            "49a8dd708c1b4f34",
+            "fa6d2e984fcf7cfc",
+            "8fed383227e051a1",
+            "a53b690add9c95d8"
+        ],
+        "x": 975,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "13330a5229df6135",
+        "type": "debug",
+        "z": "93bfa7be5611ed79",
+        "g": "6f6edaeb1d55cba0",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 260,
+        "wires": []
     }
 ]
