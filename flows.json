@@ -151,7 +151,8 @@
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
@@ -650,9 +651,8 @@
         "z": "350f3f1be5bf834e",
         "g": "063501cbf8d4d96b",
         "name": "On Browser Refresh",
-        "links": [
-            "91bbad40.53273"
-        ],
+        "mode": "link",
+        "links": [],
         "x": 295,
         "y": 240,
         "wires": []
