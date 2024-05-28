@@ -641,7 +641,7 @@
         "y": 240,
         "wires": [
             [
-                "d311c48a2c07bfe0"
+                "3697c0b81e0b8ff9"
             ]
         ]
     },
@@ -756,42 +756,27 @@
         "wires": []
     },
     {
-        "id": "d311c48a2c07bfe0",
-        "type": "rbe",
+        "id": "3697c0b81e0b8ff9",
+        "type": "switch",
         "z": "bc3f40f178b15cc3",
         "name": "",
-        "func": "deadband",
-        "gap": "",
-        "start": "",
-        "inout": "in",
-        "septopics": true,
         "property": "payload",
-        "topi": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
         "x": 810,
-        "y": 380,
+        "y": 240,
         "wires": [
             [
-                "5c4b4104d87193de",
-                "8bb57dcf2f1ff74b"
+                "5c4b4104d87193de"
             ]
         ]
-    },
-    {
-        "id": "8bb57dcf2f1ff74b",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1020,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "4a56258a14858018",
