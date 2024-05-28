@@ -646,7 +646,7 @@
         "z": "bc3f40f178b15cc3",
         "name": "",
         "pin": "17",
-        "set": "",
+        "set": true,
         "level": "0",
         "freq": "",
         "out": "out",
@@ -740,7 +740,8 @@
         "y": 240,
         "wires": [
             [
-                "a64be0597031f9c8"
+                "a64be0597031f9c8",
+                "238d0820d6b80b23"
             ]
         ]
     },
@@ -763,9 +764,27 @@
         "y": 300,
         "wires": [
             [
-                "a64be0597031f9c8"
+                "a64be0597031f9c8",
+                "238d0820d6b80b23"
             ]
         ]
+    },
+    {
+        "id": "238d0820d6b80b23",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 520,
+        "y": 180,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
@@ -981,12 +1000,10 @@
         "z": "350f3f1be5bf834e",
         "g": "1d39f27b3d601c72",
         "name": "On Game Start",
+        "mode": "link",
         "links": [
-            "65781ff6.32997",
-            "f64afdb2.ae6738",
-            "75a596869f308dab",
-            "fde61d47216f1287",
-            "4d67412aeea1faa0"
+            "4d67412aeea1faa0",
+            "75a596869f308dab"
         ],
         "x": 495,
         "y": 360,
