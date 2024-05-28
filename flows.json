@@ -712,7 +712,8 @@
         "name": "start alarm",
         "links": [
             "ef582930fa6e08ef",
-            "1a0ec93bbbd6303c"
+            "1a0ec93bbbd6303c",
+            "ac15dfd7ab189de4"
         ],
         "x": 215,
         "y": 240,
@@ -1841,5 +1842,43 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "3b2726c872daa5b2",
+        "type": "inject",
+        "z": "350f3f1be5bf834e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 990,
+        "y": 480,
+        "wires": [
+            [
+                "ac15dfd7ab189de4"
+            ]
+        ]
+    },
+    {
+        "id": "ac15dfd7ab189de4",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "4d67412aeea1faa0"
+        ],
+        "x": 1225,
+        "y": 480,
+        "wires": []
     }
 ]
