@@ -702,7 +702,8 @@
         "y": 240,
         "wires": [
             [
-                "238d0820d6b80b23"
+                "238d0820d6b80b23",
+                "976efef9bdb1335e"
             ]
         ]
     },
@@ -722,6 +723,44 @@
         "x": 420,
         "y": 220,
         "wires": []
+    },
+    {
+        "id": "976efef9bdb1335e",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "gamestart",
+                "fromt": "str",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "cancel",
+                "fromt": "str",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "a64be0597031f9c8"
+            ]
+        ]
     },
     {
         "id": "4a56258a14858018",
