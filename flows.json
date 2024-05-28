@@ -506,7 +506,7 @@
         "type": "ui_group",
         "name": "Connect the Wires",
         "tab": "a38c3d325d960343",
-        "order": 4,
+        "order": 2,
         "disp": false,
         "width": "6",
         "collapse": false
@@ -515,7 +515,7 @@
         "id": "8f886ae1479c4797",
         "type": "ui_group",
         "name": "Button",
-        "tab": "7d66f574.b154cc",
+        "tab": "a38c3d325d960343",
         "order": 3,
         "disp": false,
         "width": "6",
@@ -554,15 +554,6 @@
         "type": "websocket-listener",
         "path": "/ws/input",
         "wholemsg": "false"
-    },
-    {
-        "id": "7d66f574.b154cc",
-        "type": "ui_tab",
-        "name": "Main",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "4a56258a14858018",
