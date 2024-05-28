@@ -711,7 +711,8 @@
         "z": "bc3f40f178b15cc3",
         "name": "start alarm",
         "links": [
-            "ef582930fa6e08ef"
+            "ef582930fa6e08ef",
+            "1a0ec93bbbd6303c"
         ],
         "x": 215,
         "y": 240,
@@ -804,13 +805,26 @@
         "payload": "true",
         "payloadType": "bool",
         "x": 210,
-        "y": 140,
+        "y": 60,
         "wires": [
             [
                 "238d0820d6b80b23",
-                "2d0cb4871a899174"
+                "1a0ec93bbbd6303c"
             ]
         ]
+    },
+    {
+        "id": "1a0ec93bbbd6303c",
+        "type": "link out",
+        "z": "bc3f40f178b15cc3",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "4d67412aeea1faa0"
+        ],
+        "x": 445,
+        "y": 60,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
