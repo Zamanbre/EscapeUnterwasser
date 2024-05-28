@@ -693,7 +693,7 @@
         "id": "ef33beeff378a0e1",
         "type": "link in",
         "z": "bc3f40f178b15cc3",
-        "name": "stop",
+        "name": "stop alarm",
         "links": [
             "4a863b19c2050c0a"
         ],
@@ -709,7 +709,7 @@
         "id": "4d67412aeea1faa0",
         "type": "link in",
         "z": "bc3f40f178b15cc3",
-        "name": "start",
+        "name": "start alarm",
         "links": [
             "ef582930fa6e08ef"
         ],
@@ -785,6 +785,32 @@
         "x": 520,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "f49944015da02b88",
+        "type": "inject",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "238d0820d6b80b23",
+                "a64be0597031f9c8"
+            ]
+        ]
     },
     {
         "id": "4a56258a14858018",
