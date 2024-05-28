@@ -724,8 +724,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 440,
-        "y": 220,
+        "x": 580,
+        "y": 340,
         "wires": []
     },
     {
@@ -791,8 +791,8 @@
         "y": 160,
         "wires": [
             [
-                "238d0820d6b80b23",
-                "976efef9bdb1335e"
+                "976efef9bdb1335e",
+                "b0da65f78694ec6b"
             ]
         ]
     },
