@@ -594,32 +594,6 @@
         "className": ""
     },
     {
-        "id": "5d969ceaf27812a1",
-        "type": "ui_button",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "group": "af93c53b4bbc79b1",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 630,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1cb8410f1e8faed8",
         "type": "rpi-gpio in",
         "z": "bc3f40f178b15cc3",
@@ -633,7 +607,6 @@
         "y": 200,
         "wires": [
             [
-                "5d969ceaf27812a1",
                 "328bab6004f0eb10"
             ]
         ]
@@ -681,7 +654,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "from": "1",
-                "fromt": "str",
+                "fromt": "num",
                 "to": "false",
                 "tot": "bool"
             },
@@ -690,7 +663,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "from": "0",
-                "fromt": "str",
+                "fromt": "num",
                 "to": "true",
                 "tot": "bool"
             }
