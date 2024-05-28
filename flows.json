@@ -651,8 +651,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 500,
-        "y": 300,
+        "x": 660,
+        "y": 280,
         "wires": []
     },
     {
@@ -681,11 +681,89 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 250,
-        "y": 300,
+        "x": 490,
+        "y": 280,
         "wires": [
             [
                 "13fc056b006dae96"
+            ]
+        ]
+    },
+    {
+        "id": "ef33beeff378a0e1",
+        "type": "link in",
+        "z": "bc3f40f178b15cc3",
+        "name": "stop",
+        "links": [
+            "4a863b19c2050c0a"
+        ],
+        "x": 215,
+        "y": 300,
+        "wires": [
+            [
+                "a938e4cd5f5819f0"
+            ]
+        ]
+    },
+    {
+        "id": "4d67412aeea1faa0",
+        "type": "link in",
+        "z": "bc3f40f178b15cc3",
+        "name": "start",
+        "links": [
+            "ef582930fa6e08ef"
+        ],
+        "x": 215,
+        "y": 240,
+        "wires": [
+            [
+                "2d0cb4871a899174"
+            ]
+        ]
+    },
+    {
+        "id": "2d0cb4871a899174",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "a64be0597031f9c8"
+            ]
+        ]
+    },
+    {
+        "id": "a938e4cd5f5819f0",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "a64be0597031f9c8"
             ]
         ]
     },
@@ -907,7 +985,8 @@
             "65781ff6.32997",
             "f64afdb2.ae6738",
             "75a596869f308dab",
-            "fde61d47216f1287"
+            "fde61d47216f1287",
+            "4d67412aeea1faa0"
         ],
         "x": 495,
         "y": 360,
@@ -932,7 +1011,8 @@
         "name": "On Game Stop",
         "mode": "link",
         "links": [
-            "75a596869f308dab"
+            "75a596869f308dab",
+            "ef33beeff378a0e1"
         ],
         "x": 495,
         "y": 420,
@@ -955,19 +1035,9 @@
         "z": "350f3f1be5bf834e",
         "g": "1d39f27b3d601c72",
         "name": "On Game Reset",
+        "mode": "link",
         "links": [
-            "b72df54c.54dbc8",
-            "f476429e.39f778",
-            "fad501df9730e3cd",
-            "5051fca6f0fc24ce",
-            "771ef7315cbeaed4",
-            "6aa55bc0969c2645",
-            "f64afdb2.ae6738",
-            "27a13ceb38ba3113",
-            "b24d6dd76f244e1c",
-            "561c4af966865974",
-            "75a596869f308dab",
-            "fde61d47216f1287"
+            "75a596869f308dab"
         ],
         "x": 495,
         "y": 480,
