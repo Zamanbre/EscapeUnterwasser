@@ -142,6 +142,25 @@
         "h": 202
     },
     {
+        "id": "eaeca8afb05066c4",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "name": "Alarm",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "13fc056b006dae96",
+            "a64be0597031f9c8",
+            "4d67412aeea1faa0",
+            "976efef9bdb1335e"
+        ],
+        "x": 44,
+        "y": 239,
+        "w": 762,
+        "h": 82
+    },
+    {
         "id": "f08ba3d0ec182a89",
         "type": "ui_group",
         "name": "Game Control",
@@ -648,6 +667,7 @@
         "id": "13fc056b006dae96",
         "type": "rpi-gpio out",
         "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
         "name": "",
         "pin": "17",
         "set": true,
@@ -655,7 +675,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 1040,
+        "x": 720,
         "y": 280,
         "wires": []
     },
@@ -663,6 +683,7 @@
         "id": "a64be0597031f9c8",
         "type": "ui_switch",
         "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
         "name": "",
         "label": "Alarm",
         "tooltip": "",
@@ -685,7 +706,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 890,
+        "x": 570,
         "y": 280,
         "wires": [
             [
@@ -697,41 +718,25 @@
         "id": "4d67412aeea1faa0",
         "type": "link in",
         "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
         "name": "alarm",
         "links": [
             "21d47c54a97169e3",
             "e24e2635213fc060"
         ],
-        "x": 215,
-        "y": 240,
+        "x": 85,
+        "y": 280,
         "wires": [
             [
-                "976efef9bdb1335e",
-                "238d0820d6b80b23"
+                "976efef9bdb1335e"
             ]
         ]
-    },
-    {
-        "id": "238d0820d6b80b23",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 340,
-        "y": 320,
-        "wires": []
     },
     {
         "id": "976efef9bdb1335e",
         "type": "change",
         "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
         "name": "",
         "rules": [
             {
@@ -758,55 +763,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
+        "x": 250,
         "y": 280,
         "wires": [
             [
                 "a64be0597031f9c8"
             ]
-        ]
-    },
-    {
-        "id": "284572d638421748",
-        "type": "inject",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "cancel",
-        "payloadType": "str",
-        "x": 270,
-        "y": 160,
-        "wires": [
-            [
-                "976efef9bdb1335e"
-            ]
-        ]
-    },
-    {
-        "id": "93bb3e96478fdf86",
-        "type": "json",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 510,
-        "y": 140,
-        "wires": [
-            []
         ]
     },
     {
