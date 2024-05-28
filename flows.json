@@ -820,8 +820,8 @@
                 "t": "change",
                 "p": "payload",
                 "pt": "msg",
-                "from": "{     \"msg\": {         \"payload\": \"gamestart\",         \"timeout\": 600,         \"warning\": 30     } }",
-                "fromt": "str",
+                "from": "payload",
+                "fromt": "msg",
                 "to": "test",
                 "tot": "str"
             }
