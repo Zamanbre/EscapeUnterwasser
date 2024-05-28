@@ -583,6 +583,61 @@
         "hidden": false
     },
     {
+        "id": "af93c53b4bbc79b1",
+        "type": "ui_group",
+        "name": "Finale Button",
+        "tab": "a38c3d325d960343",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d969ceaf27812a1",
+        "type": "ui_button",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "group": "af93c53b4bbc79b1",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1cb8410f1e8faed8",
+        "type": "rpi-gpio in",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "pin": "4",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "5d969ceaf27812a1"
+            ]
+        ]
+    },
+    {
         "id": "4a56258a14858018",
         "type": "change",
         "z": "350f3f1be5bf834e",
@@ -3160,22 +3215,6 @@
         "wires": []
     },
     {
-        "id": "d34b675c0135f52f",
-        "type": "rpi-gpio in",
-        "z": "a1538f107b6f4fdc",
-        "name": "",
-        "pin": "4",
-        "intype": "up",
-        "debounce": "25",
-        "read": false,
-        "bcm": true,
-        "x": 150,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f045a30af8ee1b2f",
         "type": "change",
         "z": "fcf0c6616a19d3cd",
@@ -3221,7 +3260,9 @@
         "format": "<md-card-title>\n    <md-card-title-text>\n        <p class=\"md-headline\">{{msg.payload.name}}</p>\n    </md-card-title-text>\n    <span ng-class=\"msg.payload.state=='SOLVED' ? 'fa fa-unlock fa-2x' : 'fa fa-lock fa-2x'\"></span>\n</md-card-title>\n<md-card-content>\n    <div ng-style=\"{width:'100%',height:'8px','background-color':msg.payload.state=='SOLVED' ? 'green' : 'red'}\" ></div>\n    <p>\n        {{msg.payload.description?msg.payload.description:'Unknown'}}\n    </p>\n</md-card-content>",
         "storeOutMessages": false,
         "fwdInMessages": false,
+        "resendOnRefresh": false,
         "templateScope": "local",
+        "className": "",
         "x": 876.5,
         "y": 371,
         "wires": [
