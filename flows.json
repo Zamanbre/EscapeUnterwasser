@@ -763,7 +763,7 @@
         ]
     },
     {
-        "id": "b170430e1ed4702e",
+        "id": "284572d638421748",
         "type": "inject",
         "z": "bc3f40f178b15cc3",
         "name": "",
@@ -780,10 +780,10 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "cancel",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
+        "topic": "",
+        "payload": "cancel",
+        "payloadType": "str",
+        "x": 270,
         "y": 160,
         "wires": [
             [
