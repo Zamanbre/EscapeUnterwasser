@@ -750,7 +750,7 @@
         "font": "Arial,Arial,Helvetica,sans-serif",
         "fontSize": 16,
         "color": "#000000",
-        "x": 230,
+        "x": 250,
         "y": 320,
         "wires": []
     },
