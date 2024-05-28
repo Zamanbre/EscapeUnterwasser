@@ -373,15 +373,6 @@
         "collapse": false
     },
     {
-        "id": "aac8b69ca8e1e068",
-        "type": "ui_tab",
-        "name": "Puzzle Status Monitor",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "af93c53b4bbc79b1",
         "type": "ui_group",
         "name": "Finale Button",
