@@ -309,16 +309,6 @@
         "wholemsg": "false"
     },
     {
-        "id": "ddc4c194acf07958",
-        "type": "ui_group",
-        "name": "Connect the Wires",
-        "tab": "a38c3d325d960343",
-        "order": 2,
-        "disp": false,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "8f886ae1479c4797",
         "type": "ui_group",
         "name": "Button",
@@ -403,7 +393,7 @@
         "type": "ui_group",
         "name": "Alarm deaktivieren",
         "tab": "a38c3d325d960343",
-        "order": 6,
+        "order": 2,
         "disp": true,
         "width": "6",
         "collapse": false,
