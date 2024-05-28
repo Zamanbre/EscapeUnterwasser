@@ -604,7 +604,7 @@
         "read": false,
         "bcm": true,
         "x": 350,
-        "y": 200,
+        "y": 240,
         "wires": [
             [
                 "328bab6004f0eb10"
@@ -637,10 +637,12 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 630,
+        "x": 670,
         "y": 240,
         "wires": [
-            []
+            [
+                "5c4b4104d87193de"
+            ]
         ]
     },
     {
@@ -673,13 +675,85 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 340,
+        "x": 510,
+        "y": 240,
         "wires": [
             [
                 "33594149ba6f023e"
             ]
         ]
+    },
+    {
+        "id": "f20ce2e56b374556",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameState",
+                "pt": "global",
+                "to": "stopped",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "$globalContext('elapsedTimeDelta') + $millis() - $flowContext('startTime')",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 240,
+        "wires": [
+            [
+                "d50f6585c7c521e4"
+            ]
+        ]
+    },
+    {
+        "id": "5c4b4104d87193de",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "property": "gameState",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "stopped",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 240,
+        "wires": [
+            [
+                "f20ce2e56b374556"
+            ]
+        ]
+    },
+    {
+        "id": "d50f6585c7c521e4",
+        "type": "link out",
+        "z": "bc3f40f178b15cc3",
+        "name": "On Game Stop",
+        "mode": "link",
+        "links": [
+            "75a596869f308dab"
+        ],
+        "x": 1065,
+        "y": 240,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
@@ -922,11 +996,9 @@
         "z": "350f3f1be5bf834e",
         "g": "1d39f27b3d601c72",
         "name": "On Game Stop",
+        "mode": "link",
         "links": [
-            "b6c64fbb.744e7",
-            "f64afdb2.ae6738",
-            "75a596869f308dab",
-            "fde61d47216f1287"
+            "75a596869f308dab"
         ],
         "x": 495,
         "y": 420,
@@ -1261,7 +1333,8 @@
             "4a863b19c2050c0a",
             "442e7bc38dd4c3b7",
             "cd9c79c0f7ca4c12",
-            "32180624627a2049"
+            "32180624627a2049",
+            "d50f6585c7c521e4"
         ],
         "x": 85,
         "y": 600,
