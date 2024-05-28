@@ -1860,25 +1860,12 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 990,
-        "y": 480,
+        "x": 470,
+        "y": 260,
         "wires": [
             [
-                "ac15dfd7ab189de4"
+                "ef582930fa6e08ef"
             ]
         ]
-    },
-    {
-        "id": "ac15dfd7ab189de4",
-        "type": "link out",
-        "z": "350f3f1be5bf834e",
-        "name": "link out 2",
-        "mode": "link",
-        "links": [
-            "4d67412aeea1faa0"
-        ],
-        "x": 1225,
-        "y": 480,
-        "wires": []
     }
 ]
