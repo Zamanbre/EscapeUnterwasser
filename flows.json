@@ -803,12 +803,12 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 270,
-        "y": 160,
+        "x": 210,
+        "y": 140,
         "wires": [
             [
                 "238d0820d6b80b23",
-                "a64be0597031f9c8"
+                "2d0cb4871a899174"
             ]
         ]
     },
