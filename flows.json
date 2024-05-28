@@ -74,12 +74,16 @@
             "4a863b19c2050c0a",
             "4f3e8b2d7209c3c4",
             "442e7bc38dd4c3b7",
-            "06ef4faf69df41d0"
+            "06ef4faf69df41d0",
+            "65c7426ce5c0b8dc",
+            "e24e2635213fc060",
+            "21d47c54a97169e3",
+            "ad9330a092b196d8"
         ],
         "x": 34,
-        "y": 319,
+        "y": 299,
         "w": 672,
-        "h": 202
+        "h": 242
     },
     {
         "id": "c870415b6658eca9",
@@ -695,8 +699,8 @@
         "z": "bc3f40f178b15cc3",
         "name": "alarm",
         "links": [
-            "4a863b19c2050c0a",
-            "ef582930fa6e08ef"
+            "e24e2635213fc060",
+            "21d47c54a97169e3"
         ],
         "x": 215,
         "y": 240,
@@ -734,7 +738,7 @@
                 "t": "change",
                 "p": "payload",
                 "pt": "msg",
-                "from": "gamestart",
+                "from": "start",
                 "fromt": "str",
                 "to": "1",
                 "tot": "num"
@@ -743,7 +747,7 @@
                 "t": "change",
                 "p": "payload",
                 "pt": "msg",
-                "from": "cancel",
+                "from": "stop",
                 "fromt": "str",
                 "to": "0",
                 "tot": "num"
@@ -793,6 +797,20 @@
         ]
     },
     {
+        "id": "93bb3e96478fdf86",
+        "type": "json",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "4a56258a14858018",
         "type": "change",
         "z": "350f3f1be5bf834e",
@@ -820,10 +838,11 @@
         "to": "",
         "reg": false,
         "x": 380,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
-                "ef582930fa6e08ef"
+                "ef582930fa6e08ef",
+                "65c7426ce5c0b8dc"
             ]
         ]
     },
@@ -858,7 +877,8 @@
         "y": 420,
         "wires": [
             [
-                "4a863b19c2050c0a"
+                "4a863b19c2050c0a",
+                "ad9330a092b196d8"
             ]
         ]
     },
@@ -881,7 +901,7 @@
         "repair": false,
         "outputs": 1,
         "x": 230,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
                 "4a56258a14858018"
@@ -956,7 +976,7 @@
         "to": "",
         "reg": false,
         "x": 320,
-        "y": 480,
+        "y": 500,
         "wires": [
             [
                 "442e7bc38dd4c3b7"
@@ -1008,11 +1028,10 @@
         "name": "On Game Start",
         "mode": "link",
         "links": [
-            "4d67412aeea1faa0",
             "75a596869f308dab"
         ],
         "x": 495,
-        "y": 360,
+        "y": 340,
         "wires": []
     },
     {
@@ -1023,7 +1042,7 @@
         "name": "On Game Start",
         "info": "",
         "x": 600,
-        "y": 360,
+        "y": 340,
         "wires": []
     },
     {
@@ -1035,8 +1054,7 @@
         "mode": "link",
         "links": [
             "75a596869f308dab",
-            "ef33beeff378a0e1",
-            "4d67412aeea1faa0"
+            "ef33beeff378a0e1"
         ],
         "x": 495,
         "y": 420,
@@ -1064,7 +1082,7 @@
             "75a596869f308dab"
         ],
         "x": 495,
-        "y": 480,
+        "y": 500,
         "wires": []
     },
     {
@@ -1305,7 +1323,7 @@
         "name": "On Game Reset",
         "info": "",
         "x": 600,
-        "y": 480,
+        "y": 500,
         "wires": []
     },
     {
@@ -1532,7 +1550,7 @@
         "topic": "/game",
         "topicType": "str",
         "x": 110,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
                 "98ab54042d4213d0"
@@ -1590,7 +1608,7 @@
         "topic": "/game",
         "topicType": "str",
         "x": 110,
-        "y": 480,
+        "y": 500,
         "wires": [
             [
                 "890f86205d47ef77"
@@ -1806,6 +1824,86 @@
         "y": 600,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "e24e2635213fc060",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "start pure out",
+        "mode": "link",
+        "links": [
+            "4d67412aeea1faa0"
+        ],
+        "x": 605,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "65c7426ce5c0b8dc",
+        "type": "switch",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "start",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "e24e2635213fc060"
+            ]
+        ]
+    },
+    {
+        "id": "21d47c54a97169e3",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "stop pure out",
+        "mode": "link",
+        "links": [
+            "4d67412aeea1faa0"
+        ],
+        "x": 605,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ad9330a092b196d8",
+        "type": "switch",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 460,
+        "wires": [
+            [
+                "21d47c54a97169e3"
+            ]
         ]
     }
 ]
