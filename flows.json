@@ -2,7 +2,7 @@
     {
         "id": "bc3f40f178b15cc3",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Ablauf",
         "disabled": false,
         "info": "",
         "env": []
@@ -339,6 +339,31 @@
         "h": 122
     },
     {
+        "id": "1f4858029cf46f27",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "name": "Finale Button",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1cb8410f1e8faed8",
+            "33594149ba6f023e",
+            "328bab6004f0eb10",
+            "f20ce2e56b374556",
+            "5c4b4104d87193de",
+            "d50f6585c7c521e4",
+            "3697c0b81e0b8ff9",
+            "f03df95382fdf2dc",
+            "383ca25591a63b81",
+            "113cb15c1a22398d"
+        ],
+        "x": 34,
+        "y": 379,
+        "w": 982,
+        "h": 202
+    },
+    {
         "id": "f08ba3d0ec182a89",
         "type": "ui_group",
         "name": "Game Control",
@@ -597,14 +622,15 @@
         "id": "1cb8410f1e8faed8",
         "type": "rpi-gpio in",
         "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
         "name": "",
         "pin": "4",
         "intype": "up",
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 350,
-        "y": 240,
+        "x": 110,
+        "y": 460,
         "wires": [
             [
                 "328bab6004f0eb10"
@@ -615,6 +641,7 @@
         "id": "33594149ba6f023e",
         "type": "ui_switch",
         "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
         "name": "",
         "label": "switch",
         "tooltip": "",
@@ -637,8 +664,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 670,
-        "y": 240,
+        "x": 430,
+        "y": 460,
         "wires": [
             [
                 "3697c0b81e0b8ff9"
@@ -649,6 +676,7 @@
         "id": "328bab6004f0eb10",
         "type": "change",
         "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
         "name": "",
         "rules": [
             {
@@ -675,8 +703,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 240,
+        "x": 270,
+        "y": 460,
         "wires": [
             [
                 "33594149ba6f023e"
@@ -687,6 +715,7 @@
         "id": "f20ce2e56b374556",
         "type": "change",
         "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
         "name": "",
         "rules": [
             {
@@ -709,8 +738,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1100,
-        "y": 240,
+        "x": 860,
+        "y": 460,
         "wires": [
             [
                 "d50f6585c7c521e4"
@@ -721,6 +750,7 @@
         "id": "5c4b4104d87193de",
         "type": "switch",
         "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
         "name": "",
         "property": "gameState",
         "propertyType": "global",
@@ -734,8 +764,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 950,
-        "y": 240,
+        "x": 710,
+        "y": 460,
         "wires": [
             [
                 "f20ce2e56b374556"
@@ -746,20 +776,22 @@
         "id": "d50f6585c7c521e4",
         "type": "link out",
         "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
         "name": "On Game Stop",
         "mode": "link",
         "links": [
             "75a596869f308dab"
         ],
-        "x": 1215,
-        "y": 240,
+        "x": 975,
+        "y": 460,
         "wires": []
     },
     {
         "id": "3697c0b81e0b8ff9",
         "type": "switch",
         "z": "bc3f40f178b15cc3",
-        "name": "",
+        "g": "1f4858029cf46f27",
+        "name": "nur true",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -770,11 +802,60 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 810,
-        "y": 240,
+        "x": 560,
+        "y": 460,
         "wires": [
             [
-                "5c4b4104d87193de"
+                "5c4b4104d87193de",
+                "113cb15c1a22398d"
+            ]
+        ]
+    },
+    {
+        "id": "f03df95382fdf2dc",
+        "type": "comment",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "Spiel Stoppen",
+        "info": "",
+        "x": 730,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "383ca25591a63b81",
+        "type": "play audio",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "Ansage",
+        "voice": "0",
+        "x": 820,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "113cb15c1a22398d",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Ihr habt es geschafft! Ihr habt das Notfallprotokoll aktiviert. Nun fahren sich die übrigen Schutzsysteme hoch und die Station ist gerettet!",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 540,
+        "wires": [
+            [
+                "383ca25591a63b81"
             ]
         ]
     },
