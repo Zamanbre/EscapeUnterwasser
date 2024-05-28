@@ -633,8 +633,41 @@
         "y": 200,
         "wires": [
             [
-                "5d969ceaf27812a1"
+                "5d969ceaf27812a1",
+                "33594149ba6f023e"
             ]
+        ]
+    },
+    {
+        "id": "33594149ba6f023e",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "af93c53b4bbc79b1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 240,
+        "wires": [
+            []
         ]
     },
     {
