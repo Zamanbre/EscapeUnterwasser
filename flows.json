@@ -706,8 +706,8 @@
         "y": 240,
         "wires": [
             [
-                "238d0820d6b80b23",
-                "976efef9bdb1335e"
+                "976efef9bdb1335e",
+                "b0da65f78694ec6b"
             ]
         ]
     },
@@ -808,6 +808,35 @@
         "y": 140,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "b0da65f78694ec6b",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "{     \"msg\": {         \"payload\": \"gamestart\",         \"timeout\": 600,         \"warning\": 30     } }",
+                "fromt": "str",
+                "to": "test",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "238d0820d6b80b23"
+            ]
         ]
     },
     {
@@ -1909,31 +1938,6 @@
         ]
     },
     {
-        "id": "b0da65f78694ec6b",
-        "type": "change",
-        "z": "350f3f1be5bf834e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 870,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "e701024b5fc51c4a",
         "type": "debug",
         "z": "350f3f1be5bf834e",
@@ -1946,8 +1950,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 540,
-        "y": 260,
+        "x": 440,
+        "y": 240,
         "wires": []
     }
 ]
