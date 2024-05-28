@@ -1282,10 +1282,9 @@
         "id": "a4e1b2d5ee32da8d",
         "type": "complete",
         "z": "350f3f1be5bf834e",
+        "d": true,
         "name": "",
-        "scope": [
-            "4a863b19c2050c0a"
-        ],
+        "scope": [],
         "uncaught": false,
         "x": 950,
         "y": 300,
