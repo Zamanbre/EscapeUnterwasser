@@ -134,7 +134,7 @@
         ],
         "x": 34,
         "y": 379,
-        "w": 982,
+        "w": 1132,
         "h": 202
     },
     {
@@ -408,7 +408,7 @@
         "z": "bc3f40f178b15cc3",
         "g": "1f4858029cf46f27",
         "name": "",
-        "label": "switch",
+        "label": "Großer roter Knopf",
         "tooltip": "",
         "group": "af93c53b4bbc79b1",
         "order": 1,
@@ -429,7 +429,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 430,
+        "x": 470,
         "y": 460,
         "wires": [
             [
@@ -503,7 +503,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 860,
+        "x": 1000,
         "y": 460,
         "wires": [
             [
@@ -529,7 +529,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 710,
+        "x": 850,
         "y": 460,
         "wires": [
             [
@@ -547,7 +547,7 @@
         "links": [
             "75a596869f308dab"
         ],
-        "x": 975,
+        "x": 1125,
         "y": 460,
         "wires": []
     },
@@ -567,7 +567,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 560,
+        "x": 660,
         "y": 460,
         "wires": [
             [
@@ -583,7 +583,7 @@
         "g": "1f4858029cf46f27",
         "name": "Spiel Stoppen",
         "info": "",
-        "x": 730,
+        "x": 870,
         "y": 420,
         "wires": []
     },
@@ -594,7 +594,7 @@
         "g": "1f4858029cf46f27",
         "name": "Ansage",
         "voice": "0",
-        "x": 820,
+        "x": 960,
         "y": 540,
         "wires": []
     },
@@ -616,7 +616,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 690,
+        "x": 830,
         "y": 540,
         "wires": [
             [
@@ -1087,7 +1087,9 @@
         "type": "complete",
         "z": "350f3f1be5bf834e",
         "name": "",
-        "scope": [],
+        "scope": [
+            "4a863b19c2050c0a"
+        ],
         "uncaught": false,
         "x": 950,
         "y": 300,
