@@ -1982,7 +1982,7 @@
         "type": "function",
         "z": "b365465971930594",
         "name": "my function that does stuff",
-        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\n\nlet output = new Array(3,);\nfor (let char of msg.payload) {\n    output.push(parseInt(char),3);\n}\nmsg.payload = output\nreturn msg;",
+        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\n\nlet output = new Array();\noutput.push(3);\nfor (let char of msg.payload) {\n    output.push(parseInt(char),3);\n}\nmsg.payload = output\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
