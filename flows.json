@@ -2327,7 +2327,7 @@
         "timeout": "200",
         "timeoutUnits": "milliseconds",
         "rate": "1",
-        "nbRateUnits": "0.08",
+        "nbRateUnits": "0.1",
         "rateUnits": "second",
         "randomFirst": "1",
         "randomLast": "5",
