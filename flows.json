@@ -1972,7 +1972,8 @@
         "wires": [
             [
                 "cc26e2d4.ffd35",
-                "b42b2908.665408"
+                "b42b2908.665408",
+                "8dd93d7766f700e8"
             ]
         ]
     },
@@ -2042,8 +2043,8 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 650,
-        "y": 500,
+        "x": 670,
+        "y": 480,
         "wires": []
     },
     {
@@ -2881,5 +2882,26 @@
                 "364ace566a5eb150"
             ]
         ]
+    },
+    {
+        "id": "8dd93d7766f700e8",
+        "type": "ui_text",
+        "z": "b365465971930594",
+        "group": "7b21dcfa8c25f756",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "letzter Input:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 450,
+        "y": 460,
+        "wires": []
     }
 ]
