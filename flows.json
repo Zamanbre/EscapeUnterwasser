@@ -1982,7 +1982,7 @@
         "id": "cc26e2d4.ffd35",
         "type": "function",
         "z": "b365465971930594",
-        "name": "my function that does stuff",
+        "name": "str to array + 3",
         "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\nif (msg.payload.length == 8){\n    let output = new Array();\n    output.push(3);\n    for (let char of msg.payload) {\n        output.push(parseInt(char),3);\n    }\n    msg.payload = output\n    return msg;\n}",
         "outputs": 1,
         "timeout": "",
@@ -1990,7 +1990,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
+        "x": 520,
         "y": 420,
         "wires": [
             [
@@ -2559,12 +2559,11 @@
         "topic": "",
         "payload": "11221122",
         "payloadType": "str",
-        "x": 80,
-        "y": 360,
+        "x": 160,
+        "y": 480,
         "wires": [
             [
-                "1330b995.eb0626",
-                "b573f57d.6290e8"
+                "cc26e2d4.ffd35"
             ]
         ]
     },
@@ -2589,12 +2588,11 @@
         "topic": "",
         "payload": "12121212",
         "payloadType": "str",
-        "x": 80,
-        "y": 400,
+        "x": 160,
+        "y": 520,
         "wires": [
             [
-                "1330b995.eb0626",
-                "b573f57d.6290e8"
+                "cc26e2d4.ffd35"
             ]
         ]
     }
