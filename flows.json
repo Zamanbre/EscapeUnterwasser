@@ -1983,7 +1983,7 @@
         "type": "function",
         "z": "b365465971930594",
         "name": "str to array + 3",
-        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\nif (msg.payload.length == 8){\n    let output = new Array();\n    //output.push(3);\n    for (let char of msg.payload) {\n        output.push(3,parseInt(char));\n    }\n    msg.payload = output\n    return msg;\n}",
+        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\nif (msg.payload.length == 8){\n    let output = new Array();\n    //output.push(3);\n    for (let char of msg.payload) {\n        if (char == \"0\") {\n            output.push(3,1);\n        }\n        if (char == \"1\") {\n            output.push(3,2);\n        }\n    }\n    msg.payload = output\n    return msg;\n}",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -2300,7 +2300,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 800,
+        "x": 820,
         "y": 420,
         "wires": [
             [
@@ -2540,7 +2540,7 @@
         "id": "41b03875cde1ec1a",
         "type": "inject",
         "z": "b365465971930594",
-        "name": "11221122",
+        "name": "00110011",
         "props": [
             {
                 "p": "payload"
@@ -2569,7 +2569,7 @@
         "id": "fd8cdc9bdb47d2d9",
         "type": "inject",
         "z": "b365465971930594",
-        "name": "12121212",
+        "name": "01010101",
         "props": [
             {
                 "p": "payload"
