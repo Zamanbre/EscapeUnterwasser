@@ -2009,7 +2009,7 @@
         "type": "function",
         "z": "b365465971930594",
         "name": "str to array + 3",
-        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\nif (msg.payload.length == 8){\n    let output = new Array();\n    //output.push(3);\n    for (let char of msg.payload) {\n        if (char == \"0\") {\n            output.push(3,1);\n        }\n        if (char == \"1\") {\n            output.push(3,2);\n        }\n    }\n    msg.payload = output\n    return msg;\n}",
+        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\n\nlet output = new Array();\n//output.push(3);\nfor (let char of msg.payload) {\n    if (char == \"0\") {\n        output.push(3,1);\n    }\n    if (char == \"1\") {\n        output.push(3,2);\n    }\n}\noutput.push(3,0)\nmsg.payload = output\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
