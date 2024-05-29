@@ -2537,5 +2537,63 @@
                 "41b60f87bcecdd1c"
             ]
         ]
+    },
+    {
+        "id": "41b03875cde1ec1a",
+        "type": "inject",
+        "z": "b365465971930594",
+        "name": "11221122",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "11221122",
+        "payloadType": "str",
+        "x": 80,
+        "y": 360,
+        "wires": [
+            [
+                "2ffeee02.29d762"
+            ]
+        ]
+    },
+    {
+        "id": "fd8cdc9bdb47d2d9",
+        "type": "inject",
+        "z": "b365465971930594",
+        "name": "12121212",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "12121212",
+        "payloadType": "str",
+        "x": 80,
+        "y": 400,
+        "wires": [
+            [
+                "2ffeee02.29d762"
+            ]
+        ]
     }
 ]
