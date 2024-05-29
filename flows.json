@@ -1902,7 +1902,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 1220,
+        "x": 1380,
         "y": 500,
         "wires": []
     },
@@ -1917,7 +1917,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 1220,
+        "x": 1380,
         "y": 400,
         "wires": []
     },
@@ -1983,14 +1983,14 @@
         "type": "function",
         "z": "b365465971930594",
         "name": "str to array + 3",
-        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\nif (msg.payload.length == 8){\n    let output = new Array();\n    output.push(3);\n    for (let char of msg.payload) {\n        output.push(parseInt(char),3);\n    }\n    msg.payload = output\n    return msg;\n}",
+        "func": "//msg.payload +=  \" - payload modified in my function\"\n//return msg;\nif (msg.payload.length == 8){\n    let output = new Array();\n    //output.push(3);\n    for (let char of msg.payload) {\n        output.push(3,parseInt(char));\n    }\n    msg.payload = output\n    return msg;\n}",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 460,
         "y": 420,
         "wires": [
             [
@@ -2016,7 +2016,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 490,
+        "x": 450,
         "y": 480,
         "wires": []
     },
@@ -2077,7 +2077,7 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 470,
+        "x": 430,
         "y": 540,
         "wires": []
     },
@@ -2266,7 +2266,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 810,
+        "x": 1010,
         "y": 420,
         "wires": [
             [
@@ -2288,11 +2288,11 @@
         "type": "delay",
         "z": "b365465971930594",
         "name": "",
-        "pauseType": "delay",
+        "pauseType": "rate",
         "timeout": "200",
         "timeoutUnits": "milliseconds",
         "rate": "1",
-        "nbRateUnits": "1",
+        "nbRateUnits": "0.1",
         "rateUnits": "second",
         "randomFirst": "1",
         "randomLast": "5",
@@ -2300,12 +2300,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 860,
-        "y": 480,
+        "x": 800,
+        "y": 420,
         "wires": [
             [
-                "5e7fce8fa99b1ec3",
-                "f94354d4862fff74"
+                "0f5b03e0eed3a4aa"
             ]
         ]
     },
@@ -2448,7 +2447,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1250,
         "y": 480,
         "wires": [
             [
@@ -2475,7 +2474,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1250,
         "y": 520,
         "wires": [
             [
@@ -2502,7 +2501,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1250,
         "y": 380,
         "wires": [
             [
@@ -2529,7 +2528,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1250,
         "y": 420,
         "wires": [
             [
@@ -2606,11 +2605,10 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 690,
+        "x": 630,
         "y": 420,
         "wires": [
             [
-                "0f5b03e0eed3a4aa",
                 "6ed5205425eed59e",
                 "8960c464f6fba3e1"
             ]
