@@ -1995,8 +1995,7 @@
         "wires": [
             [
                 "a0241251.a9cc4",
-                "454f78dbbdc08247",
-                "8960c464f6fba3e1"
+                "454f78dbbdc08247"
             ]
         ]
     },
@@ -2612,7 +2611,8 @@
         "wires": [
             [
                 "0f5b03e0eed3a4aa",
-                "6ed5205425eed59e"
+                "6ed5205425eed59e",
+                "8960c464f6fba3e1"
             ]
         ]
     },
@@ -2629,7 +2629,7 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 780,
+        "x": 880,
         "y": 560,
         "wires": []
     }
