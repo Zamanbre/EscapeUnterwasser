@@ -1989,8 +1989,26 @@
         "y": 220,
         "wires": [
             [
-                "171449c4c185e55a"
+                "171449c4c185e55a",
+                "2bdb6437a287bb26"
             ]
         ]
+    },
+    {
+        "id": "2bdb6437a287bb26",
+        "type": "debug",
+        "z": "b365465971930594",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 320,
+        "y": 300,
+        "wires": []
     }
 ]
