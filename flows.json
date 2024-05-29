@@ -1943,7 +1943,53 @@
         "y": 200,
         "wires": [
             [
-                "19671bb6de62b59f"
+                "19671bb6de62b59f",
+                "1242cbc331b4f2ef"
+            ]
+        ]
+    },
+    {
+        "id": "1242cbc331b4f2ef",
+        "type": "debug",
+        "z": "b365465971930594",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 500,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "32bef04bddec388f",
+        "type": "ui_button",
+        "z": "b365465971930594",
+        "name": "",
+        "group": "7b21dcfa8c25f756",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Senden",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "171449c4c185e55a"
             ]
         ]
     }
