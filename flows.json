@@ -1902,8 +1902,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 920,
-        "y": 220,
+        "x": 1120,
+        "y": 460,
         "wires": []
     },
     {
@@ -1917,61 +1917,17 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 920,
-        "y": 180,
+        "x": 1120,
+        "y": 420,
         "wires": []
     },
     {
-        "id": "171449c4c185e55a",
-        "type": "ui_text_input",
-        "z": "b365465971930594",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "group": "7b21dcfa8c25f756",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": false,
-        "className": "",
-        "topicType": "msg",
-        "x": 320,
-        "y": 220,
-        "wires": [
-            [
-                "1242cbc331b4f2ef",
-                "afd979fba7800aea"
-            ]
-        ]
-    },
-    {
-        "id": "1242cbc331b4f2ef",
-        "type": "debug",
-        "z": "b365465971930594",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 520,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "32bef04bddec388f",
+        "id": "b573f57d.6290e8",
         "type": "ui_button",
         "z": "b365465971930594",
         "name": "",
         "group": "7b21dcfa8c25f756",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1981,101 +1937,12 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 140,
-        "y": 220,
-        "wires": [
-            [
-                "171449c4c185e55a",
-                "2bdb6437a287bb26"
-            ]
-        ]
-    },
-    {
-        "id": "2bdb6437a287bb26",
-        "type": "debug",
-        "z": "b365465971930594",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 320,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "afd979fba7800aea",
-        "type": "ui_button",
-        "z": "b365465971930594",
-        "name": "",
-        "group": "7b21dcfa8c25f756",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "Senden2",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 500,
-        "y": 220,
-        "wires": [
-            [
-                "67a76219ea82c39a"
-            ]
-        ]
-    },
-    {
-        "id": "67a76219ea82c39a",
-        "type": "debug",
-        "z": "b365465971930594",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 700,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "b573f57d.6290e8",
-        "type": "ui_button",
-        "z": "b365465971930594",
-        "name": "",
-        "group": "1b214600.17935a",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Do stuff",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
         "payload": "textInput",
         "payloadType": "flow",
         "topic": "",
-        "x": 320,
-        "y": 520,
+        "topicType": "str",
+        "x": 270,
+        "y": 420,
         "wires": [
             [
                 "cc26e2d4.ffd35",
@@ -2090,7 +1957,7 @@
         "name": "",
         "label": "",
         "tooltip": "",
-        "group": "1b214600.17935a",
+        "group": "7b21dcfa8c25f756",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -2098,8 +1965,11 @@
         "mode": "text",
         "delay": "100",
         "topic": "",
-        "x": 300,
-        "y": 460,
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 250,
+        "y": 360,
         "wires": [
             [
                 "7ba1f4df.b12a7c",
@@ -2115,8 +1985,8 @@
         "func": "msg.payload +=  \" - payload modified in my function\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 510,
-        "y": 520,
+        "x": 460,
+        "y": 420,
         "wires": [
             [
                 "bcad70c7.b9db",
@@ -2136,8 +2006,8 @@
         "label": "Result: ",
         "format": "{{msg.payload}}",
         "layout": "row-left",
-        "x": 760,
-        "y": 520,
+        "x": 710,
+        "y": 420,
         "wires": []
     },
     {
@@ -2159,8 +2029,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 460,
+        "x": 440,
+        "y": 360,
         "wires": [
             [
                 "fe2d6e02.ad949"
@@ -2180,8 +2050,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 500,
-        "y": 420,
+        "x": 450,
+        "y": 320,
         "wires": []
     },
     {
@@ -2197,8 +2067,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 510,
-        "y": 580,
+        "x": 460,
+        "y": 480,
         "wires": []
     },
     {
@@ -2219,8 +2089,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 680,
-        "y": 460,
+        "x": 630,
+        "y": 360,
         "wires": [
             [
                 "db2479e4.104468"
@@ -2249,8 +2119,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 440,
+        "x": 800,
+        "y": 340,
         "wires": [
             [
                 "eb06ed9d.7f23f"
@@ -2276,8 +2146,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 480,
+        "x": 800,
+        "y": 380,
         "wires": [
             [
                 "eb06ed9d.7f23f"
@@ -2289,11 +2159,12 @@
         "type": "link out",
         "z": "b365465971930594",
         "name": "",
+        "mode": "link",
         "links": [
             "58d47e08.81ffc"
         ],
-        "x": 975,
-        "y": 460,
+        "x": 925,
+        "y": 360,
         "wires": []
     },
     {
@@ -2304,8 +2175,8 @@
         "links": [
             "eb06ed9d.7f23f"
         ],
-        "x": 235,
-        "y": 520,
+        "x": 185,
+        "y": 420,
         "wires": [
             [
                 "b573f57d.6290e8"
@@ -2317,6 +2188,15 @@
         "type": "inject",
         "z": "b365465971930594",
         "name": "Init with empty string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": true,
@@ -2324,8 +2204,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "x": 200,
-        "y": 420,
+        "x": 150,
+        "y": 320,
         "wires": [
             [
                 "1330b995.eb0626"
@@ -2345,8 +2225,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 810,
-        "y": 580,
+        "x": 760,
+        "y": 480,
         "wires": []
     }
 ]
