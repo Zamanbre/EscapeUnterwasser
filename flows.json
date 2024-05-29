@@ -2290,7 +2290,7 @@
         "z": "b365465971930594",
         "name": "",
         "pauseType": "delay",
-        "timeout": "100",
+        "timeout": "200",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
