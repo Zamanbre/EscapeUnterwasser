@@ -1995,8 +1995,8 @@
         "wires": [
             [
                 "a0241251.a9cc4",
-                "0f5b03e0eed3a4aa",
-                "6ed5205425eed59e"
+                "454f78dbbdc08247",
+                "8960c464f6fba3e1"
             ]
         ]
     },
@@ -2237,7 +2237,7 @@
         "statusVal": "payload",
         "statusType": "auto",
         "x": 760,
-        "y": 560,
+        "y": 640,
         "wires": []
     },
     {
@@ -2267,7 +2267,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 750,
+        "x": 810,
         "y": 420,
         "wires": [
             [
@@ -2301,7 +2301,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 780,
+        "x": 860,
         "y": 480,
         "wires": [
             [
@@ -2595,5 +2595,42 @@
                 "cc26e2d4.ffd35"
             ]
         ]
+    },
+    {
+        "id": "454f78dbbdc08247",
+        "type": "split",
+        "z": "b365465971930594",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 690,
+        "y": 420,
+        "wires": [
+            [
+                "0f5b03e0eed3a4aa",
+                "6ed5205425eed59e"
+            ]
+        ]
+    },
+    {
+        "id": "8960c464f6fba3e1",
+        "type": "debug",
+        "z": "b365465971930594",
+        "name": "After function debug node",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 780,
+        "y": 560,
+        "wires": []
     }
 ]
