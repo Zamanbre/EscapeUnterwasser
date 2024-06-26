@@ -851,22 +851,21 @@
         "topic": "topic",
         "topicType": "msg",
         "style": "",
-        "onvalue": "true",
+        "onvalue": "false",
         "onvalueType": "bool",
         "onicon": "",
         "oncolor": "",
-        "offvalue": "false",
+        "offvalue": "true",
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 570,
+        "x": 630,
         "y": 560,
         "wires": [
             [
-                "ea35608f103a4502",
-                "895cd77f119e3268"
+                "c71cbeef189c5de4"
             ]
         ]
     },
@@ -921,79 +920,6 @@
         "bcm": true,
         "x": 1000,
         "y": 560,
-        "wires": []
-    },
-    {
-        "id": "ea35608f103a4502",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "true",
-                "fromt": "bool",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "false",
-                "fromt": "bool",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 810,
-        "y": 560,
-        "wires": [
-            [
-                "c71cbeef189c5de4",
-                "6fa94a5a87dddc47"
-            ]
-        ]
-    },
-    {
-        "id": "895cd77f119e3268",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 800,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "6fa94a5a87dddc47",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1000,
-        "y": 660,
         "wires": []
     },
     {
