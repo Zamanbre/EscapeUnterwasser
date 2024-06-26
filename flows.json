@@ -196,7 +196,7 @@
     {
         "id": "f08ba3d0ec182a89",
         "type": "ui_group",
-        "name": "Manuelle Überbrückung",
+        "name": "Patchfeld",
         "tab": "a38c3d325d960343",
         "order": 1,
         "disp": false,
