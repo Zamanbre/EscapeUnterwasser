@@ -196,7 +196,7 @@
     {
         "id": "f08ba3d0ec182a89",
         "type": "ui_group",
-        "name": "Game Control",
+        "name": "Manuelle Überbrückung",
         "tab": "a38c3d325d960343",
         "order": 1,
         "disp": false,
@@ -816,6 +816,56 @@
         "x": 250,
         "y": 320,
         "wires": []
+    },
+    {
+        "id": "b3dcd3f06d1d504b",
+        "type": "rpi-gpio in",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "pin": "26",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "44ae1362fea2fc91"
+            ]
+        ]
+    },
+    {
+        "id": "44ae1362fea2fc91",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "label": "Manuelle Überbrückung",
+        "tooltip": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 690,
+        "y": 560,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "4a56258a14858018",
