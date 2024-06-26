@@ -861,11 +861,11 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 690,
+        "x": 570,
         "y": 560,
         "wires": [
             [
-                "c71cbeef189c5de4"
+                "ea35608f103a4502"
             ]
         ]
     },
@@ -921,6 +921,44 @@
         "x": 1000,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "ea35608f103a4502",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 560,
+        "wires": [
+            [
+                "c71cbeef189c5de4"
+            ]
+        ]
     },
     {
         "id": "4a56258a14858018",
