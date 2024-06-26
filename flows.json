@@ -831,7 +831,7 @@
         "y": 560,
         "wires": [
             [
-                "44ae1362fea2fc91"
+                "05429e588cd3cad9"
             ]
         ]
     },
@@ -865,6 +865,44 @@
         "y": 560,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "05429e588cd3cad9",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "44ae1362fea2fc91"
+            ]
         ]
     },
     {
