@@ -864,7 +864,9 @@
         "x": 690,
         "y": 560,
         "wires": [
-            []
+            [
+                "c71cbeef189c5de4"
+            ]
         ]
     },
     {
@@ -904,6 +906,21 @@
                 "44ae1362fea2fc91"
             ]
         ]
+    },
+    {
+        "id": "c71cbeef189c5de4",
+        "type": "rpi-gpio out",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "pin": "18",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1000,
+        "y": 560,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
