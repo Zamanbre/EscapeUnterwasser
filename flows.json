@@ -866,7 +866,7 @@
         "height": 0,
         "passthru": true,
         "decouple": "false",
-        "topic": "topic",
+        "topic": "schwarz",
         "topicType": "msg",
         "style": "",
         "onvalue": "false",
@@ -882,7 +882,9 @@
         "x": 600,
         "y": 560,
         "wires": [
-            []
+            [
+                "1058859cd6dee7b9"
+            ]
         ]
     },
     {
@@ -908,6 +910,13 @@
                 "fromt": "num",
                 "to": "false",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "schwarz",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -951,7 +960,7 @@
         "height": 0,
         "passthru": true,
         "decouple": "false",
-        "topic": "topic",
+        "topic": "rot",
         "topicType": "msg",
         "style": "",
         "onvalue": "false",
@@ -967,7 +976,9 @@
         "x": 580,
         "y": 600,
         "wires": [
-            []
+            [
+                "1058859cd6dee7b9"
+            ]
         ]
     },
     {
@@ -983,7 +994,7 @@
         "height": 0,
         "passthru": true,
         "decouple": "false",
-        "topic": "topic",
+        "topic": "gelb",
         "topicType": "msg",
         "style": "",
         "onvalue": "false",
@@ -999,7 +1010,9 @@
         "x": 590,
         "y": 640,
         "wires": [
-            []
+            [
+                "1058859cd6dee7b9"
+            ]
         ]
     },
     {
@@ -1061,6 +1074,13 @@
                 "fromt": "num",
                 "to": "false",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "rot",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -1099,6 +1119,13 @@
                 "fromt": "num",
                 "to": "false",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "gelb",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -1113,6 +1140,49 @@
                 "ae69488f5fa14193"
             ]
         ]
+    },
+    {
+        "id": "1058859cd6dee7b9",
+        "type": "BooleanLogicUltimate",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "payloadPropName": "payload",
+        "filtertrue": "both",
+        "persist": false,
+        "sInitializeWith": "WaitForPayload",
+        "triggertopic": "",
+        "outputtriggeredby": "all",
+        "inputCount": "3",
+        "topic": "out",
+        "restrictinputevaluation": false,
+        "delayEvaluation": "",
+        "translatorConfig": "",
+        "x": 800,
+        "y": 600,
+        "wires": [
+            [
+                "a67caffa0ab799d0"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a67caffa0ab799d0",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 560,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
