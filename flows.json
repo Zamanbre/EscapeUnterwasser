@@ -23,6 +23,13 @@
         "env": []
     },
     {
+        "id": "a1b2c3d4.e5f6",
+        "type": "tab",
+        "label": "AND Gate Example",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "063501cbf8d4d96b",
         "type": "group",
         "z": "350f3f1be5bf834e",
@@ -928,7 +935,7 @@
         "out": "out",
         "bcm": true,
         "x": 1000,
-        "y": 560,
+        "y": 600,
         "wires": []
     },
     {
@@ -1105,29 +1112,6 @@
             [
                 "ae69488f5fa14193"
             ]
-        ]
-    },
-    {
-        "id": "bebc85f850f389a4",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 810,
-        "y": 600,
-        "wires": [
-            []
         ]
     },
     {
@@ -3215,6 +3199,136 @@
         "color": "#000000",
         "x": 450,
         "y": 460,
+        "wires": []
+    },
+    {
+        "id": "inject1",
+        "type": "inject",
+        "z": "a1b2c3d4.e5f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "boolean-logic"
+            ]
+        ]
+    },
+    {
+        "id": "inject2",
+        "type": "inject",
+        "z": "a1b2c3d4.e5f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "boolean-logic"
+            ]
+        ]
+    },
+    {
+        "id": "inject3",
+        "type": "inject",
+        "z": "a1b2c3d4.e5f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "boolean-logic"
+            ]
+        ]
+    },
+    {
+        "id": "boolean-logic",
+        "type": "BooleanLogicUltimate",
+        "z": "a1b2c3d4.e5f6",
+        "name": "",
+        "payloadPropName": "payload",
+        "filtertrue": "both",
+        "persist": false,
+        "sInitializeWith": "WaitForPayload",
+        "triggertopic": "",
+        "outputtriggeredby": "all",
+        "inputCount": "3",
+        "topic": "out",
+        "restrictinputevaluation": false,
+        "delayEvaluation": "",
+        "translatorConfig": "",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "debug"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "debug",
+        "type": "debug",
+        "z": "a1b2c3d4.e5f6",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 550,
+        "y": 160,
         "wires": []
     }
 ]
