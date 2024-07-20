@@ -3330,5 +3330,34 @@
         "x": 550,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "5402585e30ea82d9",
+        "type": "inject",
+        "z": "a1b2c3d4.e5f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "drei",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "boolean-logic"
+            ]
+        ]
     }
 ]
