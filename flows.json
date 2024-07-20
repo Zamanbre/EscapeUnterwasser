@@ -1210,7 +1210,6 @@
         "y": 560,
         "wires": [
             [
-                "b8fece3ed62f69ab",
                 "c4cd4dec706b7bb4"
             ]
         ]
@@ -1238,7 +1237,6 @@
         "y": 600,
         "wires": [
             [
-                "f20cedfa65667cd8",
                 "c4cd4dec706b7bb4"
             ]
         ]
@@ -1266,7 +1264,6 @@
         "y": 640,
         "wires": [
             [
-                "6ce7237ebb70a504",
                 "c4cd4dec706b7bb4"
             ]
         ]
@@ -1284,42 +1281,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1000,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "f20cedfa65667cd8",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1000,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "6ce7237ebb70a504",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1000,
-        "y": 760,
+        "x": 1200,
+        "y": 840,
         "wires": []
     },
     {
@@ -1407,7 +1370,8 @@
         "y": 880,
         "wires": [
             [
-                "1058859cd6dee7b9"
+                "1058859cd6dee7b9",
+                "b8fece3ed62f69ab"
             ]
         ]
     },
