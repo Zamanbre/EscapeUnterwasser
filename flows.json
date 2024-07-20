@@ -161,12 +161,11 @@
             "a64be0597031f9c8",
             "4d67412aeea1faa0",
             "976efef9bdb1335e",
-            "187e5a21f93c95b5",
-            "b6469d41772b1f01"
+            "187e5a21f93c95b5"
         ],
         "x": 44,
         "y": 239,
-        "w": 1002,
+        "w": 762,
         "h": 122
     },
     {
@@ -747,7 +746,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 960,
+        "x": 720,
         "y": 280,
         "wires": []
     },
@@ -782,7 +781,7 @@
         "y": 280,
         "wires": [
             [
-                "b6469d41772b1f01"
+                "13fc056b006dae96"
             ]
         ]
     },
@@ -1300,45 +1299,6 @@
         "y": 420,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "b6469d41772b1f01",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "1",
-                "fromt": "num",
-                "to": "0",
-                "tot": "num"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "0",
-                "fromt": "num",
-                "to": "1",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 750,
-        "y": 280,
-        "wires": [
-            [
-                "13fc056b006dae96"
-            ]
         ]
     },
     {
