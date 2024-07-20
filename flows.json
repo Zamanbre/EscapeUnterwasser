@@ -1341,7 +1341,7 @@
         "type": "function",
         "z": "bc3f40f178b15cc3",
         "name": "function 1",
-        "func": "// Initialisiere eine Speicherstruktur im Kontext, falls nicht vorhanden\nvar states = context.get('states') || {};\n\n// Aktualisiere den Status basierend auf dem Topic des eingehenden Nachrichten\nstates[msg.topic] = msg.payload;\n\n// Speichere den aktualisierten Status zurück in den Kontext\ncontext.set('states', states);\n\n// Überprüfe, ob alle drei Topics vorhanden und True sind\nif (states.schwarz === true && states.rot === true && states.gelb === true) {\n    // Alle drei Bedingungen sind erfüllt, sende True\n    msg.payload = true;\n} else {\n    // Eine oder mehrere Bedingungen sind nicht erfüllt, sende False\n    msg.payload = false;\n}\n\n// Rückgabe der Nachricht\nreturn msg;\n",
+        "func": "// Initialisiere eine Speicherstruktur im Kontext, falls nicht vorhanden\nvar states = context.get('states') || {};\n\n// Aktualisiere den Status basierend auf dem Topic des eingehenden Nachrichten\nstates[msg.topic] = msg.payload;\n\n// Speichere den aktualisierten Status zurück in den Kontext\ncontext.set('states', states);\n\n// Überprüfe, ob alle drei Topics vorhanden und True sind\nif (states.schwarz === false && states.rot === false && states.gelb === false) {\n    // Alle drei Bedingungen sind erfüllt, sende True\n    msg.payload = true;\n} else {\n    // Eine oder mehrere Bedingungen sind nicht erfüllt, sende False\n    msg.payload = false;\n}\n\n// Rückgabe der Nachricht\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
