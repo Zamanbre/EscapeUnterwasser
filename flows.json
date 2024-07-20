@@ -939,7 +939,7 @@
         "z": "bc3f40f178b15cc3",
         "name": "",
         "pin": "18",
-        "set": "",
+        "set": true,
         "level": "0",
         "freq": "",
         "out": "out",
