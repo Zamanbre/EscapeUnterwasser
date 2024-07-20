@@ -944,8 +944,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 1200,
-        "y": 700,
+        "x": 1180,
+        "y": 600,
         "wires": []
     },
     {
@@ -1145,49 +1145,6 @@
         ]
     },
     {
-        "id": "1058859cd6dee7b9",
-        "type": "BooleanLogicUltimate",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "payloadPropName": "payload",
-        "filtertrue": "both",
-        "persist": false,
-        "sInitializeWith": "WaitForPayload",
-        "triggertopic": "",
-        "outputtriggeredby": "all",
-        "inputCount": "3",
-        "topic": "out",
-        "restrictinputevaluation": false,
-        "delayEvaluation": "",
-        "translatorConfig": "",
-        "x": 1260,
-        "y": 640,
-        "wires": [
-            [
-                "a67caffa0ab799d0"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "a67caffa0ab799d0",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1300,
-        "y": 560,
-        "wires": []
-    },
-    {
         "id": "2fe369140033e541",
         "type": "change",
         "z": "bc3f40f178b15cc3",
@@ -1352,7 +1309,8 @@
         "y": 600,
         "wires": [
             [
-                "b8fece3ed62f69ab"
+                "b8fece3ed62f69ab",
+                "c71cbeef189c5de4"
             ]
         ]
     },
