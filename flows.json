@@ -883,8 +883,8 @@
         "y": 560,
         "wires": [
             [
-                "1058859cd6dee7b9",
-                "022e1625021a5d3e"
+                "022e1625021a5d3e",
+                "2fe369140033e541"
             ]
         ]
     },
@@ -944,8 +944,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 1180,
-        "y": 620,
+        "x": 1200,
+        "y": 700,
         "wires": []
     },
     {
@@ -978,7 +978,7 @@
         "y": 600,
         "wires": [
             [
-                "1058859cd6dee7b9"
+                "c7b3f3694a3b207f"
             ]
         ]
     },
@@ -1012,7 +1012,7 @@
         "y": 640,
         "wires": [
             [
-                "1058859cd6dee7b9"
+                "c877f047a40f42ed"
             ]
         ]
     },
@@ -1158,7 +1158,7 @@
         "restrictinputevaluation": false,
         "delayEvaluation": "",
         "translatorConfig": "",
-        "x": 800,
+        "x": 1020,
         "y": 600,
         "wires": [
             [
@@ -1181,7 +1181,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1020,
+        "x": 1300,
         "y": 560,
         "wires": []
     },
@@ -1198,9 +1198,144 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 780,
-        "y": 540,
+        "x": 800,
+        "y": 520,
         "wires": []
+    },
+    {
+        "id": "2fe369140033e541",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "schwarz",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 560,
+        "wires": [
+            [
+                "1058859cd6dee7b9"
+            ]
+        ]
+    },
+    {
+        "id": "c7b3f3694a3b207f",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "rot",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 600,
+        "wires": [
+            [
+                "1058859cd6dee7b9"
+            ]
+        ]
+    },
+    {
+        "id": "c877f047a40f42ed",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "gelb",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 640,
+        "wires": [
+            [
+                "1058859cd6dee7b9"
+            ]
+        ]
     },
     {
         "id": "4a56258a14858018",
