@@ -1160,7 +1160,7 @@
         "restrictinputevaluation": false,
         "delayEvaluation": "",
         "translatorConfig": "",
-        "x": 1020,
+        "x": 1120,
         "y": 600,
         "wires": [
             [
@@ -1210,8 +1210,8 @@
         "y": 560,
         "wires": [
             [
-                "1058859cd6dee7b9",
-                "b8fece3ed62f69ab"
+                "b8fece3ed62f69ab",
+                "c4cd4dec706b7bb4"
             ]
         ]
     },
@@ -1238,8 +1238,8 @@
         "y": 600,
         "wires": [
             [
-                "1058859cd6dee7b9",
-                "f20cedfa65667cd8"
+                "f20cedfa65667cd8",
+                "c4cd4dec706b7bb4"
             ]
         ]
     },
@@ -1266,8 +1266,8 @@
         "y": 640,
         "wires": [
             [
-                "1058859cd6dee7b9",
-                "6ce7237ebb70a504"
+                "6ce7237ebb70a504",
+                "c4cd4dec706b7bb4"
             ]
         ]
     },
@@ -1372,6 +1372,44 @@
         "x": 760,
         "y": 760,
         "wires": []
+    },
+    {
+        "id": "c4cd4dec706b7bb4",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 880,
+        "wires": [
+            [
+                "1058859cd6dee7b9"
+            ]
+        ]
     },
     {
         "id": "4a56258a14858018",
