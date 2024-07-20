@@ -767,11 +767,11 @@
         "topic": "topic",
         "topicType": "msg",
         "style": "",
-        "onvalue": "1",
+        "onvalue": "0",
         "onvalueType": "num",
         "onicon": "",
         "oncolor": "",
-        "offvalue": "0",
+        "offvalue": "1",
         "offvalueType": "num",
         "officon": "",
         "offcolor": "",
@@ -816,7 +816,7 @@
                 "pt": "msg",
                 "from": "start",
                 "fromt": "str",
-                "to": "0",
+                "to": "1",
                 "tot": "num"
             },
             {
@@ -825,7 +825,7 @@
                 "pt": "msg",
                 "from": "stop",
                 "fromt": "str",
-                "to": "1",
+                "to": "0",
                 "tot": "num"
             }
         ],
