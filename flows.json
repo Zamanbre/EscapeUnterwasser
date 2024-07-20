@@ -18,7 +18,7 @@
         "id": "b365465971930594",
         "type": "tab",
         "label": "Fernbedienung",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
