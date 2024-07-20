@@ -3219,10 +3219,10 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "eins",
         "payload": "true",
         "payloadType": "bool",
-        "x": 100,
+        "x": 110,
         "y": 100,
         "wires": [
             [
@@ -3248,10 +3248,10 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "zwei",
         "payload": "true",
         "payloadType": "bool",
-        "x": 100,
+        "x": 110,
         "y": 160,
         "wires": [
             [
@@ -3277,10 +3277,10 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "drei",
         "payload": "true",
         "payloadType": "bool",
-        "x": 100,
+        "x": 110,
         "y": 220,
         "wires": [
             [
