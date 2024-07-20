@@ -161,12 +161,14 @@
             "a64be0597031f9c8",
             "4d67412aeea1faa0",
             "976efef9bdb1335e",
-            "187e5a21f93c95b5"
+            "187e5a21f93c95b5",
+            "b17a11e0090a7bcc",
+            "df8424d64ae52de1"
         ],
         "x": 44,
         "y": 239,
-        "w": 762,
-        "h": 122
+        "w": 962,
+        "h": 142
     },
     {
         "id": "ddbad4a3c3dc8f08",
@@ -781,7 +783,8 @@
         "y": 280,
         "wires": [
             [
-                "13fc056b006dae96"
+                "13fc056b006dae96",
+                "df8424d64ae52de1"
             ]
         ]
     },
@@ -1300,6 +1303,40 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "b17a11e0090a7bcc",
+        "type": "play-soundfile",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "directory": "e12c76d07d2533ab",
+        "file": "sieg.wav",
+        "options": "{}",
+        "allow_multiple": false,
+        "x": 920,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df8424d64ae52de1",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 740,
+        "y": 340,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
