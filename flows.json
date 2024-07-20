@@ -163,7 +163,8 @@
             "976efef9bdb1335e",
             "187e5a21f93c95b5",
             "b17a11e0090a7bcc",
-            "df8424d64ae52de1"
+            "df8424d64ae52de1",
+            "bc8dd3a66eb8ad1d"
         ],
         "x": 44,
         "y": 239,
@@ -455,7 +456,7 @@
         "type": "ui_group",
         "name": "Finale Button",
         "tab": "a38c3d325d960343",
-        "order": 5,
+        "order": 6,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -492,7 +493,7 @@
         "type": "ui_group",
         "name": "Fernbedienung",
         "tab": "a38c3d325d960343",
-        "order": 6,
+        "order": 7,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -521,7 +522,7 @@
         "type": "ui_group",
         "name": "Manuelle Überbrückung",
         "tab": "a38c3d325d960343",
-        "order": 7,
+        "order": 5,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -784,7 +785,7 @@
         "wires": [
             [
                 "13fc056b006dae96",
-                "df8424d64ae52de1"
+                "bc8dd3a66eb8ad1d"
             ]
         ]
     },
@@ -1311,10 +1312,10 @@
         "g": "eaeca8afb05066c4",
         "name": "",
         "directory": "e12c76d07d2533ab",
-        "file": "sieg.wav",
+        "file": "alarm.wav",
         "options": "{}",
         "allow_multiple": false,
-        "x": 920,
+        "x": 900,
         "y": 340,
         "wires": [
             []
@@ -1334,9 +1335,36 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 740,
-        "y": 340,
+        "x": 900,
+        "y": 280,
         "wires": []
+    },
+    {
+        "id": "bc8dd3a66eb8ad1d",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 340,
+        "wires": [
+            [
+                "df8424d64ae52de1",
+                "b17a11e0090a7bcc"
+            ]
+        ]
     },
     {
         "id": "4a56258a14858018",
