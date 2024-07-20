@@ -883,7 +883,8 @@
         "y": 560,
         "wires": [
             [
-                "1058859cd6dee7b9"
+                "1058859cd6dee7b9",
+                "022e1625021a5d3e"
             ]
         ]
     },
@@ -943,8 +944,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 1000,
-        "y": 600,
+        "x": 1180,
+        "y": 620,
         "wires": []
     },
     {
@@ -1182,6 +1183,23 @@
         "statusType": "auto",
         "x": 1020,
         "y": 560,
+        "wires": []
+    },
+    {
+        "id": "022e1625021a5d3e",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 780,
+        "y": 540,
         "wires": []
     },
     {
