@@ -883,7 +883,8 @@
         "y": 560,
         "wires": [
             [
-                "2fe369140033e541"
+                "2fe369140033e541",
+                "c4f8bf9944ef0b8a"
             ]
         ]
     },
@@ -977,7 +978,8 @@
         "y": 600,
         "wires": [
             [
-                "c7b3f3694a3b207f"
+                "c7b3f3694a3b207f",
+                "75858b1aaf923c39"
             ]
         ]
     },
@@ -1011,7 +1013,8 @@
         "y": 640,
         "wires": [
             [
-                "c877f047a40f42ed"
+                "c877f047a40f42ed",
+                "2e20cd44c600f3be"
             ]
         ]
     },
@@ -1370,7 +1373,58 @@
         "statusVal": "payload",
         "statusType": "auto",
         "x": 1000,
-        "y": 780,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c4f8bf9944ef0b8a",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 760,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "75858b1aaf923c39",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 760,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "2e20cd44c600f3be",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 760,
+        "y": 760,
         "wires": []
     },
     {
