@@ -1976,7 +1976,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "{\"state\":{\"on\":true}}",
-                "tot": "json"
+                "tot": "str"
             }
         ],
         "action": "",
