@@ -163,15 +163,14 @@
             "976efef9bdb1335e",
             "187e5a21f93c95b5",
             "b17a11e0090a7bcc",
-            "df8424d64ae52de1",
             "bc8dd3a66eb8ad1d",
             "faea51fe7695e3af",
             "5ffd75ce665b0144",
-            "d7df5a81c6c38fbb"
+            "745c556d2595ea53"
         ],
         "x": 44,
         "y": 119,
-        "w": 1122,
+        "w": 942,
         "h": 242
     },
     {
@@ -753,7 +752,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 720,
+        "x": 520,
         "y": 200,
         "wires": []
     },
@@ -784,7 +783,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 570,
+        "x": 390,
         "y": 200,
         "wires": [
             [
@@ -843,7 +842,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 250,
+        "x": 210,
         "y": 200,
         "wires": [
             [
@@ -869,8 +868,8 @@
         "font": "Arial,Arial,Helvetica,sans-serif",
         "fontSize": "14",
         "color": "#ffffff",
-        "x": 250,
-        "y": 240,
+        "x": 150,
+        "y": 160,
         "wires": []
     },
     {
@@ -1320,32 +1319,13 @@
         "file": "alarm.wav",
         "options": "{}",
         "allow_multiple": false,
-        "x": 900,
-        "y": 260,
+        "x": 840,
+        "y": 240,
         "wires": [
             [
-                "df8424d64ae52de1",
                 "5ffd75ce665b0144"
             ]
         ]
-    },
-    {
-        "id": "df8424d64ae52de1",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1060,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "bc8dd3a66eb8ad1d",
@@ -1360,16 +1340,24 @@
                 "t": "eq",
                 "v": "1",
                 "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
-        "x": 730,
+        "outputs": 2,
+        "x": 510,
         "y": 260,
         "wires": [
             [
                 "b17a11e0090a7bcc"
+            ],
+            [
+                "745c556d2595ea53"
             ]
         ]
     },
@@ -1428,7 +1416,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
+        "x": 550,
         "y": 160,
         "wires": [
             []
@@ -1452,8 +1440,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 960,
-        "y": 320,
+        "x": 840,
+        "y": 180,
         "wires": [
             [
                 "b17a11e0090a7bcc"
@@ -1461,24 +1449,27 @@
         ]
     },
     {
-        "id": "d7df5a81c6c38fbb",
-        "type": "inject",
+        "id": "745c556d2595ea53",
+        "type": "change",
         "z": "bc3f40f178b15cc3",
         "g": "eaeca8afb05066c4",
         "name": "",
-        "props": [
+        "rules": [
             {
+                "t": "set",
                 "p": "topic",
-                "vt": "str"
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
             }
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "stop",
-        "x": 610,
-        "y": 300,
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 320,
         "wires": [
             [
                 "b17a11e0090a7bcc"
