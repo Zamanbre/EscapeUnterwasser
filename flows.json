@@ -552,22 +552,6 @@
         "responsetimeout": "10000"
     },
     {
-        "id": "bc988420b6a0a649",
-        "type": "websocket-listener",
-        "path": "/ws/input",
-        "wholemsg": "false"
-    },
-    {
-        "id": "8f886ae1479c4797",
-        "type": "ui_group",
-        "name": "Button",
-        "tab": "a38c3d325d960343",
-        "order": 3,
-        "disp": false,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "125f6c81.60151b",
         "type": "mqtt-broker",
         "name": "MQTT Server",
@@ -594,22 +578,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "4e976676.9e1538",
-        "type": "websocket-listener",
-        "path": "/ws/input",
-        "wholemsg": "false"
-    },
-    {
-        "id": "712f4f6179783e86",
-        "type": "ui_group",
-        "name": "Cover Up",
-        "tab": "a38c3d325d960343",
-        "order": 4,
-        "disp": false,
-        "width": "6",
-        "collapse": false
     },
     {
         "id": "af93c53b4bbc79b1",
@@ -658,16 +626,6 @@
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "1b214600.17935a",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "b8fb94f4.0d31d8",
-        "order": 1,
-        "disp": true,
-        "width": "12",
-        "collapse": false
     },
     {
         "id": "b8fb94f4.0d31d8",
