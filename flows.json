@@ -173,7 +173,8 @@
             "745c556d2595ea53",
             "25b84a6616e7d735",
             "d0f3c4ccc2723155",
-            "f46246e7cdbf73d5"
+            "f46246e7cdbf73d5",
+            "36625b582d6be3e5"
         ],
         "x": 44,
         "y": 39,
@@ -832,8 +833,7 @@
             [
                 "13fc056b006dae96",
                 "bc8dd3a66eb8ad1d",
-                "faea51fe7695e3af",
-                "f46246e7cdbf73d5"
+                "faea51fe7695e3af"
             ]
         ]
     },
@@ -900,7 +900,8 @@
         "y": 120,
         "wires": [
             [
-                "a64be0597031f9c8"
+                "a64be0597031f9c8",
+                "36625b582d6be3e5"
             ]
         ]
     },
@@ -1889,6 +1890,41 @@
         "x": 370,
         "y": 240,
         "wires": []
+    },
+    {
+        "id": "36625b582d6be3e5",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "label": "Dampf",
+        "tooltip": "",
+        "group": "b33c16c8e02f206e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "f46246e7cdbf73d5"
+            ]
+        ]
     },
     {
         "id": "4a56258a14858018",
