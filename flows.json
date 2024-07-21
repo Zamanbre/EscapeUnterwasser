@@ -3357,7 +3357,7 @@
         "g": "fc3d470934a3d417",
         "name": "",
         "pauseType": "delay",
-        "timeout": "2",
+        "timeout": "2.5",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -3368,7 +3368,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 140,
+        "x": 150,
         "y": 1080,
         "wires": [
             [
