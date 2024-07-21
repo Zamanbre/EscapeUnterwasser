@@ -164,12 +164,14 @@
             "187e5a21f93c95b5",
             "b17a11e0090a7bcc",
             "df8424d64ae52de1",
-            "bc8dd3a66eb8ad1d"
+            "bc8dd3a66eb8ad1d",
+            "faea51fe7695e3af",
+            "5ffd75ce665b0144"
         ],
         "x": 44,
-        "y": 159,
+        "y": 119,
         "w": 1122,
-        "h": 142
+        "h": 242
     },
     {
         "id": "ddbad4a3c3dc8f08",
@@ -786,7 +788,8 @@
         "wires": [
             [
                 "13fc056b006dae96",
-                "bc8dd3a66eb8ad1d"
+                "bc8dd3a66eb8ad1d",
+                "faea51fe7695e3af"
             ]
         ]
     },
@@ -1320,7 +1323,8 @@
         "y": 260,
         "wires": [
             [
-                "df8424d64ae52de1"
+                "df8424d64ae52de1",
+                "5ffd75ce665b0144"
             ]
         ]
     },
@@ -1400,6 +1404,58 @@
         "wires": [
             [
                 "c71cbeef189c5de4"
+            ]
+        ]
+    },
+    {
+        "id": "faea51fe7695e3af",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "Set flow.alarmAktiv",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alarmAktiv",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ffd75ce665b0144",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "wiederhole wenn Alarm aktiv",
+        "property": "alarmAktiv",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 960,
+        "y": 320,
+        "wires": [
+            [
+                "b17a11e0090a7bcc"
             ]
         ]
     },
