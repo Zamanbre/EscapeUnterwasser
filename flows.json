@@ -261,12 +261,13 @@
             "91d1dc2276f0116b",
             "db31c1e4b80e7739",
             "40947bb344e575dd",
-            "ec45843ace6b8df2"
+            "ec45843ace6b8df2",
+            "9ea61e8c3bd006ab"
         ],
-        "x": 14,
+        "x": 34,
         "y": 839,
-        "w": 712,
-        "h": 182
+        "w": 892,
+        "h": 202
     },
     {
         "id": "4aef0d1c6e1e8ae7",
@@ -2784,7 +2785,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 160,
+        "x": 360,
         "y": 920,
         "wires": [
             [
@@ -2805,7 +2806,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 440,
+        "x": 640,
         "y": 920,
         "wires": []
     },
@@ -2825,7 +2826,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 250,
+        "x": 450,
         "y": 980,
         "wires": [
             [
@@ -2851,7 +2852,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 400,
+        "x": 600,
         "y": 980,
         "wires": [
             [
@@ -2879,7 +2880,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
+        "x": 790,
         "y": 980,
         "wires": [
             [
@@ -2905,7 +2906,7 @@
         "font": "Arial,Arial,Helvetica,sans-serif",
         "fontSize": "14",
         "color": "#ffffff",
-        "x": 630,
+        "x": 830,
         "y": 920,
         "wires": []
     },
@@ -3036,7 +3037,7 @@
             "db4d6d56bb684e72",
             "e24e2635213fc060"
         ],
-        "x": 65,
+        "x": 75,
         "y": 880,
         "wires": [
             [
@@ -3066,7 +3067,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 200,
+        "x": 210,
         "y": 880,
         "wires": [
             [
@@ -3232,8 +3233,26 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 100,
-        "y": 980,
+        "x": 120,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ea61e8c3bd006ab",
+        "type": "smooth",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "10",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 180,
+        "y": 1000,
         "wires": [
             []
         ]
