@@ -230,6 +230,27 @@
         "h": 202
     },
     {
+        "id": "fc3d470934a3d417",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "name": "Labyrinth Schlüssel",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "cd086293e1909477",
+            "43062c2b5dc20583",
+            "fc8cb825592a8db3",
+            "15a454309f2106a6",
+            "7ae442bc6fb47474",
+            "91d1dc2276f0116b"
+        ],
+        "x": 34,
+        "y": 739,
+        "w": 692,
+        "h": 142
+    },
+    {
         "id": "f08ba3d0ec182a89",
         "type": "ui_group",
         "name": "Timer",
@@ -1491,6 +1512,7 @@
         "id": "cd086293e1909477",
         "type": "ui_switch",
         "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
         "name": "",
         "label": "switch",
         "tooltip": "",
@@ -1513,8 +1535,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 150,
-        "y": 760,
+        "x": 110,
+        "y": 780,
         "wires": [
             [
                 "43062c2b5dc20583",
@@ -1526,6 +1548,7 @@
         "id": "43062c2b5dc20583",
         "type": "rpi-gpio out",
         "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
         "name": "",
         "pin": "23",
         "set": true,
@@ -1533,14 +1556,15 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 480,
-        "y": 760,
+        "x": 440,
+        "y": 780,
         "wires": []
     },
     {
         "id": "fc8cb825592a8db3",
         "type": "switch",
         "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1552,8 +1576,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 290,
-        "y": 820,
+        "x": 250,
+        "y": 840,
         "wires": [
             [
                 "15a454309f2106a6"
@@ -1564,6 +1588,7 @@
         "id": "15a454309f2106a6",
         "type": "delay",
         "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -1577,8 +1602,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 440,
-        "y": 820,
+        "x": 400,
+        "y": 840,
         "wires": [
             [
                 "7ae442bc6fb47474"
@@ -1589,6 +1614,7 @@
         "id": "7ae442bc6fb47474",
         "type": "change",
         "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
         "name": "",
         "rules": [
             {
@@ -1604,13 +1630,35 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 630,
-        "y": 820,
+        "x": 590,
+        "y": 840,
         "wires": [
             [
                 "cd086293e1909477"
             ]
         ]
+    },
+    {
+        "id": "91d1dc2276f0116b",
+        "type": "ui_text",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "group": "a75f6d1ca57f1fc9",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "Bedingung",
+        "label": "",
+        "format": "Der Schalter deaktiviert sich von alleine, um eine Überhitzung zu vermeiden",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "14",
+        "color": "#ffffff",
+        "x": 630,
+        "y": 780,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
