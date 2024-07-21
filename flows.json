@@ -1,5 +1,12 @@
 [
     {
+        "id": "350f3f1be5bf834e",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "bc3f40f178b15cc3",
         "type": "tab",
         "label": "Ablauf",
@@ -8,11 +15,12 @@
         "env": []
     },
     {
-        "id": "350f3f1be5bf834e",
+        "id": "a1a0700b5d60c281",
         "type": "tab",
-        "label": "Main",
+        "label": "WLED",
         "disabled": false,
-        "info": ""
+        "info": "",
+        "env": []
     },
     {
         "id": "b365465971930594",
@@ -148,7 +156,7 @@
             "1ab4695ffc9329a8"
         ],
         "x": 34,
-        "y": 299,
+        "y": 439,
         "w": 1132,
         "h": 122
     },
@@ -166,20 +174,17 @@
             "4d67412aeea1faa0",
             "976efef9bdb1335e",
             "187e5a21f93c95b5",
-            "b17a11e0090a7bcc",
             "bc8dd3a66eb8ad1d",
             "faea51fe7695e3af",
-            "5ffd75ce665b0144",
-            "745c556d2595ea53",
-            "25b84a6616e7d735",
-            "d0f3c4ccc2723155",
             "f46246e7cdbf73d5",
-            "36625b582d6be3e5"
+            "36625b582d6be3e5",
+            "66fa805ea904e05b",
+            "488383090b8b78e1"
         ],
         "x": 44,
-        "y": 39,
-        "w": 942,
-        "h": 242
+        "y": -7,
+        "w": 1028,
+        "h": 454
     },
     {
         "id": "ddbad4a3c3dc8f08",
@@ -235,7 +240,7 @@
             "1626907a838eb3fd"
         ],
         "x": 34,
-        "y": 439,
+        "y": 579,
         "w": 1112,
         "h": 242
     },
@@ -258,9 +263,73 @@
             "40947bb344e575dd"
         ],
         "x": 24,
-        "y": 699,
+        "y": 839,
         "w": 702,
         "h": 182
+    },
+    {
+        "id": "4aef0d1c6e1e8ae7",
+        "type": "group",
+        "z": "a1a0700b5d60c281",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a7d97576a7ddc914",
+            "307e4894ea2a0069",
+            "960f076d7f3032c8",
+            "af33d4005c501676"
+        ],
+        "x": 124,
+        "y": 79,
+        "w": 802,
+        "h": 82
+    },
+    {
+        "id": "66fa805ea904e05b",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "WLED",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "25d25ddaa93e0873",
+            "a515e05e6cc777c0",
+            "3361905e244fab93"
+        ],
+        "x": 714,
+        "y": 19,
+        "w": 302,
+        "h": 122
+    },
+    {
+        "id": "488383090b8b78e1",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "Sound",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b17a11e0090a7bcc",
+            "5ffd75ce665b0144",
+            "745c556d2595ea53",
+            "25b84a6616e7d735",
+            "d0f3c4ccc2723155"
+        ],
+        "x": 634,
+        "y": 179,
+        "w": 412,
+        "h": 242
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -579,1464 +648,6 @@
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "1cb8410f1e8faed8",
-        "type": "rpi-gpio in",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "",
-        "pin": "4",
-        "intype": "up",
-        "debounce": "25",
-        "read": false,
-        "bcm": true,
-        "x": 110,
-        "y": 380,
-        "wires": [
-            [
-                "328bab6004f0eb10"
-            ]
-        ]
-    },
-    {
-        "id": "33594149ba6f023e",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "",
-        "label": "Großer roter Knopf",
-        "tooltip": "",
-        "group": "af93c53b4bbc79b1",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 470,
-        "y": 380,
-        "wires": [
-            [
-                "3697c0b81e0b8ff9"
-            ]
-        ]
-    },
-    {
-        "id": "328bab6004f0eb10",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "1",
-                "fromt": "num",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "0",
-                "fromt": "num",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 270,
-        "y": 380,
-        "wires": [
-            [
-                "33594149ba6f023e"
-            ]
-        ]
-    },
-    {
-        "id": "f20ce2e56b374556",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "gameState",
-                "pt": "global",
-                "to": "stopped",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "elapsedTimeDelta",
-                "pt": "global",
-                "to": "$globalContext('elapsedTimeDelta') + $millis() - $flowContext('startTime')",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1000,
-        "y": 380,
-        "wires": [
-            [
-                "d50f6585c7c521e4"
-            ]
-        ]
-    },
-    {
-        "id": "5c4b4104d87193de",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "",
-        "property": "gameState",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "stopped",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 850,
-        "y": 380,
-        "wires": [
-            [
-                "f20ce2e56b374556"
-            ]
-        ]
-    },
-    {
-        "id": "d50f6585c7c521e4",
-        "type": "link out",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "On Game Stop",
-        "mode": "link",
-        "links": [
-            "75a596869f308dab"
-        ],
-        "x": 1125,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "3697c0b81e0b8ff9",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "nur true",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 660,
-        "y": 380,
-        "wires": [
-            [
-                "5c4b4104d87193de",
-                "fde5a962483a76cb"
-            ]
-        ]
-    },
-    {
-        "id": "f03df95382fdf2dc",
-        "type": "comment",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "Spiel Stoppen",
-        "info": "",
-        "x": 870,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "13fc056b006dae96",
-        "type": "rpi-gpio out",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "Alarmlichter",
-        "pin": "17",
-        "set": true,
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "bcm": true,
-        "x": 530,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "a64be0597031f9c8",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "label": "Alarm",
-        "tooltip": "",
-        "group": "b33c16c8e02f206e",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 390,
-        "y": 120,
-        "wires": [
-            [
-                "13fc056b006dae96",
-                "bc8dd3a66eb8ad1d",
-                "faea51fe7695e3af",
-                "36625b582d6be3e5"
-            ]
-        ]
-    },
-    {
-        "id": "4d67412aeea1faa0",
-        "type": "link in",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "alarm",
-        "links": [
-            "21d47c54a97169e3",
-            "e24e2635213fc060",
-            "db4d6d56bb684e72"
-        ],
-        "x": 85,
-        "y": 120,
-        "wires": [
-            [
-                "976efef9bdb1335e"
-            ]
-        ]
-    },
-    {
-        "id": "976efef9bdb1335e",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "start",
-                "fromt": "str",
-                "to": "1",
-                "tot": "num"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "stop",
-                "fromt": "str",
-                "to": "0",
-                "tot": "num"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "reset",
-                "fromt": "str",
-                "to": "0",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 210,
-        "y": 120,
-        "wires": [
-            [
-                "a64be0597031f9c8",
-                "36625b582d6be3e5"
-            ]
-        ]
-    },
-    {
-        "id": "187e5a21f93c95b5",
-        "type": "ui_text",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "group": "b33c16c8e02f206e",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "Bedingung",
-        "label": "",
-        "format": "Der Alarm muss vom GM manuell deaktiviert werden, sobald das Lüftungsrohr erfolgreich zugemauert wurde.",
-        "layout": "row-left",
-        "className": "",
-        "style": true,
-        "font": "Arial,Arial,Helvetica,sans-serif",
-        "fontSize": "14",
-        "color": "#ffffff",
-        "x": 150,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "b3dcd3f06d1d504b",
-        "type": "rpi-gpio in",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "pin": "26",
-        "intype": "up",
-        "debounce": "25",
-        "read": false,
-        "bcm": true,
-        "x": 120,
-        "y": 520,
-        "wires": [
-            [
-                "05429e588cd3cad9"
-            ]
-        ]
-    },
-    {
-        "id": "44ae1362fea2fc91",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "label": "Kabel Schwarz",
-        "tooltip": "",
-        "group": "750289577ba5d627",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "schwarz",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "false",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "true",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 480,
-        "y": 520,
-        "wires": [
-            [
-                "2fe369140033e541"
-            ]
-        ]
-    },
-    {
-        "id": "05429e588cd3cad9",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "1",
-                "fromt": "num",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "0",
-                "fromt": "num",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "schwarz",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 290,
-        "y": 520,
-        "wires": [
-            [
-                "44ae1362fea2fc91"
-            ]
-        ]
-    },
-    {
-        "id": "c71cbeef189c5de4",
-        "type": "rpi-gpio out",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "pin": "18",
-        "set": true,
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "bcm": true,
-        "x": 1060,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "ba513aa357e9a97d",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "label": "Kabel Rot",
-        "tooltip": "",
-        "group": "750289577ba5d627",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "rot",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "false",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "true",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 460,
-        "y": 560,
-        "wires": [
-            [
-                "c7b3f3694a3b207f"
-            ]
-        ]
-    },
-    {
-        "id": "ae69488f5fa14193",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "label": "Kabel Gelb",
-        "tooltip": "",
-        "group": "750289577ba5d627",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "gelb",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "false",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "true",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 470,
-        "y": 600,
-        "wires": [
-            [
-                "c877f047a40f42ed"
-            ]
-        ]
-    },
-    {
-        "id": "20201dc2060d114a",
-        "type": "rpi-gpio in",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "pin": "13",
-        "intype": "up",
-        "debounce": "25",
-        "read": false,
-        "bcm": true,
-        "x": 120,
-        "y": 560,
-        "wires": [
-            [
-                "4067117ea7439bc0"
-            ]
-        ]
-    },
-    {
-        "id": "03134725df8a60e3",
-        "type": "rpi-gpio in",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "pin": "21",
-        "intype": "up",
-        "debounce": "25",
-        "read": false,
-        "bcm": true,
-        "x": 120,
-        "y": 600,
-        "wires": [
-            [
-                "b0f2c476a47e5cc8"
-            ]
-        ]
-    },
-    {
-        "id": "4067117ea7439bc0",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "1",
-                "fromt": "num",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "0",
-                "fromt": "num",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "rot",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 290,
-        "y": 560,
-        "wires": [
-            [
-                "ba513aa357e9a97d"
-            ]
-        ]
-    },
-    {
-        "id": "b0f2c476a47e5cc8",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "1",
-                "fromt": "num",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "0",
-                "fromt": "num",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "gelb",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 290,
-        "y": 600,
-        "wires": [
-            [
-                "ae69488f5fa14193"
-            ]
-        ]
-    },
-    {
-        "id": "2fe369140033e541",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "schwarz",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 520,
-        "wires": [
-            [
-                "dbd70c3b9c89d1f7"
-            ]
-        ]
-    },
-    {
-        "id": "c7b3f3694a3b207f",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "rot",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 560,
-        "wires": [
-            [
-                "dbd70c3b9c89d1f7"
-            ]
-        ]
-    },
-    {
-        "id": "c877f047a40f42ed",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "gelb",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 600,
-        "wires": [
-            [
-                "dbd70c3b9c89d1f7"
-            ]
-        ]
-    },
-    {
-        "id": "dbd70c3b9c89d1f7",
-        "type": "function",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "function 1",
-        "func": "// Initialisiere eine Speicherstruktur im Kontext, falls nicht vorhanden\nvar states = context.get('states') || {};\n\n// Aktualisiere den Status basierend auf dem Topic des eingehenden Nachrichten\nstates[msg.topic] = msg.payload;\n\n// Speichere den aktualisierten Status zurück in den Kontext\ncontext.set('states', states);\n\n// Überprüfe, ob alle drei Topics vorhanden und True sind\nif (states.schwarz === false && states.rot === false && states.gelb === false) {\n    // Alle drei Bedingungen sind erfüllt, sende True\n    msg.payload = true;\n} else {\n    // Eine oder mehrere Bedingungen sind nicht erfüllt, sende False\n    msg.payload = false;\n}\n\n// Rückgabe der Nachricht\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 520,
-        "wires": [
-            [
-                "50207e3c5fc89787"
-            ]
-        ]
-    },
-    {
-        "id": "fde5a962483a76cb",
-        "type": "play-soundfile",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "",
-        "directory": "e12c76d07d2533ab",
-        "file": "sieg.wav",
-        "options": "{}",
-        "allow_multiple": false,
-        "x": 1020,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b17a11e0090a7bcc",
-        "type": "play-soundfile",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "directory": "e12c76d07d2533ab",
-        "file": "alarm.wav",
-        "options": "{}",
-        "allow_multiple": false,
-        "x": 840,
-        "y": 160,
-        "wires": [
-            [
-                "5ffd75ce665b0144"
-            ]
-        ]
-    },
-    {
-        "id": "bc8dd3a66eb8ad1d",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 510,
-        "y": 180,
-        "wires": [
-            [
-                "b17a11e0090a7bcc"
-            ],
-            [
-                "745c556d2595ea53",
-                "d0f3c4ccc2723155"
-            ]
-        ]
-    },
-    {
-        "id": "50207e3c5fc89787",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "label": "Rolltormagnet öffnen",
-        "tooltip": "",
-        "group": "750289577ba5d627",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 980,
-        "y": 580,
-        "wires": [
-            [
-                "c71cbeef189c5de4"
-            ]
-        ]
-    },
-    {
-        "id": "faea51fe7695e3af",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "Set flow.alarmAktiv",
-        "rules": [
-            {
-                "t": "set",
-                "p": "alarmAktiv",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 550,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5ffd75ce665b0144",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "wiederhole wenn Alarm aktiv",
-        "property": "alarmAktiv",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 840,
-        "y": 100,
-        "wires": [
-            [
-                "b17a11e0090a7bcc"
-            ]
-        ]
-    },
-    {
-        "id": "745c556d2595ea53",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "stop",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 200,
-        "wires": [
-            [
-                "b17a11e0090a7bcc"
-            ]
-        ]
-    },
-    {
-        "id": "cd086293e1909477",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "name": "",
-        "label": "Schloss",
-        "tooltip": "",
-        "group": "a75f6d1ca57f1fc9",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 160,
-        "y": 780,
-        "wires": [
-            [
-                "43062c2b5dc20583",
-                "fc8cb825592a8db3"
-            ]
-        ]
-    },
-    {
-        "id": "43062c2b5dc20583",
-        "type": "rpi-gpio out",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "name": "",
-        "pin": "23",
-        "set": true,
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "bcm": true,
-        "x": 440,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "fc8cb825592a8db3",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 250,
-        "y": 840,
-        "wires": [
-            [
-                "15a454309f2106a6"
-            ]
-        ]
-    },
-    {
-        "id": "15a454309f2106a6",
-        "type": "delay",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 400,
-        "y": 840,
-        "wires": [
-            [
-                "7ae442bc6fb47474"
-            ]
-        ]
-    },
-    {
-        "id": "7ae442bc6fb47474",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 590,
-        "y": 840,
-        "wires": [
-            [
-                "cd086293e1909477"
-            ]
-        ]
-    },
-    {
-        "id": "91d1dc2276f0116b",
-        "type": "ui_text",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "group": "a75f6d1ca57f1fc9",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "Bedingung",
-        "label": "",
-        "format": "Der Schalter deaktiviert sich von alleine, um eine Überhitzung zu vermeiden",
-        "layout": "row-left",
-        "className": "",
-        "style": true,
-        "font": "Arial,Arial,Helvetica,sans-serif",
-        "fontSize": "14",
-        "color": "#ffffff",
-        "x": 630,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "25b84a6616e7d735",
-        "type": "play-soundfile",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "directory": "e12c76d07d2533ab",
-        "file": "success.wav",
-        "options": "{}",
-        "allow_multiple": false,
-        "x": 830,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7abc4b7af4069dd9",
-        "type": "link in",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "finale button",
-        "links": [
-            "21d47c54a97169e3",
-            "db4d6d56bb684e72",
-            "e24e2635213fc060"
-        ],
-        "x": 145,
-        "y": 340,
-        "wires": [
-            [
-                "1ab4695ffc9329a8"
-            ]
-        ]
-    },
-    {
-        "id": "1ab4695ffc9329a8",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "1f4858029cf46f27",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "reset",
-                "fromt": "str",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 280,
-        "y": 340,
-        "wires": [
-            [
-                "33594149ba6f023e"
-            ]
-        ]
-    },
-    {
-        "id": "5c7ba2912619daf3",
-        "type": "link in",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "Patchkabel",
-        "links": [
-            "21d47c54a97169e3",
-            "db4d6d56bb684e72",
-            "e24e2635213fc060"
-        ],
-        "x": 165,
-        "y": 480,
-        "wires": [
-            [
-                "1626907a838eb3fd"
-            ]
-        ]
-    },
-    {
-        "id": "1626907a838eb3fd",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "e820139a116e902e",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "reset",
-                "fromt": "str",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 300,
-        "y": 480,
-        "wires": [
-            [
-                "44ae1362fea2fc91",
-                "ba513aa357e9a97d",
-                "ae69488f5fa14193"
-            ]
-        ]
-    },
-    {
-        "id": "db31c1e4b80e7739",
-        "type": "link in",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "name": "Labyrinth Schlüssel",
-        "links": [
-            "21d47c54a97169e3",
-            "db4d6d56bb684e72",
-            "e24e2635213fc060"
-        ],
-        "x": 65,
-        "y": 740,
-        "wires": [
-            [
-                "40947bb344e575dd"
-            ]
-        ]
-    },
-    {
-        "id": "40947bb344e575dd",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "g": "fc3d470934a3d417",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "reset",
-                "fromt": "str",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 200,
-        "y": 740,
-        "wires": [
-            [
-                "cd086293e1909477"
-            ]
-        ]
-    },
-    {
-        "id": "d0f3c4ccc2723155",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "spiel aktiv?",
-        "property": "gameState",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "playing",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 670,
-        "y": 240,
-        "wires": [
-            [
-                "25b84a6616e7d735"
-            ]
-        ]
-    },
-    {
-        "id": "f46246e7cdbf73d5",
-        "type": "rpi-gpio out",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "Dampf",
-        "pin": "19",
-        "set": true,
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "bcm": true,
-        "x": 370,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "36625b582d6be3e5",
-        "type": "ui_switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "label": "Dampf",
-        "tooltip": "",
-        "group": "b33c16c8e02f206e",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 250,
-        "y": 240,
-        "wires": [
-            [
-                "f46246e7cdbf73d5"
-            ]
-        ]
-    },
-    {
-        "id": "617e5c928df83d66",
-        "type": "http request",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 570,
-        "y": 960,
-        "wires": [
-            [
-                "632a929b0096bf6f"
-            ]
-        ]
-    },
-    {
-        "id": "86d9a2958ccd6693",
-        "type": "change",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "url",
-                "pt": "msg",
-                "to": "http://dekolicht.local/json/state",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "headers.content-type",
-                "pt": "msg",
-                "to": "application/json",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"on\":true,\"ps\":1}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 370,
-        "y": 960,
-        "wires": [
-            [
-                "617e5c928df83d66"
-            ]
-        ]
-    },
-    {
-        "id": "632a929b0096bf6f",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 720,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "c09537dd99e5fc20",
-        "type": "inject",
-        "z": "bc3f40f178b15cc3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 960,
-        "wires": [
-            [
-                "86d9a2958ccd6693"
-            ]
-        ]
     },
     {
         "id": "4a56258a14858018",
@@ -3189,6 +1800,1539 @@
         "x": 495,
         "y": 540,
         "wires": []
+    },
+    {
+        "id": "1cb8410f1e8faed8",
+        "type": "rpi-gpio in",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "pin": "4",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "328bab6004f0eb10"
+            ]
+        ]
+    },
+    {
+        "id": "33594149ba6f023e",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "label": "Großer roter Knopf",
+        "tooltip": "",
+        "group": "af93c53b4bbc79b1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 470,
+        "y": 520,
+        "wires": [
+            [
+                "3697c0b81e0b8ff9"
+            ]
+        ]
+    },
+    {
+        "id": "328bab6004f0eb10",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 520,
+        "wires": [
+            [
+                "33594149ba6f023e"
+            ]
+        ]
+    },
+    {
+        "id": "f20ce2e56b374556",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameState",
+                "pt": "global",
+                "to": "stopped",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "elapsedTimeDelta",
+                "pt": "global",
+                "to": "$globalContext('elapsedTimeDelta') + $millis() - $flowContext('startTime')",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 520,
+        "wires": [
+            [
+                "d50f6585c7c521e4"
+            ]
+        ]
+    },
+    {
+        "id": "5c4b4104d87193de",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "property": "gameState",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "stopped",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 520,
+        "wires": [
+            [
+                "f20ce2e56b374556"
+            ]
+        ]
+    },
+    {
+        "id": "d50f6585c7c521e4",
+        "type": "link out",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "On Game Stop",
+        "mode": "link",
+        "links": [
+            "75a596869f308dab"
+        ],
+        "x": 1125,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3697c0b81e0b8ff9",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "nur true",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 520,
+        "wires": [
+            [
+                "5c4b4104d87193de",
+                "fde5a962483a76cb"
+            ]
+        ]
+    },
+    {
+        "id": "f03df95382fdf2dc",
+        "type": "comment",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "Spiel Stoppen",
+        "info": "",
+        "x": 870,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "13fc056b006dae96",
+        "type": "rpi-gpio out",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "Alarmlichter",
+        "pin": "17",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 530,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a64be0597031f9c8",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "label": "Alarm",
+        "tooltip": "",
+        "group": "b33c16c8e02f206e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "13fc056b006dae96",
+                "bc8dd3a66eb8ad1d",
+                "faea51fe7695e3af",
+                "36625b582d6be3e5"
+            ]
+        ]
+    },
+    {
+        "id": "4d67412aeea1faa0",
+        "type": "link in",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "alarm",
+        "links": [
+            "21d47c54a97169e3",
+            "e24e2635213fc060",
+            "db4d6d56bb684e72"
+        ],
+        "x": 85,
+        "y": 100,
+        "wires": [
+            [
+                "976efef9bdb1335e"
+            ]
+        ]
+    },
+    {
+        "id": "976efef9bdb1335e",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "start",
+                "fromt": "str",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "stop",
+                "fromt": "str",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "reset",
+                "fromt": "str",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "a64be0597031f9c8",
+                "36625b582d6be3e5"
+            ]
+        ]
+    },
+    {
+        "id": "187e5a21f93c95b5",
+        "type": "ui_text",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "group": "b33c16c8e02f206e",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "Bedingung",
+        "label": "",
+        "format": "Der Alarm muss vom GM manuell deaktiviert werden, sobald das Lüftungsrohr erfolgreich zugemauert wurde.",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "14",
+        "color": "#ffffff",
+        "x": 150,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b3dcd3f06d1d504b",
+        "type": "rpi-gpio in",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "pin": "26",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "05429e588cd3cad9"
+            ]
+        ]
+    },
+    {
+        "id": "44ae1362fea2fc91",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "label": "Kabel Schwarz",
+        "tooltip": "",
+        "group": "750289577ba5d627",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "schwarz",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "false",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "true",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 480,
+        "y": 660,
+        "wires": [
+            [
+                "2fe369140033e541"
+            ]
+        ]
+    },
+    {
+        "id": "05429e588cd3cad9",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "schwarz",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 660,
+        "wires": [
+            [
+                "44ae1362fea2fc91"
+            ]
+        ]
+    },
+    {
+        "id": "c71cbeef189c5de4",
+        "type": "rpi-gpio out",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "pin": "18",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1060,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "ba513aa357e9a97d",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "label": "Kabel Rot",
+        "tooltip": "",
+        "group": "750289577ba5d627",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "rot",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "false",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "true",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 460,
+        "y": 700,
+        "wires": [
+            [
+                "c7b3f3694a3b207f"
+            ]
+        ]
+    },
+    {
+        "id": "ae69488f5fa14193",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "label": "Kabel Gelb",
+        "tooltip": "",
+        "group": "750289577ba5d627",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "gelb",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "false",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "true",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 470,
+        "y": 740,
+        "wires": [
+            [
+                "c877f047a40f42ed"
+            ]
+        ]
+    },
+    {
+        "id": "20201dc2060d114a",
+        "type": "rpi-gpio in",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "pin": "13",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 120,
+        "y": 700,
+        "wires": [
+            [
+                "4067117ea7439bc0"
+            ]
+        ]
+    },
+    {
+        "id": "03134725df8a60e3",
+        "type": "rpi-gpio in",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "pin": "21",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "b0f2c476a47e5cc8"
+            ]
+        ]
+    },
+    {
+        "id": "4067117ea7439bc0",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "rot",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 700,
+        "wires": [
+            [
+                "ba513aa357e9a97d"
+            ]
+        ]
+    },
+    {
+        "id": "b0f2c476a47e5cc8",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "gelb",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 740,
+        "wires": [
+            [
+                "ae69488f5fa14193"
+            ]
+        ]
+    },
+    {
+        "id": "2fe369140033e541",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "schwarz",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 660,
+        "wires": [
+            [
+                "dbd70c3b9c89d1f7"
+            ]
+        ]
+    },
+    {
+        "id": "c7b3f3694a3b207f",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "rot",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 700,
+        "wires": [
+            [
+                "dbd70c3b9c89d1f7"
+            ]
+        ]
+    },
+    {
+        "id": "c877f047a40f42ed",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "gelb",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 740,
+        "wires": [
+            [
+                "dbd70c3b9c89d1f7"
+            ]
+        ]
+    },
+    {
+        "id": "dbd70c3b9c89d1f7",
+        "type": "function",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "function 1",
+        "func": "// Initialisiere eine Speicherstruktur im Kontext, falls nicht vorhanden\nvar states = context.get('states') || {};\n\n// Aktualisiere den Status basierend auf dem Topic des eingehenden Nachrichten\nstates[msg.topic] = msg.payload;\n\n// Speichere den aktualisierten Status zurück in den Kontext\ncontext.set('states', states);\n\n// Überprüfe, ob alle drei Topics vorhanden und True sind\nif (states.schwarz === false && states.rot === false && states.gelb === false) {\n    // Alle drei Bedingungen sind erfüllt, sende True\n    msg.payload = true;\n} else {\n    // Eine oder mehrere Bedingungen sind nicht erfüllt, sende False\n    msg.payload = false;\n}\n\n// Rückgabe der Nachricht\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 660,
+        "wires": [
+            [
+                "50207e3c5fc89787"
+            ]
+        ]
+    },
+    {
+        "id": "fde5a962483a76cb",
+        "type": "play-soundfile",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "directory": "e12c76d07d2533ab",
+        "file": "sieg.wav",
+        "options": "{}",
+        "allow_multiple": false,
+        "x": 1020,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b17a11e0090a7bcc",
+        "type": "play-soundfile",
+        "z": "bc3f40f178b15cc3",
+        "g": "488383090b8b78e1",
+        "name": "",
+        "directory": "e12c76d07d2533ab",
+        "file": "alarm.wav",
+        "options": "{}",
+        "allow_multiple": false,
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [
+                "5ffd75ce665b0144"
+            ]
+        ]
+    },
+    {
+        "id": "bc8dd3a66eb8ad1d",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "b17a11e0090a7bcc",
+                "a515e05e6cc777c0"
+            ],
+            [
+                "745c556d2595ea53",
+                "d0f3c4ccc2723155",
+                "3361905e244fab93"
+            ]
+        ]
+    },
+    {
+        "id": "50207e3c5fc89787",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "label": "Rolltormagnet öffnen",
+        "tooltip": "",
+        "group": "750289577ba5d627",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 980,
+        "y": 720,
+        "wires": [
+            [
+                "c71cbeef189c5de4"
+            ]
+        ]
+    },
+    {
+        "id": "faea51fe7695e3af",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "Set flow.alarmAktiv",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alarmAktiv",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ffd75ce665b0144",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "488383090b8b78e1",
+        "name": "wiederhole wenn Alarm aktiv",
+        "property": "alarmAktiv",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "b17a11e0090a7bcc"
+            ]
+        ]
+    },
+    {
+        "id": "745c556d2595ea53",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "488383090b8b78e1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 340,
+        "wires": [
+            [
+                "b17a11e0090a7bcc"
+            ]
+        ]
+    },
+    {
+        "id": "cd086293e1909477",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "label": "Schloss",
+        "tooltip": "",
+        "group": "a75f6d1ca57f1fc9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 160,
+        "y": 920,
+        "wires": [
+            [
+                "43062c2b5dc20583",
+                "fc8cb825592a8db3"
+            ]
+        ]
+    },
+    {
+        "id": "43062c2b5dc20583",
+        "type": "rpi-gpio out",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "pin": "23",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 440,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "fc8cb825592a8db3",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 250,
+        "y": 980,
+        "wires": [
+            [
+                "15a454309f2106a6"
+            ]
+        ]
+    },
+    {
+        "id": "15a454309f2106a6",
+        "type": "delay",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 980,
+        "wires": [
+            [
+                "7ae442bc6fb47474"
+            ]
+        ]
+    },
+    {
+        "id": "7ae442bc6fb47474",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 980,
+        "wires": [
+            [
+                "cd086293e1909477"
+            ]
+        ]
+    },
+    {
+        "id": "91d1dc2276f0116b",
+        "type": "ui_text",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "group": "a75f6d1ca57f1fc9",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "Bedingung",
+        "label": "",
+        "format": "Der Schalter deaktiviert sich von alleine, um eine Überhitzung zu vermeiden",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "14",
+        "color": "#ffffff",
+        "x": 630,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "25b84a6616e7d735",
+        "type": "play-soundfile",
+        "z": "bc3f40f178b15cc3",
+        "g": "488383090b8b78e1",
+        "name": "",
+        "directory": "e12c76d07d2533ab",
+        "file": "success.wav",
+        "options": "{}",
+        "allow_multiple": false,
+        "x": 890,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7abc4b7af4069dd9",
+        "type": "link in",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "finale button",
+        "links": [
+            "21d47c54a97169e3",
+            "db4d6d56bb684e72",
+            "e24e2635213fc060"
+        ],
+        "x": 145,
+        "y": 480,
+        "wires": [
+            [
+                "1ab4695ffc9329a8"
+            ]
+        ]
+    },
+    {
+        "id": "1ab4695ffc9329a8",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "reset",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 480,
+        "wires": [
+            [
+                "33594149ba6f023e"
+            ]
+        ]
+    },
+    {
+        "id": "5c7ba2912619daf3",
+        "type": "link in",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "Patchkabel",
+        "links": [
+            "21d47c54a97169e3",
+            "db4d6d56bb684e72",
+            "e24e2635213fc060"
+        ],
+        "x": 165,
+        "y": 620,
+        "wires": [
+            [
+                "1626907a838eb3fd"
+            ]
+        ]
+    },
+    {
+        "id": "1626907a838eb3fd",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "reset",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 620,
+        "wires": [
+            [
+                "44ae1362fea2fc91",
+                "ba513aa357e9a97d",
+                "ae69488f5fa14193"
+            ]
+        ]
+    },
+    {
+        "id": "db31c1e4b80e7739",
+        "type": "link in",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "Labyrinth Schlüssel",
+        "links": [
+            "21d47c54a97169e3",
+            "db4d6d56bb684e72",
+            "e24e2635213fc060"
+        ],
+        "x": 65,
+        "y": 880,
+        "wires": [
+            [
+                "40947bb344e575dd"
+            ]
+        ]
+    },
+    {
+        "id": "40947bb344e575dd",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "reset",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 880,
+        "wires": [
+            [
+                "cd086293e1909477"
+            ]
+        ]
+    },
+    {
+        "id": "d0f3c4ccc2723155",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "488383090b8b78e1",
+        "name": "spiel aktiv?",
+        "property": "gameState",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "playing",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 380,
+        "wires": [
+            [
+                "25b84a6616e7d735"
+            ]
+        ]
+    },
+    {
+        "id": "f46246e7cdbf73d5",
+        "type": "rpi-gpio out",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "Dampf",
+        "pin": "19",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 370,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "36625b582d6be3e5",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "label": "Dampf",
+        "tooltip": "",
+        "group": "b33c16c8e02f206e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "f46246e7cdbf73d5"
+            ]
+        ]
+    },
+    {
+        "id": "25d25ddaa93e0873",
+        "type": "link out",
+        "z": "bc3f40f178b15cc3",
+        "g": "66fa805ea904e05b",
+        "name": "alarm out",
+        "mode": "link",
+        "links": [
+            "960f076d7f3032c8"
+        ],
+        "x": 975,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a515e05e6cc777c0",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "66fa805ea904e05b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "PS2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 60,
+        "wires": [
+            [
+                "25d25ddaa93e0873"
+            ]
+        ]
+    },
+    {
+        "id": "3361905e244fab93",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "66fa805ea904e05b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "PS1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 100,
+        "wires": [
+            [
+                "25d25ddaa93e0873"
+            ]
+        ]
+    },
+    {
+        "id": "a7d97576a7ddc914",
+        "type": "http request",
+        "z": "a1a0700b5d60c281",
+        "g": "4aef0d1c6e1e8ae7",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 830,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "307e4894ea2a0069",
+        "type": "change",
+        "z": "a1a0700b5d60c281",
+        "g": "4aef0d1c6e1e8ae7",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "PS1",
+                "fromt": "str",
+                "to": "{\"on\":true,\"ps\":1}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "PS2",
+                "fromt": "str",
+                "to": "{\"on\":true,\"ps\":2}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "af33d4005c501676"
+            ]
+        ]
+    },
+    {
+        "id": "960f076d7f3032c8",
+        "type": "link in",
+        "z": "a1a0700b5d60c281",
+        "g": "4aef0d1c6e1e8ae7",
+        "name": "link in 1",
+        "links": [
+            "25d25ddaa93e0873"
+        ],
+        "x": 165,
+        "y": 120,
+        "wires": [
+            [
+                "307e4894ea2a0069"
+            ]
+        ]
+    },
+    {
+        "id": "af33d4005c501676",
+        "type": "change",
+        "z": "a1a0700b5d60c281",
+        "g": "4aef0d1c6e1e8ae7",
+        "name": "Dekolicht",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "http://dekolicht.local/json/state",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "headers.content-type",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [
+                "a7d97576a7ddc914"
+            ]
+        ]
     },
     {
         "id": "595ffa42b5b38bed",
