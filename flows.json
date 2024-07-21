@@ -1394,8 +1394,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 920,
-        "y": 680,
+        "x": 980,
+        "y": 620,
         "wires": [
             [
                 "c71cbeef189c5de4"
