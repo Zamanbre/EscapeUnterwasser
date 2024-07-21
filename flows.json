@@ -1961,7 +1961,7 @@
                 "t": "set",
                 "p": "url",
                 "pt": "msg",
-                "to": "dekolicht.local",
+                "to": "http://dekolicht.local",
                 "tot": "str"
             },
             {
