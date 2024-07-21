@@ -1962,7 +1962,7 @@
                 "p": "url",
                 "pt": "msg",
                 "to": "dekolicht.local",
-                "tot": "global"
+                "tot": "str"
             },
             {
                 "t": "set",
