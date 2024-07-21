@@ -166,7 +166,8 @@
             "bc8dd3a66eb8ad1d",
             "faea51fe7695e3af",
             "5ffd75ce665b0144",
-            "745c556d2595ea53"
+            "745c556d2595ea53",
+            "25b84a6616e7d735"
         ],
         "x": 44,
         "y": 119,
@@ -1389,7 +1390,8 @@
                 "b17a11e0090a7bcc"
             ],
             [
-                "745c556d2595ea53"
+                "745c556d2595ea53",
+                "25b84a6616e7d735"
             ]
         ]
     },
@@ -1659,6 +1661,22 @@
         "x": 630,
         "y": 780,
         "wires": []
+    },
+    {
+        "id": "25b84a6616e7d735",
+        "type": "play-soundfile",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "directory": "e12c76d07d2533ab",
+        "file": "succes.wav",
+        "options": "{}",
+        "allow_multiple": false,
+        "x": 850,
+        "y": 280,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "4a56258a14858018",
