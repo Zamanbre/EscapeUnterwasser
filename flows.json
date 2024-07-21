@@ -1961,7 +1961,7 @@
                 "t": "set",
                 "p": "url",
                 "pt": "msg",
-                "to": "http://dekolicht.local/json/state",
+                "to": "http://dekolicht.local/json",
                 "tot": "str"
             },
             {
@@ -1975,8 +1975,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"on\":false}",
-                "tot": "str"
+                "to": "{\"state\":{\"on\":true}}",
+                "tot": "json"
             }
         ],
         "action": "",
