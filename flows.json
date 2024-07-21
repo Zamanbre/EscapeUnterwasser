@@ -1373,7 +1373,7 @@
         "z": "bc3f40f178b15cc3",
         "g": "e820139a116e902e",
         "name": "",
-        "label": "Rolltormagnet",
+        "label": "Rolltormagnet öffnen",
         "tooltip": "",
         "group": "750289577ba5d627",
         "order": 12,
@@ -1394,7 +1394,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 900,
+        "x": 920,
         "y": 680,
         "wires": [
             [
