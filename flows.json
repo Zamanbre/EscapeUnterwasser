@@ -3251,7 +3251,7 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "5",
+        "nbRateUnits": "2",
         "rateUnits": "second",
         "randomFirst": "1",
         "randomLast": "5",
