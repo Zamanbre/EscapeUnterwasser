@@ -172,7 +172,8 @@
             "5ffd75ce665b0144",
             "745c556d2595ea53",
             "25b84a6616e7d735",
-            "d0f3c4ccc2723155"
+            "d0f3c4ccc2723155",
+            "f46246e7cdbf73d5"
         ],
         "x": 44,
         "y": 39,
@@ -787,14 +788,14 @@
         "type": "rpi-gpio out",
         "z": "bc3f40f178b15cc3",
         "g": "eaeca8afb05066c4",
-        "name": "",
+        "name": "Alarmlichter",
         "pin": "17",
         "set": true,
         "level": "0",
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 520,
+        "x": 530,
         "y": 120,
         "wires": []
     },
@@ -831,7 +832,8 @@
             [
                 "13fc056b006dae96",
                 "bc8dd3a66eb8ad1d",
-                "faea51fe7695e3af"
+                "faea51fe7695e3af",
+                "f46246e7cdbf73d5"
             ]
         ]
     },
@@ -1871,6 +1873,22 @@
                 "25b84a6616e7d735"
             ]
         ]
+    },
+    {
+        "id": "f46246e7cdbf73d5",
+        "type": "rpi-gpio out",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "Dampf",
+        "pin": "19",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 370,
+        "y": 240,
+        "wires": []
     },
     {
         "id": "4a56258a14858018",
