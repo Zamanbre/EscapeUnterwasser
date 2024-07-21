@@ -537,6 +537,17 @@
         "directory": "/home/escape/Escape Game Sounds"
     },
     {
+        "id": "a75f6d1ca57f1fc9",
+        "type": "ui_group",
+        "name": "Labyrinth Schlüssel",
+        "tab": "a38c3d325d960343",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "1cb8410f1e8faed8",
         "type": "rpi-gpio in",
         "z": "bc3f40f178b15cc3",
@@ -1474,6 +1485,78 @@
             [
                 "b17a11e0090a7bcc"
             ]
+        ]
+    },
+    {
+        "id": "cd086293e1909477",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "a75f6d1ca57f1fc9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "43062c2b5dc20583"
+            ]
+        ]
+    },
+    {
+        "id": "43062c2b5dc20583",
+        "type": "rpi-gpio out",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "pin": "23",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 480,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "fc8cb825592a8db3",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 800,
+        "wires": [
+            []
         ]
     },
     {
