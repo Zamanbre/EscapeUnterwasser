@@ -262,7 +262,7 @@
             "db31c1e4b80e7739",
             "40947bb344e575dd",
             "ec45843ace6b8df2",
-            "9ea61e8c3bd006ab"
+            "c20dfe41936d4b22"
         ],
         "x": 34,
         "y": 839,
@@ -3236,25 +3236,35 @@
         "x": 120,
         "y": 940,
         "wires": [
-            []
+            [
+                "c20dfe41936d4b22"
+            ]
         ]
     },
     {
-        "id": "9ea61e8c3bd006ab",
-        "type": "smooth",
+        "id": "c20dfe41936d4b22",
+        "type": "delay",
         "z": "bc3f40f178b15cc3",
         "g": "fc3d470934a3d417",
         "name": "",
-        "property": "payload",
-        "action": "mean",
-        "count": "10",
-        "round": "",
-        "mult": "single",
-        "reduce": false,
-        "x": 180,
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 240,
         "y": 1000,
         "wires": [
-            []
+            [
+                "cd086293e1909477"
+            ]
         ]
     },
     {
