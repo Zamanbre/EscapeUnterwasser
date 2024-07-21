@@ -171,7 +171,8 @@
             "faea51fe7695e3af",
             "5ffd75ce665b0144",
             "745c556d2595ea53",
-            "25b84a6616e7d735"
+            "25b84a6616e7d735",
+            "d0f3c4ccc2723155"
         ],
         "x": 44,
         "y": 39,
@@ -1409,7 +1410,7 @@
             ],
             [
                 "745c556d2595ea53",
-                "25b84a6616e7d735"
+                "d0f3c4ccc2723155"
             ]
         ]
     },
@@ -1520,8 +1521,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
-        "y": 240,
+        "x": 680,
+        "y": 200,
         "wires": [
             [
                 "b17a11e0090a7bcc"
@@ -1690,8 +1691,8 @@
         "file": "success.wav",
         "options": "{}",
         "allow_multiple": false,
-        "x": 850,
-        "y": 200,
+        "x": 830,
+        "y": 240,
         "wires": [
             []
         ]
@@ -1842,6 +1843,32 @@
         "wires": [
             [
                 "cd086293e1909477"
+            ]
+        ]
+    },
+    {
+        "id": "d0f3c4ccc2723155",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "spiel aktiv?",
+        "property": "gameState",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "playing",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "25b84a6616e7d735"
             ]
         ]
     },
