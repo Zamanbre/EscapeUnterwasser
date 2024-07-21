@@ -859,7 +859,7 @@
         "name": "Bedingung",
         "label": "",
         "format": "Der Alarm muss vom GM manuell deaktiviert werden, sobald das Lüftungsrohr erfolgreich zugemauert wurde.",
-        "layout": "col-center",
+        "layout": "row-left",
         "className": "",
         "style": false,
         "font": "Arial,Arial,Helvetica,sans-serif",
