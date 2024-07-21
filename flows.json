@@ -219,12 +219,13 @@
             "2fe369140033e541",
             "c7b3f3694a3b207f",
             "c877f047a40f42ed",
-            "dbd70c3b9c89d1f7"
+            "dbd70c3b9c89d1f7",
+            "50207e3c5fc89787"
         ],
         "x": 34,
         "y": 519,
-        "w": 1032,
-        "h": 162
+        "w": 1112,
+        "h": 202
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -980,8 +981,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 980,
-        "y": 600,
+        "x": 1060,
+        "y": 680,
         "wires": []
     },
     {
@@ -1281,11 +1282,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 600,
+        "x": 880,
+        "y": 560,
         "wires": [
             [
-                "c71cbeef189c5de4"
+                "50207e3c5fc89787"
             ]
         ]
     },
@@ -1363,6 +1364,41 @@
             [
                 "df8424d64ae52de1",
                 "b17a11e0090a7bcc"
+            ]
+        ]
+    },
+    {
+        "id": "50207e3c5fc89787",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "label": "Rolltormagnet",
+        "tooltip": "",
+        "group": "f08ba3d0ec182a89",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 900,
+        "y": 680,
+        "wires": [
+            [
+                "c71cbeef189c5de4"
             ]
         ]
     },
