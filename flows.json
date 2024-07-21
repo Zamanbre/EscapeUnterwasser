@@ -230,7 +230,7 @@
     {
         "id": "f08ba3d0ec182a89",
         "type": "ui_group",
-        "name": "Patchfeld",
+        "name": "Timer",
         "tab": "a38c3d325d960343",
         "order": 1,
         "disp": false,
@@ -1375,7 +1375,7 @@
         "name": "",
         "label": "Rolltormagnet",
         "tooltip": "",
-        "group": "f08ba3d0ec182a89",
+        "group": "750289577ba5d627",
         "order": 12,
         "width": 0,
         "height": 0,
