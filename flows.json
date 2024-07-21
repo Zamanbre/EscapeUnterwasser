@@ -262,12 +262,13 @@
             "db31c1e4b80e7739",
             "40947bb344e575dd",
             "ec45843ace6b8df2",
-            "c20dfe41936d4b22"
+            "c20dfe41936d4b22",
+            "d886dc676506e4f8"
         ],
         "x": 34,
         "y": 839,
         "w": 892,
-        "h": 202
+        "h": 222
     },
     {
         "id": "4aef0d1c6e1e8ae7",
@@ -3259,8 +3260,47 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 240,
-        "y": 1000,
+        "x": 180,
+        "y": 1020,
+        "wires": [
+            [
+                "d886dc676506e4f8"
+            ]
+        ]
+    },
+    {
+        "id": "d886dc676506e4f8",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "fc3d470934a3d417",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1020,
         "wires": [
             [
                 "cd086293e1909477"
