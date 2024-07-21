@@ -1514,7 +1514,7 @@
         "z": "bc3f40f178b15cc3",
         "g": "fc3d470934a3d417",
         "name": "",
-        "label": "switch",
+        "label": "Schloss",
         "tooltip": "",
         "group": "a75f6d1ca57f1fc9",
         "order": 0,
@@ -1535,7 +1535,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 110,
+        "x": 120,
         "y": 780,
         "wires": [
             [
