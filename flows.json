@@ -86,12 +86,14 @@
             "e24e2635213fc060",
             "21d47c54a97169e3",
             "054b36ebe3c3f2f6",
-            "42027097dca022f3"
+            "42027097dca022f3",
+            "2970d125e8debc4e",
+            "db4d6d56bb684e72"
         ],
         "x": 34,
         "y": 299,
         "w": 672,
-        "h": 242
+        "h": 282
     },
     {
         "id": "c870415b6658eca9",
@@ -840,7 +842,8 @@
         "name": "alarm",
         "links": [
             "21d47c54a97169e3",
-            "e24e2635213fc060"
+            "e24e2635213fc060",
+            "db4d6d56bb684e72"
         ],
         "x": 85,
         "y": 120,
@@ -1698,9 +1701,10 @@
         "type": "link in",
         "z": "bc3f40f178b15cc3",
         "g": "1f4858029cf46f27",
-        "name": "alarm",
+        "name": "finale button",
         "links": [
             "21d47c54a97169e3",
+            "db4d6d56bb684e72",
             "e24e2635213fc060"
         ],
         "x": 145,
@@ -1746,9 +1750,10 @@
         "type": "link in",
         "z": "bc3f40f178b15cc3",
         "g": "e820139a116e902e",
-        "name": "alarm",
+        "name": "Patchkabel",
         "links": [
             "21d47c54a97169e3",
+            "db4d6d56bb684e72",
             "e24e2635213fc060"
         ],
         "x": 165,
@@ -1796,9 +1801,10 @@
         "type": "link in",
         "z": "bc3f40f178b15cc3",
         "g": "fc3d470934a3d417",
-        "name": "alarm",
+        "name": "Labyrinth Schlüssel",
         "links": [
             "21d47c54a97169e3",
+            "db4d6d56bb684e72",
             "e24e2635213fc060"
         ],
         "x": 65,
@@ -2640,7 +2646,8 @@
         "y": 500,
         "wires": [
             [
-                "890f86205d47ef77"
+                "890f86205d47ef77",
+                "2970d125e8debc4e"
             ]
         ]
     },
@@ -2944,6 +2951,51 @@
                 "21d47c54a97169e3"
             ]
         ]
+    },
+    {
+        "id": "2970d125e8debc4e",
+        "type": "change",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "db4d6d56bb684e72"
+            ]
+        ]
+    },
+    {
+        "id": "db4d6d56bb684e72",
+        "type": "link out",
+        "z": "350f3f1be5bf834e",
+        "g": "1d39f27b3d601c72",
+        "name": "reset pure out",
+        "mode": "link",
+        "links": [
+            "4d67412aeea1faa0",
+            "5c7ba2912619daf3",
+            "7abc4b7af4069dd9",
+            "db31c1e4b80e7739"
+        ],
+        "x": 495,
+        "y": 540,
+        "wires": []
     },
     {
         "id": "595ffa42b5b38bed",
