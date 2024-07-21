@@ -874,6 +874,15 @@
                 "fromt": "str",
                 "to": "0",
                 "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "reset",
+                "fromt": "str",
+                "to": "0",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -1713,16 +1722,7 @@
                 "t": "change",
                 "p": "payload",
                 "pt": "msg",
-                "from": "start",
-                "fromt": "str",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "stop",
+                "from": "reset",
                 "fromt": "str",
                 "to": "false",
                 "tot": "bool"
@@ -1733,7 +1733,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 270,
+        "x": 280,
         "y": 340,
         "wires": [
             [
@@ -1770,16 +1770,7 @@
                 "t": "change",
                 "p": "payload",
                 "pt": "msg",
-                "from": "start",
-                "fromt": "str",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "stop",
+                "from": "reset",
                 "fromt": "str",
                 "to": "true",
                 "tot": "bool"
@@ -1790,7 +1781,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 290,
+        "x": 300,
         "y": 480,
         "wires": [
             [
@@ -1829,16 +1820,7 @@
                 "t": "change",
                 "p": "payload",
                 "pt": "msg",
-                "from": "start",
-                "fromt": "str",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "stop",
+                "from": "reset",
                 "fromt": "str",
                 "to": "false",
                 "tot": "bool"
@@ -1849,7 +1831,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 190,
+        "x": 200,
         "y": 740,
         "wires": [
             [
