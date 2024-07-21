@@ -864,7 +864,7 @@
         "style": true,
         "font": "Arial,Arial,Helvetica,sans-serif",
         "fontSize": "14",
-        "color": "#000000",
+        "color": "#ffffff",
         "x": 250,
         "y": 320,
         "wires": []
