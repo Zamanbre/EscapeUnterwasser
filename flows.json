@@ -234,11 +234,13 @@
             "dbd70c3b9c89d1f7",
             "50207e3c5fc89787",
             "5c7ba2912619daf3",
-            "1626907a838eb3fd"
+            "1626907a838eb3fd",
+            "65579b6d30c421d0",
+            "5324aa0597bd54f9"
         ],
         "x": 34,
         "y": 759,
-        "w": 1112,
+        "w": 1252,
         "h": 242
     },
     {
@@ -2568,7 +2570,8 @@
         "y": 840,
         "wires": [
             [
-                "50207e3c5fc89787"
+                "50207e3c5fc89787",
+                "5324aa0597bd54f9"
             ]
         ]
     },
@@ -3358,6 +3361,46 @@
         "wires": [
             [
                 "c20dfe41936d4b22"
+            ]
+        ]
+    },
+    {
+        "id": "65579b6d30c421d0",
+        "type": "play-soundfile",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "",
+        "directory": "e12c76d07d2533ab",
+        "file": "success.wav",
+        "options": "{}",
+        "allow_multiple": false,
+        "x": 1190,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5324aa0597bd54f9",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "e820139a116e902e",
+        "name": "nur true",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1040,
+        "y": 820,
+        "wires": [
+            [
+                "65579b6d30c421d0"
             ]
         ]
     },
