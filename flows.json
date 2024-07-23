@@ -1874,6 +1874,13 @@
                 "pt": "msg",
                 "to": "reset",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "str"
             }
         ],
         "action": "",
