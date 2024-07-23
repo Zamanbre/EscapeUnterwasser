@@ -2207,7 +2207,7 @@
                 "from": "reset",
                 "fromt": "str",
                 "to": "0",
-                "tot": "str"
+                "tot": "num"
             }
         ],
         "action": "",
