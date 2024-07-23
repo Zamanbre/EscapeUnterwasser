@@ -268,7 +268,7 @@
         ],
         "x": 28,
         "y": 839,
-        "w": 1164,
+        "w": 1184,
         "h": 508
     },
     {
@@ -468,12 +468,14 @@
             "9d7f6ed2c58f77fe",
             "2f80bcf466618cda",
             "3615f5f2234af126",
-            "693059c785fa5aa1"
+            "693059c785fa5aa1",
+            "9f029f0ca67f5b6c",
+            "b06d2ba6dd9887b1"
         ],
         "x": 564,
-        "y": 1179,
-        "w": 602,
-        "h": 122
+        "y": 1139,
+        "w": 622,
+        "h": 162
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -3856,7 +3858,8 @@
         "y": 1220,
         "wires": [
             [
-                "cfa83df4b569ab31"
+                "cfa83df4b569ab31",
+                "b06d2ba6dd9887b1"
             ]
         ]
     },
@@ -3910,7 +3913,8 @@
         "y": 1260,
         "wires": [
             [
-                "cfa83df4b569ab31"
+                "cfa83df4b569ab31",
+                "9f029f0ca67f5b6c"
             ]
         ]
     },
@@ -4000,6 +4004,42 @@
         "statusType": "auto",
         "x": 800,
         "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "9f029f0ca67f5b6c",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "g": "0d5657855b597663",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "b06d2ba6dd9887b1",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "g": "0d5657855b597663",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 1180,
         "wires": []
     },
     {
