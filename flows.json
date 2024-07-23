@@ -183,8 +183,7 @@
             "ed4b449f11160b44",
             "42d1c19769c25315",
             "4cdbd9e07b2bfe96",
-            "8a34aeacfc9ba223",
-            "178ad774bdf24fc5"
+            "8a34aeacfc9ba223"
         ],
         "x": 44,
         "y": 93,
@@ -2172,7 +2171,7 @@
             [
                 "976efef9bdb1335e",
                 "ed4b449f11160b44",
-                "178ad774bdf24fc5"
+                "4344d09d9b3ba89c"
             ]
         ]
     },
@@ -3857,7 +3856,7 @@
                 "from": "reset",
                 "fromt": "str",
                 "to": "1",
-                "tot": "str"
+                "tot": "num"
             }
         ],
         "action": "",
@@ -3986,32 +3985,6 @@
         "wires": [
             [
                 "36625b582d6be3e5"
-            ]
-        ]
-    },
-    {
-        "id": "178ad774bdf24fc5",
-        "type": "delay",
-        "z": "bc3f40f178b15cc3",
-        "g": "eaeca8afb05066c4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "100",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 180,
-        "y": 340,
-        "wires": [
-            [
-                "4344d09d9b3ba89c"
             ]
         ]
     },
