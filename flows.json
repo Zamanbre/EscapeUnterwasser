@@ -3857,13 +3857,6 @@
                 "fromt": "str",
                 "to": "1",
                 "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
             }
         ],
         "action": "",
@@ -3871,7 +3864,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 210,
+        "x": 220,
         "y": 380,
         "wires": [
             [
