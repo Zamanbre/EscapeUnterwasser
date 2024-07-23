@@ -293,6 +293,23 @@
         "h": 82
     },
     {
+        "id": "7ecce9efbd1c9926",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "name": "Kombinationen",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "20d9d516ef7259ca",
+            "980eb2fecb2559ce"
+        ],
+        "x": 34,
+        "y": 1439,
+        "w": 212,
+        "h": 122
+    },
+    {
         "id": "66fa805ea904e05b",
         "type": "group",
         "z": "bc3f40f178b15cc3",
@@ -390,23 +407,6 @@
         "y": 639,
         "w": 392,
         "h": 82
-    },
-    {
-        "id": "7ecce9efbd1c9926",
-        "type": "group",
-        "z": "bc3f40f178b15cc3",
-        "name": "Kombinationen",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "20d9d516ef7259ca",
-            "980eb2fecb2559ce"
-        ],
-        "x": 34,
-        "y": 1439,
-        "w": 212,
-        "h": 122
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -3147,7 +3147,7 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 390,
+        "x": 370,
         "y": 320,
         "wires": []
     },
