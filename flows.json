@@ -3717,7 +3717,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "",
+                "to": "-",
                 "tot": "str"
             }
         ],
@@ -3897,7 +3897,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "--",
+                "to": "-",
                 "tot": "str"
             }
         ],
