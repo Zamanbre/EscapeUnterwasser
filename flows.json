@@ -150,12 +150,13 @@
             "fde5a962483a76cb",
             "7abc4b7af4069dd9",
             "1ab4695ffc9329a8",
-            "539381a3e3b6ab80"
+            "539381a3e3b6ab80",
+            "3c5eb1f01e60fb13"
         ],
         "x": 34,
         "y": 1379,
         "w": 1148,
-        "h": 168
+        "h": 308
     },
     {
         "id": "eaeca8afb05066c4",
@@ -432,6 +433,31 @@
         ],
         "x": 594,
         "y": 1079,
+        "w": 552,
+        "h": 122
+    },
+    {
+        "id": "3c5eb1f01e60fb13",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c862e1898e2bd3fe",
+            "d25d3b029d5efb2c",
+            "b583e85cd3a8acbc",
+            "e8d502c1fbf5d98c"
+        ],
+        "x": 594,
+        "y": 1539,
         "w": 552,
         "h": 122
     },
@@ -2063,7 +2089,8 @@
         "wires": [
             [
                 "5c4b4104d87193de",
-                "fde5a962483a76cb"
+                "fde5a962483a76cb",
+                "d25d3b029d5efb2c"
             ]
         ]
     },
@@ -3033,7 +3060,8 @@
         "y": 1420,
         "wires": [
             [
-                "33594149ba6f023e"
+                "33594149ba6f023e",
+                "b583e85cd3a8acbc"
             ]
         ]
     },
@@ -3699,6 +3727,110 @@
         "wires": [
             [
                 "569d15f40ab2d941"
+            ]
+        ]
+    },
+    {
+        "id": "c862e1898e2bd3fe",
+        "type": "ui_text",
+        "z": "bc3f40f178b15cc3",
+        "g": "3c5eb1f01e60fb13",
+        "group": "a75f6d1ca57f1fc9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1070,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "d25d3b029d5efb2c",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "3c5eb1f01e60fb13",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Gelöst",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 1580,
+        "wires": [
+            [
+                "c862e1898e2bd3fe"
+            ]
+        ]
+    },
+    {
+        "id": "b583e85cd3a8acbc",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "3c5eb1f01e60fb13",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "reset",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 1620,
+        "wires": [
+            [
+                "e8d502c1fbf5d98c"
+            ]
+        ]
+    },
+    {
+        "id": "e8d502c1fbf5d98c",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "3c5eb1f01e60fb13",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 1620,
+        "wires": [
+            [
+                "c862e1898e2bd3fe"
             ]
         ]
     },
