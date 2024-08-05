@@ -1951,61 +1951,77 @@
         "wires": []
     },
     {
-        "id": "171019aefbf3c130",
-        "type": "exec",
+        "id": "ab01bcd1.c410e",
+        "type": "inject",
         "z": "350f3f1be5bf834e",
-        "command": "",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1230,
-        "y": 460,
+        "name": "reboot!",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1030,
+        "y": 620,
         "wires": [
             [
-                "9adb7b1d311cc462"
-            ],
+                "8f9f1fe.3f891e"
+            ]
+        ]
+    },
+    {
+        "id": "8f9f1fe.3f891e",
+        "type": "exec",
+        "z": "350f3f1be5bf834e",
+        "command": "sudo reboot #",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "name": "reboot Pi",
+        "x": 1220,
+        "y": 620,
+        "wires": [
+            [],
             [],
             []
         ]
     },
     {
-        "id": "a35f4dca2f97cebf",
-        "type": "inject",
+        "id": "a90f2b9434c70e93",
+        "type": "exec",
         "z": "350f3f1be5bf834e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "sudo reboot",
-        "payloadType": "str",
-        "x": 970,
-        "y": 420,
+        "command": "sudo poweroff #",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "name": "turn off Pi",
+        "x": 1220,
+        "y": 680,
         "wires": [
-            [
-                "171019aefbf3c130"
-            ]
+            [],
+            [],
+            []
         ]
     },
     {
-        "id": "cda8b072e12652a8",
+        "id": "eda8aacd2cd8f506",
         "type": "inject",
         "z": "350f3f1be5bf834e",
-        "name": "",
+        "name": "shutdown!",
         "props": [
             {
                 "p": "payload"
@@ -2018,61 +2034,15 @@
         "repeat": "",
         "crontab": "",
         "once": false,
-        "onceDelay": 0.1,
+        "onceDelay": "",
         "topic": "",
-        "payload": "sudo poweroff",
-        "payloadType": "str",
-        "x": 970,
-        "y": 460,
+        "payload": "",
+        "payloadType": "date",
+        "x": 1040,
+        "y": 680,
         "wires": [
             [
-                "171019aefbf3c130"
-            ]
-        ]
-    },
-    {
-        "id": "9adb7b1d311cc462",
-        "type": "debug",
-        "z": "350f3f1be5bf834e",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1140,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "44eb24923f5477d7",
-        "type": "inject",
-        "z": "350f3f1be5bf834e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "ls",
-        "payloadType": "str",
-        "x": 950,
-        "y": 520,
-        "wires": [
-            [
-                "171019aefbf3c130"
+                "a90f2b9434c70e93"
             ]
         ]
     },
