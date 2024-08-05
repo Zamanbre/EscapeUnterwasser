@@ -23,6 +23,14 @@
         "env": []
     },
     {
+        "id": "3fc41409a7a06018",
+        "type": "tab",
+        "label": "System",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "b365465971930594",
         "type": "tab",
         "label": "Fernbedienung",
@@ -494,6 +502,27 @@
         "y": 819,
         "w": 602,
         "h": 122
+    },
+    {
+        "id": "20ba795cfae420ee",
+        "type": "group",
+        "z": "3fc41409a7a06018",
+        "name": "System",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ab01bcd1.c410e",
+            "8f9f1fe.3f891e",
+            "a90f2b9434c70e93",
+            "eda8aacd2cd8f506",
+            "f526ea0477fe7a84",
+            "0d8e930bb6631647"
+        ],
+        "x": 94,
+        "y": 59,
+        "w": 372,
+        "h": 262
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -1968,158 +1997,6 @@
         "x": 495,
         "y": 540,
         "wires": []
-    },
-    {
-        "id": "ab01bcd1.c410e",
-        "type": "inject",
-        "z": "350f3f1be5bf834e",
-        "name": "reboot!",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1030,
-        "y": 620,
-        "wires": [
-            [
-                "8f9f1fe.3f891e"
-            ]
-        ]
-    },
-    {
-        "id": "8f9f1fe.3f891e",
-        "type": "exec",
-        "z": "350f3f1be5bf834e",
-        "command": "sudo reboot #",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "",
-        "timer": "",
-        "winHide": false,
-        "name": "reboot Pi",
-        "x": 1220,
-        "y": 620,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "a90f2b9434c70e93",
-        "type": "exec",
-        "z": "350f3f1be5bf834e",
-        "command": "sudo poweroff #",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "",
-        "timer": "",
-        "winHide": false,
-        "name": "turn off Pi",
-        "x": 1220,
-        "y": 680,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "eda8aacd2cd8f506",
-        "type": "inject",
-        "z": "350f3f1be5bf834e",
-        "name": "shutdown!",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1040,
-        "y": 680,
-        "wires": [
-            [
-                "a90f2b9434c70e93"
-            ]
-        ]
-    },
-    {
-        "id": "f526ea0477fe7a84",
-        "type": "ui_button",
-        "z": "350f3f1be5bf834e",
-        "name": "",
-        "group": "0fecc83d04543ece",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Reboot",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1040,
-        "y": 560,
-        "wires": [
-            [
-                "8f9f1fe.3f891e"
-            ]
-        ]
-    },
-    {
-        "id": "0d8e930bb6631647",
-        "type": "ui_button",
-        "z": "350f3f1be5bf834e",
-        "name": "",
-        "group": "0fecc83d04543ece",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Herunterfahren",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1060,
-        "y": 740,
-        "wires": [
-            [
-                "a90f2b9434c70e93"
-            ]
-        ]
     },
     {
         "id": "1cb8410f1e8faed8",
@@ -4406,6 +4283,164 @@
         "wires": [
             [
                 "a7d97576a7ddc914"
+            ]
+        ]
+    },
+    {
+        "id": "ab01bcd1.c410e",
+        "type": "inject",
+        "z": "3fc41409a7a06018",
+        "g": "20ba795cfae420ee",
+        "name": "reboot!",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "8f9f1fe.3f891e"
+            ]
+        ]
+    },
+    {
+        "id": "8f9f1fe.3f891e",
+        "type": "exec",
+        "z": "3fc41409a7a06018",
+        "g": "20ba795cfae420ee",
+        "command": "sudo reboot #",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "name": "reboot Pi",
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a90f2b9434c70e93",
+        "type": "exec",
+        "z": "3fc41409a7a06018",
+        "g": "20ba795cfae420ee",
+        "command": "sudo poweroff #",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "name": "turn off Pi",
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "eda8aacd2cd8f506",
+        "type": "inject",
+        "z": "3fc41409a7a06018",
+        "g": "20ba795cfae420ee",
+        "name": "shutdown!",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "a90f2b9434c70e93"
+            ]
+        ]
+    },
+    {
+        "id": "f526ea0477fe7a84",
+        "type": "ui_button",
+        "z": "3fc41409a7a06018",
+        "g": "20ba795cfae420ee",
+        "name": "",
+        "group": "0fecc83d04543ece",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reboot",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "8f9f1fe.3f891e"
+            ]
+        ]
+    },
+    {
+        "id": "0d8e930bb6631647",
+        "type": "ui_button",
+        "z": "3fc41409a7a06018",
+        "g": "20ba795cfae420ee",
+        "name": "",
+        "group": "0fecc83d04543ece",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Herunterfahren",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "a90f2b9434c70e93"
             ]
         ]
     },
