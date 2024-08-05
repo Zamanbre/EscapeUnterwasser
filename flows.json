@@ -3600,7 +3600,7 @@
         "height": "0",
         "name": "",
         "label": "Widerstandkiste",
-        "format": "220 k Ohm (Rot-Rot-Schwarz-Orange-Braun)",
+        "format": "220 Ohm (Rot-Rot-Braun-Gold)",
         "layout": "row-spread",
         "className": "",
         "style": true,
