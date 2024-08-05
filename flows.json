@@ -1991,9 +1991,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "sudo shutdown -r -t 00",
+        "payload": "sudo reboot",
         "payloadType": "str",
-        "x": 1000,
+        "x": 970,
         "y": 420,
         "wires": [
             [
@@ -2020,9 +2020,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "sudo shutdown -s -t 00",
+        "payload": "sudo poweroff",
         "payloadType": "str",
-        "x": 1000,
+        "x": 970,
         "y": 460,
         "wires": [
             [
