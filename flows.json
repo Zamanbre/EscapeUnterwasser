@@ -783,6 +783,25 @@
         "className": ""
     },
     {
+        "id": "23ef75e422ead84a",
+        "type": "ui_tab",
+        "name": "System",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0fecc83d04543ece",
+        "type": "ui_group",
+        "name": "Systemausführung",
+        "tab": "23ef75e422ead84a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "4a56258a14858018",
         "type": "change",
         "z": "350f3f1be5bf834e",
@@ -2040,6 +2059,62 @@
         "payloadType": "date",
         "x": 1040,
         "y": 680,
+        "wires": [
+            [
+                "a90f2b9434c70e93"
+            ]
+        ]
+    },
+    {
+        "id": "f526ea0477fe7a84",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "name": "",
+        "group": "0fecc83d04543ece",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reboot",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1040,
+        "y": 560,
+        "wires": [
+            [
+                "8f9f1fe.3f891e"
+            ]
+        ]
+    },
+    {
+        "id": "0d8e930bb6631647",
+        "type": "ui_button",
+        "z": "350f3f1be5bf834e",
+        "name": "",
+        "group": "0fecc83d04543ece",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Herunterfahren",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1060,
+        "y": 740,
         "wires": [
             [
                 "a90f2b9434c70e93"
