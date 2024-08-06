@@ -303,21 +303,25 @@
         "h": 82
     },
     {
-        "id": "7ecce9efbd1c9926",
+        "id": "20ba795cfae420ee",
         "type": "group",
-        "z": "bc3f40f178b15cc3",
-        "name": "Kombinationen",
+        "z": "3fc41409a7a06018",
+        "name": "System",
         "style": {
             "label": true
         },
         "nodes": [
-            "20d9d516ef7259ca",
-            "980eb2fecb2559ce"
+            "ab01bcd1.c410e",
+            "8f9f1fe.3f891e",
+            "a90f2b9434c70e93",
+            "eda8aacd2cd8f506",
+            "f526ea0477fe7a84",
+            "0d8e930bb6631647"
         ],
-        "x": 34,
-        "y": 1779,
-        "w": 212,
-        "h": 122
+        "x": 94,
+        "y": 59,
+        "w": 372,
+        "h": 262
     },
     {
         "id": "66fa805ea904e05b",
@@ -504,25 +508,22 @@
         "h": 122
     },
     {
-        "id": "20ba795cfae420ee",
+        "id": "7ecce9efbd1c9926",
         "type": "group",
-        "z": "3fc41409a7a06018",
-        "name": "System",
+        "z": "bc3f40f178b15cc3",
+        "name": "Kombinationen",
         "style": {
             "label": true
         },
         "nodes": [
-            "ab01bcd1.c410e",
-            "8f9f1fe.3f891e",
-            "a90f2b9434c70e93",
-            "eda8aacd2cd8f506",
-            "f526ea0477fe7a84",
-            "0d8e930bb6631647"
+            "20d9d516ef7259ca",
+            "980eb2fecb2559ce",
+            "b8c2881e423a8349"
         ],
-        "x": 94,
-        "y": 59,
-        "w": 372,
-        "h": 262
+        "x": 34,
+        "y": 1919,
+        "w": 272,
+        "h": 162
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -3590,50 +3591,6 @@
         ]
     },
     {
-        "id": "20d9d516ef7259ca",
-        "type": "ui_text",
-        "z": "bc3f40f178b15cc3",
-        "g": "7ecce9efbd1c9926",
-        "group": "9465214e16ea572e",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "",
-        "label": "Widerstandkiste",
-        "format": "220 Ohm (Rot-Rot-Braun-Gold)",
-        "layout": "row-spread",
-        "className": "",
-        "style": true,
-        "font": "Arial,Arial,Helvetica,sans-serif",
-        "fontSize": "14",
-        "color": "#ffffff",
-        "x": 140,
-        "y": 1820,
-        "wires": []
-    },
-    {
-        "id": "980eb2fecb2559ce",
-        "type": "ui_text",
-        "z": "bc3f40f178b15cc3",
-        "g": "7ecce9efbd1c9926",
-        "group": "9465214e16ea572e",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "",
-        "label": "Perspektiven",
-        "format": "5523",
-        "layout": "row-spread",
-        "className": "",
-        "style": true,
-        "font": "Arial,Arial,Helvetica,sans-serif",
-        "fontSize": "14",
-        "color": "#ffffff",
-        "x": 130,
-        "y": 1860,
-        "wires": []
-    },
-    {
         "id": "ba55a12bbe5afe58",
         "type": "ui_text",
         "z": "bc3f40f178b15cc3",
@@ -4171,6 +4128,72 @@
                 "a776e3be95e3edbf"
             ]
         ]
+    },
+    {
+        "id": "20d9d516ef7259ca",
+        "type": "ui_text",
+        "z": "bc3f40f178b15cc3",
+        "g": "7ecce9efbd1c9926",
+        "group": "9465214e16ea572e",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Widerstandkiste",
+        "format": "220 Ohm (Rot-Rot-Braun-Gold)",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "14",
+        "color": "#ffffff",
+        "x": 140,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "980eb2fecb2559ce",
+        "type": "ui_text",
+        "z": "bc3f40f178b15cc3",
+        "g": "7ecce9efbd1c9926",
+        "group": "9465214e16ea572e",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Perspektiven",
+        "format": "5523",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "14",
+        "color": "#ffffff",
+        "x": 130,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "b8c2881e423a8349",
+        "type": "ui_text",
+        "z": "bc3f40f178b15cc3",
+        "g": "7ecce9efbd1c9926",
+        "group": "9465214e16ea572e",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Dekolicht Direktsteuerung",
+        "format": "http://dekolicht.local/",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "14",
+        "color": "#ffffff",
+        "x": 170,
+        "y": 2040,
+        "wires": []
     },
     {
         "id": "a7d97576a7ddc914",
