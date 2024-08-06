@@ -569,11 +569,11 @@
             "01e1d9c34adc911e",
             "898e0662e2cd143c",
             "5e949becb5190438",
-            "305a900fe3b572df"
+            "0ae1d71969345772"
         ],
-        "x": 1084,
+        "x": 1074,
         "y": 179,
-        "w": 628,
+        "w": 638,
         "h": 308
     },
     {
@@ -2890,8 +2890,7 @@
                 "745c556d2595ea53",
                 "d0f3c4ccc2723155",
                 "3361905e244fab93",
-                "3b56aa95220eaf1e",
-                "305a900fe3b572df"
+                "0ae1d71969345772"
             ]
         ]
     },
@@ -4303,7 +4302,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1360,
+        "x": 1420,
         "y": 260,
         "wires": [
             [
@@ -4479,7 +4478,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1370,
+        "x": 1410,
         "y": 220,
         "wires": [
             [
@@ -4533,22 +4532,32 @@
         ]
     },
     {
-        "id": "305a900fe3b572df",
-        "type": "debug",
+        "id": "0ae1d71969345772",
+        "type": "change",
         "z": "bc3f40f178b15cc3",
         "g": "cf687ff36e48ebd7",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1180,
-        "y": 300,
-        "wires": []
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 260,
+        "wires": [
+            [
+                "3b56aa95220eaf1e"
+            ]
+        ]
     },
     {
         "id": "a7d97576a7ddc914",
