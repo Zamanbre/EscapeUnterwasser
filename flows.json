@@ -523,7 +523,7 @@
         "x": 34,
         "y": 1919,
         "w": 212,
-        "h": 202
+        "h": 162
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -4183,14 +4183,14 @@
         "order": 12,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht Direktsteuerung</a>",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<a href=\"http://dekolicht.local/\" color=\"light blue\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht Direktsteuerung</a>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 120,
-        "y": 2080,
+        "y": 2040,
         "wires": [
             []
         ]
