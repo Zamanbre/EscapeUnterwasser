@@ -518,12 +518,11 @@
         "nodes": [
             "20d9d516ef7259ca",
             "980eb2fecb2559ce",
-            "b8c2881e423a8349",
             "ebf8c41466c6d63e"
         ],
         "x": 34,
         "y": 1919,
-        "w": 272,
+        "w": 212,
         "h": 202
     },
     {
@@ -4175,28 +4174,6 @@
         "wires": []
     },
     {
-        "id": "b8c2881e423a8349",
-        "type": "ui_text",
-        "z": "bc3f40f178b15cc3",
-        "g": "7ecce9efbd1c9926",
-        "group": "9465214e16ea572e",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "",
-        "label": "Dekolicht Direktsteuerung",
-        "format": "http://dekolicht.local/",
-        "layout": "row-spread",
-        "className": "",
-        "style": true,
-        "font": "Arial,Arial,Helvetica,sans-serif",
-        "fontSize": "14",
-        "color": "#ffffff",
-        "x": 170,
-        "y": 2040,
-        "wires": []
-    },
-    {
         "id": "ebf8c41466c6d63e",
         "type": "ui_template",
         "z": "bc3f40f178b15cc3",
@@ -4206,7 +4183,7 @@
         "order": 12,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<a href=\"http://dekolicht.local/\">Dekolicht Direktsteuerung</a>",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht Direktsteuerung</a>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
