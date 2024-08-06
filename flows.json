@@ -4179,7 +4179,7 @@
         "z": "bc3f40f178b15cc3",
         "g": "7ecce9efbd1c9926",
         "group": "9465214e16ea572e",
-        "name": "",
+        "name": "Dekolicht Link",
         "order": 12,
         "width": 0,
         "height": 0,
@@ -4189,7 +4189,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 120,
+        "x": 140,
         "y": 2040,
         "wires": [
             []
