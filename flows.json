@@ -518,12 +518,13 @@
         "nodes": [
             "20d9d516ef7259ca",
             "980eb2fecb2559ce",
-            "b8c2881e423a8349"
+            "b8c2881e423a8349",
+            "ebf8c41466c6d63e"
         ],
         "x": 34,
         "y": 1919,
         "w": 272,
-        "h": 162
+        "h": 202
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -4194,6 +4195,28 @@
         "x": 170,
         "y": 2040,
         "wires": []
+    },
+    {
+        "id": "ebf8c41466c6d63e",
+        "type": "ui_template",
+        "z": "bc3f40f178b15cc3",
+        "g": "7ecce9efbd1c9926",
+        "group": "f08ba3d0ec182a89",
+        "name": "",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<a href=\"http://dekolicht.local/\">Dekolicht Direktsteuerung</a>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 120,
+        "y": 2080,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "a7d97576a7ddc914",
