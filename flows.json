@@ -4250,7 +4250,7 @@
         "order": 12,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<style>\n    a:link, a:visited {\n    color: cyan;\n</style>\n\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht Direktsteuerung</a>\n<a href=\"http://fensterlicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Bullauge Direktsteuerung</a>",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<style>\n    a:link, a:visited {\n    color: cyan;\n</style>\nDirektsteuerung Licht:\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht</a>\n<a href=\"http://fensterlicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Fensterlicht</a>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
