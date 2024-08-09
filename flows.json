@@ -325,6 +325,24 @@
         "h": 262
     },
     {
+        "id": "7ecce9efbd1c9926",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "name": "Kombinationen",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "20d9d516ef7259ca",
+            "980eb2fecb2559ce",
+            "ebf8c41466c6d63e"
+        ],
+        "x": 34,
+        "y": 2239,
+        "w": 212,
+        "h": 162
+    },
+    {
         "id": "66fa805ea904e05b",
         "type": "group",
         "z": "bc3f40f178b15cc3",
@@ -509,47 +527,6 @@
         "h": 122
     },
     {
-        "id": "7ecce9efbd1c9926",
-        "type": "group",
-        "z": "bc3f40f178b15cc3",
-        "name": "Kombinationen",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "20d9d516ef7259ca",
-            "980eb2fecb2559ce",
-            "ebf8c41466c6d63e"
-        ],
-        "x": 34,
-        "y": 2239,
-        "w": 212,
-        "h": 162
-    },
-    {
-        "id": "1152848392bbf23c",
-        "type": "group",
-        "z": "bc3f40f178b15cc3",
-        "g": "cf687ff36e48ebd7",
-        "name": "Gelöst Anzeige",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4b37dad67d607e93",
-            "214e93a22a38149f",
-            "90c5bc127544e207",
-            "713cae45d9c9e104",
-            "d19021453aa568b0",
-            "9ed11211a7db1893",
-            "0fc1e08e8e39277f"
-        ],
-        "x": 664,
-        "y": 659,
-        "w": 602,
-        "h": 122
-    },
-    {
         "id": "cf687ff36e48ebd7",
         "type": "group",
         "z": "bc3f40f178b15cc3",
@@ -578,6 +555,29 @@
         "y": 479,
         "w": 658,
         "h": 328
+    },
+    {
+        "id": "1152848392bbf23c",
+        "type": "group",
+        "z": "bc3f40f178b15cc3",
+        "g": "cf687ff36e48ebd7",
+        "name": "Gelöst Anzeige",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4b37dad67d607e93",
+            "214e93a22a38149f",
+            "90c5bc127544e207",
+            "713cae45d9c9e104",
+            "d19021453aa568b0",
+            "9ed11211a7db1893",
+            "0fc1e08e8e39277f"
+        ],
+        "x": 664,
+        "y": 659,
+        "w": 602,
+        "h": 122
     },
     {
         "id": "f08ba3d0ec182a89",
@@ -4246,17 +4246,17 @@
         "z": "bc3f40f178b15cc3",
         "g": "7ecce9efbd1c9926",
         "group": "9465214e16ea572e",
-        "name": "Dekolicht Link",
+        "name": "WLED Links",
         "order": 12,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<style>\n    a:link, a:visited {\n    color: cyan;\n</style>\n\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht Direktsteuerung</a>",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<style>\n    a:link, a:visited {\n    color: cyan;\n</style>\n\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht Direktsteuerung</a>\n<a href=\"http://fensterlicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Bullauge Direktsteuerung</a>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 140,
+        "x": 130,
         "y": 2360,
         "wires": [
             []
