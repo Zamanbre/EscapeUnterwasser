@@ -590,7 +590,8 @@
             "521dca9ce8f0a212",
             "08f9503eb1493742",
             "b3b8962859baf705",
-            "5243cbee3ef87c8c"
+            "5243cbee3ef87c8c",
+            "55c97babfe626c10"
         ],
         "x": 54,
         "y": 1459,
@@ -643,7 +644,8 @@
         "wires": [
             [
                 "0bc81052a3e8ab0b",
-                "3d09a98578ba98e3"
+                "3d09a98578ba98e3",
+                "55c97babfe626c10"
             ]
         ]
     },
@@ -5254,6 +5256,35 @@
                 "a64be0597031f9c8"
             ]
         ]
+    },
+    {
+        "id": "55c97babfe626c10",
+        "type": "ui_gauge",
+        "z": "bc3f40f178b15cc3",
+        "g": "eb8a7efbc8bac078",
+        "name": "",
+        "group": "a75f6d1ca57f1fc9",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 830,
+        "y": 1500,
+        "wires": []
     },
     {
         "id": "a7d97576a7ddc914",
