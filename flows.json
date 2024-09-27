@@ -5267,7 +5267,7 @@
         "order": 4,
         "width": 0,
         "height": 0,
-        "gtype": "wave",
+        "gtype": "compass",
         "title": "gauge",
         "label": "units",
         "format": "{{value}}",
