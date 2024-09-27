@@ -4320,7 +4320,7 @@
         "order": 12,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<style>\n    a:link, a:visited {\n    color: cyan;\n</style>\n<b>Direktsteuerung Licht:</b>\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Dekolicht</a>\n<a href=\"http://fensterlicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Fensterlicht</a>",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>\n<style>\n    a:link, a:visited {\n    color: cyan;\n</style>\n<b>Direktsteuerung Licht:</b>\n<a href=\"http://dekolicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Lichtseil</a>\n<a href=\"http://Lichtleisten.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Lichtleisten</a>\n<a href=\"http://fensterlicht.local/\" target=\"_blank\" rel=\"noopener noreferrer\">Fensterlicht</a>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -4952,7 +4952,8 @@
         "y": 1620,
         "wires": [
             [
-                "098de3e53d4dfcb5"
+                "098de3e53d4dfcb5",
+                "873d45a86edd13b7"
             ]
         ]
     },
@@ -5273,7 +5274,7 @@
         "label": "Chekpoints",
         "format": "{{value}}",
         "min": 0,
-        "max": "4",
+        "max": "3",
         "colors": [
             "#cf3030",
             "#cfcf30",
