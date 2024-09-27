@@ -185,7 +185,8 @@
             "66fa805ea904e05b",
             "488383090b8b78e1",
             "8eceb05dbdb901e6",
-            "cf687ff36e48ebd7"
+            "cf687ff36e48ebd7",
+            "ad0c914fc6df4fe2"
         ],
         "x": 44,
         "y": 33,
@@ -5210,6 +5211,25 @@
         "wires": [
             [
                 "b3b8962859baf705"
+            ]
+        ]
+    },
+    {
+        "id": "ad0c914fc6df4fe2",
+        "type": "rpi-gpio in",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "pin": "12",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "bcm": true,
+        "x": 240,
+        "y": 200,
+        "wires": [
+            [
+                "a64be0597031f9c8"
             ]
         ]
     },
