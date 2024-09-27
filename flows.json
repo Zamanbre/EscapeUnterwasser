@@ -5270,7 +5270,7 @@
         "height": "2",
         "gtype": "donut",
         "title": "Labyrinth Fortschritt",
-        "label": "units",
+        "label": "Chekpoints",
         "format": "{{value}}",
         "min": 0,
         "max": "4",
