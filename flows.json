@@ -600,7 +600,6 @@
             "55c97babfe626c10",
             "631083f359de76ee",
             "9ab41d1bcbfa6e77",
-            "42a1a8ed9d96f6f7",
             "e5b13cf795131019",
             "99cbf9dcc57ef8a3",
             "0b9af854a543633a"
@@ -674,7 +673,7 @@
         "y": 1540,
         "wires": [
             [
-                "42a1a8ed9d96f6f7"
+                "99cbf9dcc57ef8a3"
             ]
         ]
     },
@@ -694,7 +693,7 @@
         "type": "junction",
         "z": "bc3f40f178b15cc3",
         "g": "eb8a7efbc8bac078",
-        "x": 960,
+        "x": 780,
         "y": 1500,
         "wires": [
             [
@@ -5459,34 +5458,6 @@
         "wires": [
             [
                 "e5b13cf795131019"
-            ]
-        ]
-    },
-    {
-        "id": "42a1a8ed9d96f6f7",
-        "type": "switch",
-        "z": "bc3f40f178b15cc3",
-        "g": "eb8a7efbc8bac078",
-        "name": "blockiert?",
-        "property": "LabyBlockiert",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 860,
-        "y": 1540,
-        "wires": [
-            [],
-            [
-                "99cbf9dcc57ef8a3"
             ]
         ]
     },
