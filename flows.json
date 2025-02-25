@@ -159,11 +159,15 @@
             "7abc4b7af4069dd9",
             "1ab4695ffc9329a8",
             "539381a3e3b6ab80",
-            "3c5eb1f01e60fb13"
+            "3c5eb1f01e60fb13",
+            "ceee02c18bcd3942",
+            "65c136ad08077545",
+            "0e67e6c7a36aeba4",
+            "13a3c2c826a78601"
         ],
         "x": 34,
         "y": 1959,
-        "w": 1148,
+        "w": 1308,
         "h": 308
     },
     {
@@ -441,7 +445,7 @@
             "5c4b4104d87193de",
             "d50f6585c7c521e4"
         ],
-        "x": 764,
+        "x": 924,
         "y": 2019,
         "w": 392,
         "h": 82
@@ -462,7 +466,7 @@
             "e8d502c1fbf5d98c",
             "08e07260fa52cab4"
         ],
-        "x": 554,
+        "x": 714,
         "y": 2119,
         "w": 592,
         "h": 122
@@ -2238,7 +2242,7 @@
         "y": 2040,
         "wires": [
             [
-                "3697c0b81e0b8ff9"
+                "0e67e6c7a36aeba4"
             ]
         ]
     },
@@ -2308,7 +2312,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 990,
+        "x": 1150,
         "y": 2060,
         "wires": [
             [
@@ -2334,7 +2338,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 840,
+        "x": 1000,
         "y": 2060,
         "wires": [
             [
@@ -2352,7 +2356,7 @@
         "links": [
             "75a596869f308dab"
         ],
-        "x": 1115,
+        "x": 1275,
         "y": 2060,
         "wires": []
     },
@@ -2372,7 +2376,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 660,
+        "x": 820,
         "y": 2040,
         "wires": [
             [
@@ -2958,7 +2962,7 @@
         "file": "sieg.wav",
         "options": "{}",
         "allow_multiple": false,
-        "x": 820,
+        "x": 980,
         "y": 2000,
         "wires": [
             []
@@ -3350,7 +3354,8 @@
         "y": 2000,
         "wires": [
             [
-                "33594149ba6f023e"
+                "33594149ba6f023e",
+                "ceee02c18bcd3942"
             ]
         ]
     },
@@ -3863,7 +3868,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1070,
+        "x": 1230,
         "y": 2160,
         "wires": []
     },
@@ -3887,7 +3892,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
+        "x": 1010,
         "y": 2160,
         "wires": [
             [
@@ -3913,7 +3918,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 670,
+        "x": 830,
         "y": 2200,
         "wires": [
             [
@@ -3941,7 +3946,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
+        "x": 1010,
         "y": 2200,
         "wires": [
             [
@@ -4016,7 +4021,7 @@
             "db4d6d56bb684e72",
             "e24e2635213fc060"
         ],
-        "x": 595,
+        "x": 755,
         "y": 2200,
         "wires": [
             [
@@ -5187,7 +5192,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 330,
         "y": 1780,
         "wires": [
             [
@@ -5462,7 +5467,7 @@
         "type": "switch",
         "z": "bc3f40f178b15cc3",
         "g": "eb8a7efbc8bac078",
-        "name": "",
+        "name": "blockiert?",
         "property": "LabyBlockiert",
         "propertyType": "flow",
         "rules": [
@@ -5476,7 +5481,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
+        "x": 860,
         "y": 1540,
         "wires": [
             [],
@@ -5544,7 +5549,7 @@
         "type": "switch",
         "z": "bc3f40f178b15cc3",
         "g": "76ea0912d827d0a0",
-        "name": "",
+        "name": "blockiert?",
         "property": "LabyBlockiert",
         "propertyType": "flow",
         "rules": [
@@ -5558,12 +5563,127 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 150,
+        "x": 160,
         "y": 1780,
         "wires": [
             [],
             [
                 "352c22886be7cff3"
+            ]
+        ]
+    },
+    {
+        "id": "ceee02c18bcd3942",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "label": "Rätsel blockieren",
+        "tooltip": "",
+        "group": "af93c53b4bbc79b1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "payload",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 490,
+        "y": 2000,
+        "wires": [
+            [
+                "65c136ad08077545"
+            ]
+        ]
+    },
+    {
+        "id": "65c136ad08077545",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "GRKBlockiert",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 2000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e67e6c7a36aeba4",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "blockiert?",
+        "property": "GRKBlockiert",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 660,
+        "y": 2040,
+        "wires": [
+            [],
+            [
+                "3697c0b81e0b8ff9"
+            ]
+        ]
+    },
+    {
+        "id": "13a3c2c826a78601",
+        "type": "inject",
+        "z": "bc3f40f178b15cc3",
+        "g": "1f4858029cf46f27",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 130,
+        "y": 2140,
+        "wires": [
+            [
+                "328bab6004f0eb10"
             ]
         ]
     },
