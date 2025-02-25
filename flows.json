@@ -279,7 +279,7 @@
         ],
         "x": 48,
         "y": 1259,
-        "w": 1430,
+        "w": 1450,
         "h": 668
     },
     {
@@ -597,11 +597,13 @@
             "fcb311b8603f4bfd",
             "650dca0793c0dfac",
             "06251a3c80d4c30e",
-            "ef0184dafdefae43"
+            "ef0184dafdefae43",
+            "9ab41d1bcbfa6e77",
+            "42a1a8ed9d96f6f7"
         ],
         "x": 74,
         "y": 1419,
-        "w": 1378,
+        "w": 1398,
         "h": 308
     },
     {
@@ -639,13 +641,12 @@
         "nodes": [
             "d12fa53a2888433c",
             "c266b6216fbc6776",
-            "142409cb24cad2cf",
-            "ba7f05b8f4520a51"
+            "142409cb24cad2cf"
         ],
         "x": 894,
-        "y": 1579,
-        "w": 532,
-        "h": 122
+        "y": 1619,
+        "w": 552,
+        "h": 82
     },
     {
         "id": "873d45a86edd13b7",
@@ -669,11 +670,8 @@
         "y": 1540,
         "wires": [
             [
-                "0bc81052a3e8ab0b",
-                "3d09a98578ba98e3",
-                "55c97babfe626c10",
-                "d12fa53a2888433c",
-                "ef0184dafdefae43"
+                "ef0184dafdefae43",
+                "42a1a8ed9d96f6f7"
             ]
         ]
     },
@@ -4966,7 +4964,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1020,
+        "x": 1280,
         "y": 1540,
         "wires": []
     },
@@ -5044,7 +5042,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 990,
+        "x": 1250,
         "y": 1580,
         "wires": [
             []
@@ -5324,7 +5322,7 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 1000,
+        "x": 1260,
         "y": 1500,
         "wires": []
     },
@@ -5335,7 +5333,7 @@
         "g": "631083f359de76ee",
         "name": "",
         "pauseType": "delay",
-        "timeout": "5",
+        "timeout": "60",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -5346,7 +5344,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1000,
+        "x": 1010,
         "y": 1660,
         "wires": [
             [
@@ -5372,12 +5370,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1150,
+        "x": 1170,
         "y": 1660,
         "wires": [
             [
-                "142409cb24cad2cf",
-                "ba7f05b8f4520a51"
+                "142409cb24cad2cf"
             ]
         ]
     },
@@ -5401,7 +5398,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1310,
+        "x": 1330,
         "y": 1660,
         "wires": [
             [
@@ -5488,24 +5485,6 @@
         ]
     },
     {
-        "id": "ba7f05b8f4520a51",
-        "type": "debug",
-        "z": "bc3f40f178b15cc3",
-        "g": "631083f359de76ee",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1280,
-        "y": 1620,
-        "wires": []
-    },
-    {
         "id": "ef0184dafdefae43",
         "type": "debug",
         "z": "bc3f40f178b15cc3",
@@ -5519,9 +5498,69 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 960,
+        "x": 1220,
         "y": 1460,
         "wires": []
+    },
+    {
+        "id": "9ab41d1bcbfa6e77",
+        "type": "ui_switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eb8a7efbc8bac078",
+        "name": "",
+        "label": "Rätsel blockieren",
+        "tooltip": "",
+        "group": "a75f6d1ca57f1fc9",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "LabyBlockiert",
+        "topicType": "flow",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42a1a8ed9d96f6f7",
+        "type": "switch",
+        "z": "bc3f40f178b15cc3",
+        "g": "eb8a7efbc8bac078",
+        "name": "",
+        "property": "LabyBlockiert",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 1540,
+        "wires": [
+            [
+                "55c97babfe626c10",
+                "3d09a98578ba98e3",
+                "d12fa53a2888433c",
+                "0bc81052a3e8ab0b"
+            ]
+        ]
     },
     {
         "id": "a7d97576a7ddc914",
