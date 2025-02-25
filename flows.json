@@ -596,12 +596,13 @@
             "631083f359de76ee",
             "fcb311b8603f4bfd",
             "650dca0793c0dfac",
-            "06251a3c80d4c30e"
+            "06251a3c80d4c30e",
+            "ef0184dafdefae43"
         ],
         "x": 74,
-        "y": 1459,
+        "y": 1419,
         "w": 1378,
-        "h": 268
+        "h": 308
     },
     {
         "id": "1152848392bbf23c",
@@ -638,12 +639,13 @@
         "nodes": [
             "d12fa53a2888433c",
             "c266b6216fbc6776",
-            "142409cb24cad2cf"
+            "142409cb24cad2cf",
+            "ba7f05b8f4520a51"
         ],
         "x": 894,
-        "y": 1619,
+        "y": 1579,
         "w": 532,
-        "h": 82
+        "h": 122
     },
     {
         "id": "873d45a86edd13b7",
@@ -670,7 +672,8 @@
                 "0bc81052a3e8ab0b",
                 "3d09a98578ba98e3",
                 "55c97babfe626c10",
-                "d12fa53a2888433c"
+                "d12fa53a2888433c",
+                "ef0184dafdefae43"
             ]
         ]
     },
@@ -5373,7 +5376,8 @@
         "y": 1660,
         "wires": [
             [
-                "142409cb24cad2cf"
+                "142409cb24cad2cf",
+                "ba7f05b8f4520a51"
             ]
         ]
     },
@@ -5480,6 +5484,42 @@
                 "e1f99bc72dce66b7"
             ]
         ]
+    },
+    {
+        "id": "ba7f05b8f4520a51",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "g": "631083f359de76ee",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "ef0184dafdefae43",
+        "type": "debug",
+        "z": "bc3f40f178b15cc3",
+        "g": "eb8a7efbc8bac078",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 960,
+        "y": 1460,
+        "wires": []
     },
     {
         "id": "a7d97576a7ddc914",
