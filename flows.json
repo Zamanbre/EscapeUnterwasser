@@ -600,7 +600,8 @@
             "ef0184dafdefae43",
             "9ab41d1bcbfa6e77",
             "42a1a8ed9d96f6f7",
-            "e5b13cf795131019"
+            "e5b13cf795131019",
+            "99cbf9dcc57ef8a3"
         ],
         "x": 74,
         "y": 1419,
@@ -685,6 +686,22 @@
         "y": 580,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "99cbf9dcc57ef8a3",
+        "type": "junction",
+        "z": "bc3f40f178b15cc3",
+        "g": "eb8a7efbc8bac078",
+        "x": 1100,
+        "y": 1500,
+        "wires": [
+            [
+                "55c97babfe626c10",
+                "0bc81052a3e8ab0b",
+                "3d09a98578ba98e3",
+                "d12fa53a2888433c"
+            ]
         ]
     },
     {
@@ -5206,7 +5223,7 @@
         "y": 1500,
         "wires": [
             [
-                "098de3e53d4dfcb5"
+                "99cbf9dcc57ef8a3"
             ]
         ]
     },
@@ -5557,15 +5574,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 970,
+        "x": 990,
         "y": 1540,
         "wires": [
             [],
             [
-                "d12fa53a2888433c",
-                "3d09a98578ba98e3",
-                "0bc81052a3e8ab0b",
-                "55c97babfe626c10"
+                "99cbf9dcc57ef8a3"
             ]
         ]
     },
