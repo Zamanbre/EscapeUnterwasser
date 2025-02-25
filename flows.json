@@ -599,7 +599,8 @@
             "06251a3c80d4c30e",
             "ef0184dafdefae43",
             "9ab41d1bcbfa6e77",
-            "42a1a8ed9d96f6f7"
+            "42a1a8ed9d96f6f7",
+            "e5b13cf795131019"
         ],
         "x": 74,
         "y": 1419,
@@ -5516,8 +5517,8 @@
         "height": 0,
         "passthru": true,
         "decouple": "false",
-        "topic": "LabyBlockiert",
-        "topicType": "flow",
+        "topic": "payload",
+        "topicType": "msg",
         "style": "",
         "onvalue": "true",
         "onvalueType": "bool",
@@ -5532,7 +5533,9 @@
         "x": 330,
         "y": 1460,
         "wires": [
-            []
+            [
+                "e5b13cf795131019"
+            ]
         ]
     },
     {
@@ -5560,6 +5563,32 @@
                 "d12fa53a2888433c",
                 "0bc81052a3e8ab0b"
             ]
+        ]
+    },
+    {
+        "id": "e5b13cf795131019",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "eb8a7efbc8bac078",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "LabyBlockiert",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 1460,
+        "wires": [
+            []
         ]
     },
     {
