@@ -5548,20 +5548,24 @@
         "propertyType": "flow",
         "rules": [
             {
-                "t": "false"
+                "t": "true"
+            },
+            {
+                "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 970,
         "y": 1540,
         "wires": [
+            [],
             [
-                "55c97babfe626c10",
-                "3d09a98578ba98e3",
                 "d12fa53a2888433c",
-                "0bc81052a3e8ab0b"
+                "3d09a98578ba98e3",
+                "0bc81052a3e8ab0b",
+                "55c97babfe626c10"
             ]
         ]
     },
