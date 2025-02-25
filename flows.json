@@ -5390,8 +5390,8 @@
         "rules": [
             {
                 "t": "set",
-                "p": "LabyLast",
-                "pt": "flow",
+                "p": "payload",
+                "pt": "msg",
                 "to": "0",
                 "tot": "num"
             }
@@ -5404,7 +5404,9 @@
         "x": 1310,
         "y": 1660,
         "wires": [
-            []
+            [
+                "098de3e53d4dfcb5"
+            ]
         ]
     },
     {
