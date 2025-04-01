@@ -3503,6 +3503,7 @@
         "id": "36625b582d6be3e5",
         "type": "ui_switch",
         "z": "bc3f40f178b15cc3",
+        "d": true,
         "g": "8eceb05dbdb901e6",
         "name": "",
         "label": "Dampf",
