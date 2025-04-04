@@ -5357,7 +5357,7 @@
         "g": "631083f359de76ee",
         "name": "",
         "pauseType": "delay",
-        "timeout": "20",
+        "timeout": "30",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
