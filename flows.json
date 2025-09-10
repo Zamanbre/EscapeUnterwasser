@@ -5720,7 +5720,7 @@
         "type": "change",
         "z": "a1a0700b5d60c281",
         "g": "4aef0d1c6e1e8ae7",
-        "name": "Dekolicht",
+        "name": "Lichtleisten",
         "rules": [
             {
                 "t": "set",
@@ -5742,7 +5742,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
+        "x": 650,
         "y": 120,
         "wires": [
             [
