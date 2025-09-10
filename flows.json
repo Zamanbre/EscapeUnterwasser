@@ -5726,7 +5726,7 @@
                 "t": "set",
                 "p": "url",
                 "pt": "msg",
-                "to": "http://dekolicht.local/json/state",
+                "to": "http://lichtleisten.local/json/state",
                 "tot": "str"
             },
             {
