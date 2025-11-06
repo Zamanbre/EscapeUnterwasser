@@ -5283,11 +5283,11 @@
         "g": "eaeca8afb05066c4",
         "name": "",
         "pin": "12",
-        "intype": "up",
+        "intype": "tri",
         "debounce": "25",
         "read": true,
         "bcm": true,
-        "x": 160,
+        "x": 150,
         "y": 200,
         "wires": [
             [
