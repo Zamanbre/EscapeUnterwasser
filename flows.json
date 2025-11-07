@@ -190,7 +190,8 @@
             "8eceb05dbdb901e6",
             "cf687ff36e48ebd7",
             "ad0c914fc6df4fe2",
-            "54716b964da95261"
+            "54716b964da95261",
+            "bf54df11bd801a3a"
         ],
         "x": 44,
         "y": 33,
@@ -486,7 +487,7 @@
             "4dc0417176cffd8b"
         ],
         "x": 94,
-        "y": 239,
+        "y": 359,
         "w": 492,
         "h": 182
     },
@@ -3496,7 +3497,7 @@
         "out": "out",
         "bcm": true,
         "x": 510,
-        "y": 380,
+        "y": 500,
         "wires": []
     },
     {
@@ -3528,7 +3529,7 @@
         "animate": false,
         "className": "",
         "x": 390,
-        "y": 380,
+        "y": 500,
         "wires": [
             [
                 "f46246e7cdbf73d5"
@@ -3976,7 +3977,7 @@
         "to": "",
         "reg": false,
         "x": 220,
-        "y": 320,
+        "y": 440,
         "wires": [
             [
                 "36625b582d6be3e5"
@@ -4002,7 +4003,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 210,
-        "y": 280,
+        "y": 400,
         "wires": [
             [
                 "4344d09d9b3ba89c"
@@ -5287,11 +5288,11 @@
         "debounce": "25",
         "read": true,
         "bcm": true,
-        "x": 150,
-        "y": 200,
+        "x": 130,
+        "y": 280,
         "wires": [
             [
-                "54716b964da95261"
+                "bf54df11bd801a3a"
             ]
         ]
     },
@@ -5313,8 +5314,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 290,
-        "y": 200,
+        "x": 450,
+        "y": 280,
         "wires": [
             [
                 "a64be0597031f9c8"
@@ -5633,6 +5634,45 @@
             [],
             [
                 "3697c0b81e0b8ff9"
+            ]
+        ]
+    },
+    {
+        "id": "bf54df11bd801a3a",
+        "type": "change",
+        "z": "bc3f40f178b15cc3",
+        "g": "eaeca8afb05066c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "54716b964da95261"
             ]
         ]
     },
